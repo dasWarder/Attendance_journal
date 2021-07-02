@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AttendingsJournal.iml" filepath="$PROJECT_DIR$/AttendingsJournal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/journal-common/common/common.iml" filepath="$PROJECT_DIR$/journal-common/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/journal-common/journal-common.iml" filepath="$PROJECT_DIR$/journal-common/journal-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/journal-common/map-service/map-service.iml" filepath="$PROJECT_DIR$/journal-common/map-service/map-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/journal-common/common/model/model.iml" filepath="$PROJECT_DIR$/journal-common/common/model/model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/journal-common/common/repository/repository.iml" filepath="$PROJECT_DIR$/journal-common/common/repository/repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/journal-common/service/service.iml" filepath="$PROJECT_DIR$/journal-common/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/journal-common/web/web.iml" filepath="$PROJECT_DIR$/journal-common/web/web.iml" />
+    </modules>
+  </component>
+</project>
