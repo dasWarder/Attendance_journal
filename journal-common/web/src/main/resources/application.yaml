@@ -9,6 +9,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: none
-    database: postgresql
+      ddl-auto: validate
+    show-sql: true
+    generate-ddl: false
 

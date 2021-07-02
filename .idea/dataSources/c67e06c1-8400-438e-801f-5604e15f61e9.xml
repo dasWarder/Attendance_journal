@@ -1431,7 +1431,7 @@ true posixrules
 13108||-9223372036854775808|U|G
 13108||10|U|G</Grants>
       <Owner>user</Owner>
-      <IntrospectionStateNumber>488</IntrospectionStateNumber>
+      <IntrospectionStateNumber>505</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -1501,7 +1501,7 @@ true posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>user</Owner>
-      <IntrospectionStateNumber>489</IntrospectionStateNumber>
+      <IntrospectionStateNumber>506</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="18" parent="2" name="plpgsql">
@@ -1601,5 +1601,230 @@ true posixrules
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
+    <sequence id="30" parent="17" name="global_seq">
+      <ObjectId>16415</ObjectId>
+      <Owner>user</Owner>
+      <StateNumber>504</StateNumber>
+      <DataType>bigint|0s</DataType>
+    </sequence>
+    <table id="31" parent="17" name="flyway_schema_history">
+      <ObjectId>16405</ObjectId>
+      <Owner>user</Owner>
+      <StateNumber>503</StateNumber>
+    </table>
+    <table id="32" parent="17" name="school_class">
+      <ObjectId>16417</ObjectId>
+      <Owner>user</Owner>
+      <StateNumber>504</StateNumber>
+    </table>
+    <table id="33" parent="17" name="student">
+      <ObjectId>16424</ObjectId>
+      <Owner>user</Owner>
+      <StateNumber>504</StateNumber>
+    </table>
+    <column id="34" parent="31" name="installed_rank">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>503</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="35" parent="31" name="version">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>503</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="36" parent="31" name="description">
+      <Position>3</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>503</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="37" parent="31" name="type">
+      <Position>4</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>503</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="38" parent="31" name="script">
+      <Position>5</Position>
+      <DataType>varchar(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>503</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="39" parent="31" name="checksum">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>503</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="40" parent="31" name="installed_by">
+      <Position>7</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>503</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="41" parent="31" name="installed_on">
+      <Position>8</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>503</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="42" parent="31" name="execution_time">
+      <Position>9</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>503</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="43" parent="31" name="success">
+      <Position>10</Position>
+      <DataType>boolean|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>503</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <index id="44" parent="31" name="flyway_schema_history_pk">
+      <ObjectId>16412</ObjectId>
+      <StateNumber>503</StateNumber>
+      <ColNames>installed_rank</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <index id="45" parent="31" name="flyway_schema_history_s_idx">
+      <ObjectId>16414</ObjectId>
+      <StateNumber>503</StateNumber>
+      <ColNames>success</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>10003</ClassIds>
+    </index>
+    <key id="46" parent="31" name="flyway_schema_history_pk">
+      <ObjectId>16413</ObjectId>
+      <StateNumber>503</StateNumber>
+      <ColNames>installed_rank</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>flyway_schema_history_pk</UnderlyingIndexName>
+    </key>
+    <column id="47" parent="32" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>504</StateNumber>
+      <DefaultExpression>nextval(&apos;global_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="48" parent="32" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>504</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="49" parent="32" name="id_name">
+      <ObjectId>16423</ObjectId>
+      <StateNumber>504</StateNumber>
+      <ColNames>id
+name</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0,100</CollationIds>
+      <CollationNames>
+default</CollationNames>
+      <ClassIds>3124,3126</ClassIds>
+    </index>
+    <index id="50" parent="32" name="school_class_pkey">
+      <ObjectId>16421</ObjectId>
+      <StateNumber>504</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <key id="51" parent="32" name="school_class_pkey">
+      <ObjectId>16422</ObjectId>
+      <StateNumber>504</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>school_class_pkey</UnderlyingIndexName>
+    </key>
+    <column id="52" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>504</StateNumber>
+      <DefaultExpression>nextval(&apos;global_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="53" parent="33" name="name">
+      <Position>2</Position>
+      <DataType>varchar(120)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>504</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="54" parent="33" name="surname">
+      <Position>3</Position>
+      <DataType>varchar(120)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>504</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="55" parent="33" name="class_id">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>504</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="56" parent="33" name="student_class_id">
+      <ObjectId>16435</ObjectId>
+      <StateNumber>504</StateNumber>
+      <ColNames>id
+class_id</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0,0</CollationIds>
+      <ClassIds>3124,3124</ClassIds>
+    </index>
+    <index id="57" parent="33" name="student_pkey">
+      <ObjectId>16428</ObjectId>
+      <StateNumber>504</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <key id="58" parent="33" name="student_pkey">
+      <ObjectId>16429</ObjectId>
+      <StateNumber>504</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>student_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="59" parent="33" name="student_class_id_fkey">
+      <ObjectId>16430</ObjectId>
+      <StateNumber>504</StateNumber>
+      <ColNames>class_id</ColNames>
+      <RefTableId>16417</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>school_class</RefTableName>
+      <RefKeyName>school_class_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

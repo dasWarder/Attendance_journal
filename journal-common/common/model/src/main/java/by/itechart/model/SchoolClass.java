@@ -12,7 +12,7 @@ import java.util.Set;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "class")
+@Table(name = "school_class")
 public class SchoolClass {
     @Id
     @Column
