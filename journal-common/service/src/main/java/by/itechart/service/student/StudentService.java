@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface StudentService {
 
-    Student saveStudent(Student student, Long classId) throws Throwable;
+    Student saveStudent(Student student) throws Throwable;
 
     Student getStudentByIdAndClassId(Long studentId, Long classId) throws Throwable;
 

@@ -31,7 +31,7 @@ public class StudentController {
                                                   @PathVariable("classId") Long classId) throws Throwable {
 
         Student student = studentMapping.fromStudentDtoToStudent(studentDto, classId);
-        Student storedStudent = studentService.saveStudent(student, classId);
+        Student storedStudent = studentService.saveStudent(student);
         StudentDto dto = studentMapping.fromStudentToStudentDto(storedStudent);
 
         return new ResponseEntity<>(

@@ -1,7 +1,5 @@
 package by.itechart.service.student;
 
-import by.itechart.mapping.dto.StudentDto;
-import by.itechart.mapping.student.StudentMapping;
 import by.itechart.model.Student;
 import by.itechart.repository.StudentRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -24,12 +22,12 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student saveStudent(Student student, Long classId) {
+    public Student saveStudent(Student student) {
 
-        validateParams(student, classId);
+        validateParams(student);
 
         log.info("Storing a student for the class with ID = {}",
-                                                                classId);
+                                                                student.getSchoolClass().getId());
         Student storedStudent = studentRepository.save(student);
 
         return storedStudent;

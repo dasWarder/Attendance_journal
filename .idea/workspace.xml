@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7db09f3-a94f-44c6-a68e-c6ff28e24bde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9/storage_v2/_src_/database/journal.N69kqw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9/storage_v2/_src_/database/journal.N69kqw/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/student/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/student/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/classes/by/itechart/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/classes/by/itechart/service/StudentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/student/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/student/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/student/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/src/test/java/by/itechart/service/student/StudentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/src/test/java/by/itechart/service/student/StudentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/src/test/java/by/itechart/service/student/StudentTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/src/test/java/by/itechart/service/student/StudentTestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/target/classes/by/itechart/service/student/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/classes/by/itechart/service/student/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/target/test-classes/by/itechart/service/student/StudentServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/test-classes/by/itechart/service/student/StudentServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/target/test-classes/by/itechart/service/student/StudentTestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/test-classes/by/itechart/service/student/StudentTestData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/web/src/main/java/by/itechart/web/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/main/java/by/itechart/web/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/classes/by/itechart/web/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/classes/by/itechart/web/controller/StudentController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <recent name="by.itechart.mapping.student" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApplicationWeb">
+  <component name="RunManager" selected="JUnit.StudentServiceTest">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -94,54 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentMappingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="map-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.itechart.mapping.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentMappingTest.shouldMapProperlyFromStudentListToStudentDtoList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="map-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.itechart.mapping.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
-      <option name="METHOD_NAME" value="shouldMapProperlyFromStudentListToStudentDtoList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentMappingTest.shouldThrowExceptionWhenSchoolClassWithIdDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="map-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.itechart.mapping.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenSchoolClassWithIdDoesNotExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentServiceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
         <pattern>
@@ -151,21 +104,71 @@
       </extension>
       <option name="PACKAGE_NAME" value="by.itechart.service.student" />
       <option name="MAIN_CLASS_NAME" value="by.itechart.service.student.StudentServiceTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest.shouldFindAllStudentsMethodWorksProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itechart.service.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.itechart.service.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.service.student.StudentServiceTest" />
+      <option name="METHOD_NAME" value="shouldFindAllStudentsMethodWorksProperly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationWeb" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="web" />
+    <configuration name="StudentServiceTest.shouldThrowExceptionWhenDeleteClassIdNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itechart.web.*" />
+          <option name="PATTERN" value="by.itechart.service.student.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="by.itechart.web.ApplicationWeb" />
+      <option name="PACKAGE_NAME" value="by.itechart.service.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.service.student.StudentServiceTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenDeleteClassIdNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest.shouldThrowExceptionWhenFindAllStudentsClassIdNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itechart.service.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.itechart.service.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.service.student.StudentServiceTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenFindAllStudentsClassIdNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest.shouldThrowExceptionWhenTryToGetByWrongId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itechart.service.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.itechart.service.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.service.student.StudentServiceTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenTryToGetByWrongId" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -179,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ApplicationWeb" />
-        <item itemvalue="JUnit.StudentServiceTest.test" />
-        <item itemvalue="JUnit.StudentMappingTest" />
-        <item itemvalue="JUnit.StudentMappingTest.shouldThrowExceptionWhenSchoolClassWithIdDoesNotExist" />
-        <item itemvalue="JUnit.StudentMappingTest.shouldMapProperlyFromStudentListToStudentDtoList" />
+        <item itemvalue="JUnit.StudentServiceTest" />
+        <item itemvalue="JUnit.StudentServiceTest.shouldThrowExceptionWhenTryToGetByWrongId" />
+        <item itemvalue="JUnit.StudentServiceTest.shouldThrowExceptionWhenFindAllStudentsClassIdNull" />
+        <item itemvalue="JUnit.StudentServiceTest.shouldFindAllStudentsMethodWorksProperly" />
+        <item itemvalue="JUnit.StudentServiceTest.shouldThrowExceptionWhenDeleteClassIdNull" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +203,7 @@
       <workItem from="1625226306145" duration="5101000" />
       <workItem from="1625461595842" duration="3000" />
       <workItem from="1625461669886" duration="13032000" />
-      <workItem from="1625474885067" duration="4576000" />
+      <workItem from="1625474885067" duration="8282000" />
     </task>
     <servers />
   </component>
