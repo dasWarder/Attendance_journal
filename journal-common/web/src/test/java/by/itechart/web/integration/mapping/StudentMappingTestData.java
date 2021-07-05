@@ -1,9 +1,8 @@
-package by.itechart.web.integration;
+package by.itechart.web.integration.mapping;
 
 import by.itechart.mapping.dto.StudentDto;
 import by.itechart.model.SchoolClass;
 import by.itechart.model.Student;
-import org.junit.jupiter.api.Test;
 
 public class StudentMappingTestData {
 

@@ -1,4 +1,4 @@
-package by.itechart.web.integration;
+package by.itechart.web.integration.mapping;
 
 
 import by.itechart.mapping.student.StudentMapping;
@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import static by.itechart.web.integration.StudentMappingTestData.*;
+import static by.itechart.web.integration.mapping.StudentMappingTestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
