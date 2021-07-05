@@ -43,4 +43,9 @@ public class SchoolClass {
         this.name = name;
         this.students = students;
     }
+
+    public SchoolClass(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

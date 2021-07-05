@@ -3,5 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/journal-common/web/src/main/resources/db/migration/V1__Init.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/journal-common/web/src/main/resources/db/migration/V2__populate.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/journal-common/web/src/test/resources/db/student/init.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/journal-common/web/src/test/resources/db/student/populate.sql" dialect="H2" />
   </component>
 </project>
