@@ -14,11 +14,11 @@ import java.util.Set;
 @NoArgsConstructor
 @Table(name = "school_class")
 public class SchoolClass {
+
     @Id
-    @Column
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = "global_seq", sequenceName = "global_seq",
-            initialValue = 1, allocationSize = 1)
+                                            initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "global_seq")
     private Long id;
 
     @Column

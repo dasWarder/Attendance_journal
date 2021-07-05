@@ -1,24 +1,22 @@
 package by.itechart.model;
 
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @Table(name = "student")
 public class Student {
 
     @Id
-    @Column
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = "global_seq", sequenceName = "global_seq",
-                                            initialValue = 1, allocationSize = 1)
+                                            allocationSize = 1, initialValue = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "global_seq")
     private Long id;
 
     @Column
@@ -37,6 +35,13 @@ public class Student {
     }
 
     public Student(String name, String surname, SchoolClass schoolClass) {
+        this.name = name;
+        this.surname = surname;
+        this.schoolClass = schoolClass;
+    }
+
+    public Student(Long id, String name, String surname, SchoolClass schoolClass) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
         this.schoolClass = schoolClass;
