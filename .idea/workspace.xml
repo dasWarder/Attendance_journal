@@ -5,67 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7db09f3-a94f-44c6-a68e-c6ff28e24bde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9/storage_v2/_src_/database/journal.N69kqw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9/storage_v2/_src_/database/journal.N69kqw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_31.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_5_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_5_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AttendingsJournal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AttendingsJournal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/model.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/common/model/src/main/java/by/itechart/model/SchoolClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/src/main/java/by/itechart/model/SchoolClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/src/main/java/by/itechart/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/src/main/java/by/itechart/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/repository.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/repository/repository.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/journal-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/journal-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/map-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/map-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/src/main/java/by/itechart/web/ApplicationWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/main/java/by/itechart/web/ApplicationWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/classes/by/itechart/web/ApplicationWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/classes/by/itechart/web/ApplicationWeb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/src/main/java/by/itechart/mapping/config/MappingConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/classes/by/itechart/mapping/config/MappingConfig.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,50 +61,99 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="by.itechart.mapping.student" />
       <recent name="by.itechart.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApplicationWeb">
-    <configuration name="StudentServiceIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
+  <component name="RunManager" selected="JUnit.StudentMappingTest">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentMappingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="map-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itechart.service.*" />
+          <option name="PATTERN" value="by.itechart.mapping.student.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.service" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.service.StudentServiceIntegrationTest" />
+      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentServiceIntegrationTest.shouldWorkCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
+    <configuration name="StudentMappingTest.shouldMapFromStudentDtoToStudentProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="map-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itechart.service.*" />
+          <option name="PATTERN" value="by.itechart.mapping.student.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.service" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.service.StudentServiceIntegrationTest" />
-      <option name="METHOD_NAME" value="shouldWorkCorrectly" />
+      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
+      <option name="METHOD_NAME" value="shouldMapFromStudentDtoToStudentProperly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApplicationWeb" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="web" />
+    <configuration name="StudentMappingTest.shouldMapFromStudentToStudentDtoProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="map-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itechart.web.*" />
+          <option name="PATTERN" value="by.itechart.mapping.student.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="by.itechart.web.ApplicationWeb" />
+      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
+      <option name="METHOD_NAME" value="shouldMapFromStudentToStudentDtoProperly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentMappingTest.shouldMapProperlyFromStudentListToStudentDtoList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="map-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itechart.mapping.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
+      <option name="METHOD_NAME" value="shouldMapProperlyFromStudentListToStudentDtoList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentMappingTest.shouldThrowExceptionWhenSchoolClassWithIdDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="map-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itechart.mapping.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenSchoolClassWithIdDoesNotExist" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,9 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ApplicationWeb" />
-        <item itemvalue="JUnit.StudentServiceIntegrationTest" />
-        <item itemvalue="JUnit.StudentServiceIntegrationTest.shouldWorkCorrectly" />
+        <item itemvalue="JUnit.StudentMappingTest" />
+        <item itemvalue="JUnit.StudentMappingTest.shouldThrowExceptionWhenSchoolClassWithIdDoesNotExist" />
+        <item itemvalue="JUnit.StudentMappingTest.shouldMapProperlyFromStudentListToStudentDtoList" />
+        <item itemvalue="JUnit.StudentMappingTest.shouldMapFromStudentToStudentDtoProperly" />
+        <item itemvalue="JUnit.StudentMappingTest.shouldMapFromStudentDtoToStudentProperly" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +188,7 @@
       <workItem from="1625226306145" duration="5101000" />
       <workItem from="1625461595842" duration="3000" />
       <workItem from="1625461669886" duration="13032000" />
+      <workItem from="1625474885067" duration="2631000" />
     </task>
     <servers />
   </component>
