@@ -1,7 +1,9 @@
 package by.itechart.web.controller;
 
 import by.itechart.mapping.dto.StudentDto;
-import by.itechart.service.StudentService;
+import by.itechart.mapping.student.StudentMapping;
+import by.itechart.model.Student;
+import by.itechart.service.student.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,33 +15,38 @@ import java.util.List;
 @RequestMapping("/classes/class/{classId}/students")
 public class StudentController {
 
-    private StudentService studentService;
+    private final StudentService studentService;
+
+    private final StudentMapping studentMapping;
 
     private final String REMOVE_MESSAGE = "The student with ID = %d for a school class with ID = %d was successfully removed";
 
-    public StudentController(StudentService studentService) {
+    public StudentController(StudentService studentService, StudentMapping studentMapping) {
         this.studentService = studentService;
+        this.studentMapping = studentMapping;
     }
-
 
     @PostMapping("/student")
     public ResponseEntity<StudentDto> saveStudent(@RequestBody StudentDto studentDto,
                                                   @PathVariable("classId") Long classId) throws Throwable {
 
-        StudentDto storedStudentDto = studentService.saveStudent(studentDto, classId);
+        Student student = studentMapping.fromStudentDtoToStudent(studentDto, classId);
+        Student storedStudent = studentService.saveStudent(student, classId);
+        StudentDto dto = studentMapping.fromStudentToStudentDto(storedStudent);
 
         return new ResponseEntity<>(
-                                    storedStudentDto, HttpStatus.CREATED);
+                                    dto, HttpStatus.CREATED);
     }
 
     @GetMapping("/student/{studentId}")
     public ResponseEntity<StudentDto> getStudentById(@PathVariable("studentId") Long studentId,
                                                      @PathVariable("classId") Long classId) throws Throwable {
 
-        StudentDto studentById = studentService.getStudentByIdAndClassId(studentId, classId);
+        Student studentById = studentService.getStudentByIdAndClassId(studentId, classId);
+        StudentDto dto = studentMapping.fromStudentToStudentDto(studentById);
 
         return new ResponseEntity<>(
-                                    studentById, HttpStatus.OK);
+                                    dto, HttpStatus.OK);
     }
 
     @PutMapping("/student/{studentId}")
@@ -47,10 +54,12 @@ public class StudentController {
                                                     @PathVariable("classId") Long classId,
                                                     @RequestBody StudentDto studentDto) throws Throwable {
 
-        StudentDto updatedStudent = studentService.updateStudent(studentId, studentDto, classId);
+        Student student = studentMapping.fromStudentDtoToStudent(studentDto, classId);
+        Student updatedStudent = studentService.updateStudent(studentId, student, classId);
+        StudentDto dto = studentMapping.fromStudentToStudentDto(updatedStudent);
 
         return new ResponseEntity<>(
-                                    updatedStudent, HttpStatus.OK);
+                                    dto, HttpStatus.OK);
     }
 
     @DeleteMapping("/student/{studentId}")
@@ -66,9 +75,10 @@ public class StudentController {
     @GetMapping
     public ResponseEntity<List<StudentDto>> getAllStudentsByClassId(@PathVariable("classId") Long classId) {
 
-        List<StudentDto> allStudents = studentService.findAllStudents(classId);
+        List<Student> allStudents = studentService.findAllStudents(classId);
+        List<StudentDto> dtoList = studentMapping.fromStudentListToStudentDtoList(allStudents);
 
         return new ResponseEntity<>(
-                                    allStudents, HttpStatus.OK);
+                                    dtoList, HttpStatus.OK);
     }
 }

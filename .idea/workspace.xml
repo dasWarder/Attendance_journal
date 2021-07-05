@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7db09f3-a94f-44c6-a68e-c6ff28e24bde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9/storage_v2/_src_/database/journal.N69kqw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c67e06c1-8400-438e-801f-5604e15f61e9/storage_v2/_src_/database/journal.N69kqw/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/src/main/java/by/itechart/model/SchoolClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/src/main/java/by/itechart/model/SchoolClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/src/main/java/by/itechart/mapping/config/MappingConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/classes/by/itechart/mapping/config/MappingConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/student/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/src/main/java/by/itechart/service/student/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/target/classes/by/itechart/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/target/classes/by/itechart/service/StudentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/src/main/java/by/itechart/web/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/main/java/by/itechart/web/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/classes/by/itechart/web/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/classes/by/itechart/web/controller/StudentController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1uksVyQ4ucWKR7BFYjoY8B7EGax" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,12 +72,15 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="by.itechart.service.student" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="by.itechart.mapping.student" />
       <recent name="by.itechart.service" />
+      <recent name="by.itechart.mapping.student" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentMappingTest">
+  <component name="RunManager" selected="Spring Boot.ApplicationWeb">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -90,38 +105,6 @@
       <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
       <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentMappingTest.shouldMapFromStudentDtoToStudentProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="map-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.itechart.mapping.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
-      <option name="METHOD_NAME" value="shouldMapFromStudentDtoToStudentProperly" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentMappingTest.shouldMapFromStudentToStudentDtoProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="map-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.itechart.mapping.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
-      <option name="METHOD_NAME" value="shouldMapFromStudentToStudentDtoProperly" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,6 +141,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentServiceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itechart.service.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.itechart.service.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.service.student.StudentServiceTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationWeb" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itechart.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="by.itechart.web.ApplicationWeb" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AttendingsJournalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="AttendingsJournal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="by.itechart.attendingsjournal.AttendingsJournalApplication" />
@@ -167,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ApplicationWeb" />
+        <item itemvalue="JUnit.StudentServiceTest.test" />
         <item itemvalue="JUnit.StudentMappingTest" />
         <item itemvalue="JUnit.StudentMappingTest.shouldThrowExceptionWhenSchoolClassWithIdDoesNotExist" />
         <item itemvalue="JUnit.StudentMappingTest.shouldMapProperlyFromStudentListToStudentDtoList" />
-        <item itemvalue="JUnit.StudentMappingTest.shouldMapFromStudentToStudentDtoProperly" />
-        <item itemvalue="JUnit.StudentMappingTest.shouldMapFromStudentDtoToStudentProperly" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +200,7 @@
       <workItem from="1625226306145" duration="5101000" />
       <workItem from="1625461595842" duration="3000" />
       <workItem from="1625461669886" duration="13032000" />
-      <workItem from="1625474885067" duration="2631000" />
+      <workItem from="1625474885067" duration="4576000" />
     </task>
     <servers />
   </component>
