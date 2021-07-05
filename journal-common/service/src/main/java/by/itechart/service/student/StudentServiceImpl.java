@@ -1,7 +1,5 @@
-package by.itechart.service;
+package by.itechart.service.student;
 
-import by.itechart.mapping.dto.StudentDto;
-import by.itechart.mapping.student.StudentMapping;
 import by.itechart.model.Student;
 import by.itechart.repository.StudentRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -19,29 +17,24 @@ public class StudentServiceImpl implements StudentService {
 
     private final StudentRepository studentRepository;
 
-    private final StudentMapping studentMapping;
-
-    public StudentServiceImpl(StudentRepository studentRepository, StudentMapping studentMapping) {
+    public StudentServiceImpl(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
-        this.studentMapping = studentMapping;
     }
 
     @Override
-    public StudentDto saveStudent(StudentDto studentDto, Long classId) throws Throwable {
+    public Student saveStudent(Student student) {
 
-        validateParams(studentDto, classId);
+        validateParams(student);
 
-        Student student = studentMapping.fromStudentDtoToStudent(studentDto, classId);
         log.info("Storing a student for the class with ID = {}",
-                                                                classId);
+                                                                student.getSchoolClass().getId());
         Student storedStudent = studentRepository.save(student);
-        StudentDto dto = studentMapping.fromStudentToStudentDto(storedStudent);
 
-        return dto;
+        return storedStudent;
     }
 
     @Override
-    public StudentDto getStudentByIdAndClassId(Long studentId, Long classId) throws Throwable {
+    public Student getStudentByIdAndClassId(Long studentId, Long classId) throws Throwable {
 
         validateParams(studentId, classId);
 
@@ -50,25 +43,21 @@ public class StudentServiceImpl implements StudentService {
         Optional<Student> possibleStudentById = studentRepository.getStudentByIdAndSchoolClass_Id(
                                                                                                   studentId, classId);
         Student studentById = validateOptional(possibleStudentById, Student.class);
-        StudentDto dto = studentMapping.fromStudentToStudentDto(studentById);
 
-        return dto;
+        return studentById;
     }
 
     @Override
-    public StudentDto updateStudent(Long studentId, StudentDto studentDto, Long classId) throws Throwable {
+    public Student updateStudent(Long studentId, Student student, Long classId) {
 
-        validateParams(studentId, studentDto, classId);
+        validateParams(studentId, student, classId);
 
         log.info("Update a student with ID = {} for a class with ID = {}",
                                                                           studentId, classId);
-        Student student = studentMapping.fromStudentDtoToStudent(studentDto, classId);
         student.setId(studentId);
-
         Student storedStudent = studentRepository.save(student);
-        StudentDto dto = studentMapping.fromStudentToStudentDto(storedStudent);
 
-        return dto;
+        return storedStudent;
     }
 
     @Override
@@ -76,21 +65,21 @@ public class StudentServiceImpl implements StudentService {
 
         validateParams(studentId, classId);
 
-        log.info("Remove a student with ID = {}", studentId);
+        log.info("Remove a student with ID = {}",
+                                                studentId);
         studentRepository.deleteStudentByIdAndSchoolClass_Id(studentId, classId);
 
     }
 
     @Override
-    public List<StudentDto> findAllStudents(Long classId) {
+    public List<Student> findAllStudents(Long classId) {
 
         validateParams(classId);
 
         log.info("Receive a collection of all student for a class with ID = {}",
                                                                                 classId);
-        List<Student> possibleStudentsList = studentRepository.findAllBySchoolClass_Id(classId);
-        List<StudentDto> dtoList = studentMapping.fromStudentListToStudentDtoList(possibleStudentsList);
+        List<Student> studentsList = studentRepository.findAllBySchoolClass_Id(classId);
 
-        return dtoList;
+        return studentsList;
     }
 }

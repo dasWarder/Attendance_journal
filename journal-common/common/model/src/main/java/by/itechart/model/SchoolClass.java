@@ -1,5 +1,6 @@
 package by.itechart.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,6 +12,7 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @Table(name = "school_class")
 public class SchoolClass {
@@ -34,5 +36,16 @@ public class SchoolClass {
     public SchoolClass(String name, Set<Student> students) {
         this.name = name;
         this.students = students;
+    }
+
+    public SchoolClass(Long id, String name, Set<Student> students) {
+        this.id = id;
+        this.name = name;
+        this.students = students;
+    }
+
+    public SchoolClass(Long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 }
