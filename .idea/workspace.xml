@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7db09f3-a94f-44c6-a68e-c6ff28e24bde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/integration/StudentMappingServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/integration/mapping/StudentMappingServiceIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/integration/StudentMappingTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/integration/mapping/StudentMappingTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/StudentMappingServiceIntegrationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/StudentMappingTestData.class" beforeDir="false" />
-    </list>
+    <list default="true" id="f7db09f3-a94f-44c6-a68e-c6ff28e24bde" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,19 +73,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.StudentServiceIntegrationTest.shouldFindAllStudentsProperly">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StudentServiceIntegrationTest.shouldDeleteStudentProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="web" />
       <extension name="coverage">
@@ -202,7 +183,7 @@
       <workItem from="1625226306145" duration="5101000" />
       <workItem from="1625461595842" duration="3000" />
       <workItem from="1625461669886" duration="13032000" />
-      <workItem from="1625474885067" duration="12751000" />
+      <workItem from="1625474885067" duration="12889000" />
     </task>
     <servers />
   </component>

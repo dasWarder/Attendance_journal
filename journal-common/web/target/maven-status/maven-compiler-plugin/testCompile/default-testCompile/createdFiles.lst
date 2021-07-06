@@ -1,0 +1,5 @@
+by\itechart\web\controller\StudentControllerTest.class
+by\itechart\web\integration\mapping\StudentMappingServiceIntegrationTest.class
+by\itechart\web\integration\service\StudentServiceTestData.class
+by\itechart\web\integration\service\StudentServiceIntegrationTest.class
+by\itechart\web\integration\mapping\StudentMappingTestData.class

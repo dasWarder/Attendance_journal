@@ -1,2 +1,4 @@
-by\itechart\model\SchoolClass.class
 by\itechart\model\Student.class
+by\itechart\model\SchoolClass.class
+by\itechart\model\Student$StudentBuilder.class
+by\itechart\model\SchoolClass$SchoolClassBuilder.class
