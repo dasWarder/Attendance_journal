@@ -2,10 +2,9 @@ package by.itechart.web.controller;
 
 import by.itechart.mapping.dto.StudentDto;
 import by.itechart.mapping.dto.StudentDtoId;
-import by.itechart.mapping.student.StudentMapping;
+import by.itechart.mapping.student.StudentMapper;
 import by.itechart.model.Student;
 import by.itechart.web.controller.util.JsonParser;
-import by.itechart.web.data.StudentTestData;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -40,7 +39,7 @@ class StudentControllerTest {
     private JsonParser jsonParser;
 
     @Autowired
-    private StudentMapping studentMapping;
+    private StudentMapper studentMapper;
 
     private static final String BASE_URL = "/classes/class/1";
 
@@ -50,7 +49,7 @@ class StudentControllerTest {
         log.info("Receive a list of Student dto with id from method findAllStudents() and status OK");
 
         List<Student> studentsOrigin = List.of(TEST_STUDENT_2, TEST_STUDENT_3, TEST_STUDENT_4);
-        List<StudentDtoId> students = studentMapping.fromStudentListToStudentDtoIdList(studentsOrigin);
+        List<StudentDtoId> students = studentMapper.map(studentsOrigin);
 
         mockMvc.perform(get(BASE_URL + "/students"))
                 .andDo(print())
@@ -64,7 +63,7 @@ class StudentControllerTest {
     public void shouldBeStatusOkAndReturnGetStudentByIdProperly() throws Exception {
 
         log.info("Receive a student dto without id from method getStudentById() and status OK");
-        StudentDto response = studentMapping.fromStudentToStudentDto(TEST_STUDENT_2);
+        StudentDto response = studentMapper.studentToStudentDto(TEST_STUDENT_2);
 
         mockMvc.perform(get(BASE_URL + "/students/student/" + TEST_STUDENT_2.getId()))
                 .andDo(print())
@@ -96,7 +95,7 @@ class StudentControllerTest {
 
         log.info("Update a student and return student dto without id for the method updateStudent() and status OK");
 
-        StudentDto response = studentMapping.fromStudentToStudentDto(UPDATE_STUDENT);
+        StudentDto response = studentMapper.studentToStudentDto(UPDATE_STUDENT);
 
         mockMvc.perform(put(BASE_URL + "/students/student/" + TEST_STUDENT_2.getId())
                 .contentType(MediaType.APPLICATION_JSON)

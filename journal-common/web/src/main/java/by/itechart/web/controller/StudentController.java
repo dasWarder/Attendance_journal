@@ -2,38 +2,43 @@ package by.itechart.web.controller;
 
 import by.itechart.mapping.dto.StudentDto;
 import by.itechart.mapping.dto.StudentDtoId;
-import by.itechart.mapping.student.StudentMapping;
+import by.itechart.mapping.student.StudentMapper;
+import by.itechart.model.SchoolClass;
 import by.itechart.model.Student;
+import by.itechart.repository.SchoolClassRepository;
+import by.itechart.service.schoolClass.SchoolClassService;
 import by.itechart.service.student.StudentService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/classes/class/{classId}/students")
 public class StudentController {
 
     private final StudentService studentService;
 
-    private final StudentMapping studentMapping;
+    private final StudentMapper studentMapper;
+
+    private final SchoolClassService classService;
 
     private final String REMOVE_MESSAGE = "The student with ID = %d for a school class with ID = %d was successfully removed";
 
-    public StudentController(StudentService studentService, StudentMapping studentMapping) {
-        this.studentService = studentService;
-        this.studentMapping = studentMapping;
-    }
 
     @PostMapping("/student")
     public ResponseEntity<StudentDto> saveStudent(@RequestBody StudentDto studentDto,
                                                   @PathVariable("classId") Long classId) throws Throwable {
 
-        Student student = studentMapping.fromStudentDtoToStudent(studentDto, classId);
+        Student student = studentMapper.studentDtoToStudent(studentDto);
+        setSchoolClassOrThrowsException(student, classId);
         Student storedStudent = studentService.saveStudent(student);
-        StudentDto dto = studentMapping.fromStudentToStudentDto(storedStudent);
+        StudentDto dto = studentMapper.studentToStudentDto(storedStudent);
 
         return new ResponseEntity<>(
                                     dto, HttpStatus.CREATED);
@@ -44,7 +49,7 @@ public class StudentController {
                                                      @PathVariable("classId") Long classId) throws Throwable {
 
         Student studentById = studentService.getStudentByIdAndClassId(studentId, classId);
-        StudentDto dto = studentMapping.fromStudentToStudentDto(studentById);
+        StudentDto dto = studentMapper.studentToStudentDto(studentById);
 
         return new ResponseEntity<>(
                                     dto, HttpStatus.OK);
@@ -55,9 +60,10 @@ public class StudentController {
                                                     @PathVariable("classId") Long classId,
                                                     @RequestBody StudentDto studentDto) throws Throwable {
 
-        Student student = studentMapping.fromStudentDtoToStudent(studentDto, classId);
+        Student student = studentMapper.studentDtoToStudent(studentDto);
+        setSchoolClassOrThrowsException(student, classId);
         Student updatedStudent = studentService.updateStudent(studentId, student, classId);
-        StudentDto dto = studentMapping.fromStudentToStudentDto(updatedStudent);
+        StudentDto dto = studentMapper.studentToStudentDto(updatedStudent);
 
         return new ResponseEntity<>(
                                     dto, HttpStatus.OK);
@@ -77,9 +83,17 @@ public class StudentController {
     public ResponseEntity<List<StudentDtoId>> getAllStudentsByClassId(@PathVariable("classId") Long classId) {
 
         List<Student> allStudents = studentService.findAllStudents(classId);
-        List<StudentDtoId> dtoList = studentMapping.fromStudentListToStudentDtoIdList(allStudents);
+        List<StudentDtoId> dtoList = studentMapper.map(allStudents);
 
         return new ResponseEntity<>(
                                     dtoList, HttpStatus.OK);
+    }
+
+
+    private void setSchoolClassOrThrowsException(Student student, Long classId) throws Throwable {
+
+        SchoolClass validSchoolClass = classService.getSchoolClassById(classId);
+
+        student.setSchoolClass(validSchoolClass);
     }
 }

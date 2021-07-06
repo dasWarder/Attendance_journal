@@ -5,57 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7db09f3-a94f-44c6-a68e-c6ff28e24bde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_2002.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_02.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass$SchoolClassBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass$SchoolClassBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/Student$StudentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/Student$StudentBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/exception/SchoolClassNotFound.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/exception/SchoolClassNotFound.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/exception/StudentNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/exception/StudentNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/util/ValidationUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/util/ValidationUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AttendingsJournal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AttendingsJournal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/common/model/model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/model.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/model-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/model-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/repository/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/repository.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/repository/repository.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/common/repository/target/repository-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/repository/target/repository-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/journal-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/journal-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/map-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/map-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/src/main/java/by/itechart/mapping/student/StudentMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/src/main/java/by/itechart/mapping/student/StudentMappingImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/src/test/java/by/itechart/mapping/student/StudentMappingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/src/test/java/by/itechart/mapping/student/TestData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/classes/by/itechart/mapping/student/StudentMapping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/classes/by/itechart/mapping/student/StudentMappingImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/map-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/map-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/surefire-reports/TEST-by.itechart.mapping.student.StudentMappingTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/surefire-reports/TEST-by.itechart.mapping.student.StudentMappingTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/surefire-reports/by.itechart.mapping.student.StudentMappingTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/surefire-reports/by.itechart.mapping.student.StudentMappingTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/test-classes/by/itechart/mapping/student/StudentMappingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/test-classes/by/itechart/mapping/student/StudentMappingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/service/target/service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/service-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/service/target/surefire-reports/TEST-by.itechart.service.student.StudentServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/surefire-reports/TEST-by.itechart.service.student.StudentServiceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/service/target/surefire-reports/by.itechart.service.student.StudentServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/surefire-reports/by.itechart.service.student.StudentServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/src/main/java/by/itechart/web/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/main/java/by/itechart/web/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/controller/StudentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/controller/StudentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/integration/mapping/StudentMappingServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/integration/mapping/StudentMappingServiceIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/classes/by/itechart/web/ApplicationWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/classes/by/itechart/web/ApplicationWeb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/classes/by/itechart/web/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/classes/by/itechart/web/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/TEST-by.itechart.web.controller.StudentControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/TEST-by.itechart.web.controller.StudentControllerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/TEST-by.itechart.web.integration.mapping.StudentMappingServiceIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/TEST-by.itechart.web.integration.mapping.StudentMappingServiceIntegrationTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/TEST-by.itechart.web.integration.service.StudentServiceIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/TEST-by.itechart.web.integration.service.StudentServiceIntegrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/by.itechart.web.controller.StudentControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/by.itechart.web.controller.StudentControllerTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/by.itechart.web.integration.mapping.StudentMappingServiceIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/by.itechart.web.integration.mapping.StudentMappingServiceIntegrationTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/by.itechart.web.integration.service.StudentServiceIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/by.itechart.web.integration.service.StudentServiceIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/application.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/controller/StudentControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/controller/StudentControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/controller/util/JsonParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/controller/util/JsonParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/data/StudentTestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/data/StudentTestData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/mapping/StudentMappingServiceIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/mapping/StudentMappingServiceIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/mapping/StudentMappingTestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/mapping/StudentMappingTestData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/service/StudentServiceIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/service/StudentServiceIntegrationTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal-common/web/target/web-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/web-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +62,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -175,18 +171,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentControllerTest.shouldStatusBeOkAndReturnDeleteStudentProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="web" />
+    <configuration name="StudentMappingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="map-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itechart.web.controller.*" />
+          <option name="PATTERN" value="by.itechart.mapping.student.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.web.controller" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.web.controller.StudentControllerTest" />
-      <option name="METHOD_NAME" value="shouldStatusBeOkAndReturnDeleteStudentProperly" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="by.itechart.mapping.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.mapping.student.StudentMappingTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -229,10 +224,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ApplicationWeb" />
+        <item itemvalue="JUnit.StudentControllerTest" />
+        <item itemvalue="JUnit.StudentMappingTest" />
         <item itemvalue="JUnit.StudentServiceIntegrationTest" />
         <item itemvalue="JUnit.StudentControllerTest.shouldBeStatusOkAndReturnAllStudentsProperly" />
-        <item itemvalue="JUnit.StudentControllerTest" />
-        <item itemvalue="JUnit.StudentControllerTest.shouldStatusBeOkAndReturnDeleteStudentProperly" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +246,7 @@
       <workItem from="1625461669886" duration="13032000" />
       <workItem from="1625474885067" duration="12889000" />
       <workItem from="1625548626613" duration="8590000" />
-      <workItem from="1625561823184" duration="3072000" />
+      <workItem from="1625561823184" duration="8700000" />
     </task>
     <servers />
   </component>
