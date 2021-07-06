@@ -1,4 +1,4 @@
-package by.itechart.mapping.exception;
+package by.itechart.model.exception;
 
 public class SchoolClassNotFound extends Throwable {
 

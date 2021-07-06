@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-import static by.itechart.mapping.util.ValidationUtil.validateOptional;
-import static by.itechart.mapping.util.ValidationUtil.validateParams;
+import static by.itechart.model.util.ValidationUtil.validateOptional;
+import static by.itechart.model.util.ValidationUtil.validateParams;
 
 @Slf4j
 @Service

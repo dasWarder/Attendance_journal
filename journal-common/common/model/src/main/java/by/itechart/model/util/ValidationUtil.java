@@ -1,7 +1,7 @@
-package by.itechart.mapping.util;
+package by.itechart.model.util;
 
-import by.itechart.mapping.exception.SchoolClassNotFound;
-import by.itechart.mapping.exception.StudentNotFoundException;
+import by.itechart.model.exception.SchoolClassNotFound;
+import by.itechart.model.exception.StudentNotFoundException;
 import javassist.NotFoundException;
 import lombok.extern.slf4j.Slf4j;
 

@@ -1416,7 +1416,7 @@ true posix/WET
 false posix/Zulu
 true posixrules
 </TimeZones>
-      <StartupTime>1625461953</StartupTime>
+      <StartupTime>1625548300</StartupTime>
     </root>
     <database id="2" parent="1" name="journal">
       <ObjectId>16384</ObjectId>
@@ -1431,7 +1431,7 @@ true posixrules
 13108||-9223372036854775808|U|G
 13108||10|U|G</Grants>
       <Owner>user</Owner>
-      <IntrospectionStateNumber>516</IntrospectionStateNumber>
+      <IntrospectionStateNumber>520</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -1501,7 +1501,7 @@ true posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>user</Owner>
-      <IntrospectionStateNumber>517</IntrospectionStateNumber>
+      <IntrospectionStateNumber>521</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="18" parent="2" name="plpgsql">
@@ -1619,6 +1619,7 @@ true posixrules
     </table>
     <table id="33" parent="17" name="student">
       <ObjectId>16436</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>user</Owner>
       <StateNumber>508</StateNumber>
     </table>

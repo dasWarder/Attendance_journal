@@ -1,6 +1,7 @@
 package by.itechart.web.controller;
 
 import by.itechart.mapping.dto.StudentDto;
+import by.itechart.mapping.dto.StudentDtoId;
 import by.itechart.mapping.student.StudentMapping;
 import by.itechart.model.Student;
 import by.itechart.service.student.StudentService;
@@ -73,10 +74,10 @@ public class StudentController {
     }
 
     @GetMapping
-    public ResponseEntity<List<StudentDto>> getAllStudentsByClassId(@PathVariable("classId") Long classId) {
+    public ResponseEntity<List<StudentDtoId>> getAllStudentsByClassId(@PathVariable("classId") Long classId) {
 
         List<Student> allStudents = studentService.findAllStudents(classId);
-        List<StudentDto> dtoList = studentMapping.fromStudentListToStudentDtoList(allStudents);
+        List<StudentDtoId> dtoList = studentMapping.fromStudentListToStudentDtoIdList(allStudents);
 
         return new ResponseEntity<>(
                                     dtoList, HttpStatus.OK);

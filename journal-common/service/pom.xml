@@ -12,11 +12,13 @@
     <artifactId>service</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>by.itechart</groupId>
-            <artifactId>map-service</artifactId>
+            <artifactId>repository</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
     </dependencies>
 
 </project>
