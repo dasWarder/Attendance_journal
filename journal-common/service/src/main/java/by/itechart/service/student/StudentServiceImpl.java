@@ -2,6 +2,7 @@ package by.itechart.service.student;
 
 import by.itechart.model.Student;
 import by.itechart.repository.StudentRepository;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -13,13 +14,10 @@ import static by.itechart.model.util.ValidationUtil.validateParams;
 
 @Slf4j
 @Service
+@RequiredArgsConstructor
 public class StudentServiceImpl implements StudentService {
 
     private final StudentRepository studentRepository;
-
-    public StudentServiceImpl(StudentRepository studentRepository) {
-        this.studentRepository = studentRepository;
-    }
 
     @Override
     public Student saveStudent(Student student) {

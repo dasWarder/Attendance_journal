@@ -3,6 +3,7 @@ package by.itechart.web.controller;
 import by.itechart.mapping.dto.StudentDto;
 import by.itechart.mapping.dto.StudentDtoId;
 import by.itechart.mapping.student.StudentMapper;
+import by.itechart.mapping.student.StudentMapperWithSchoolClass;
 import by.itechart.model.SchoolClass;
 import by.itechart.model.Student;
 import by.itechart.repository.SchoolClassRepository;
@@ -26,7 +27,7 @@ public class StudentController {
 
     private final StudentMapper studentMapper;
 
-    private final SchoolClassService classService;
+    private final StudentMapperWithSchoolClass customStudentMapper;
 
     private final String REMOVE_MESSAGE = "The student with ID = %d for a school class with ID = %d was successfully removed";
 
@@ -35,8 +36,7 @@ public class StudentController {
     public ResponseEntity<StudentDto> saveStudent(@RequestBody StudentDto studentDto,
                                                   @PathVariable("classId") Long classId) throws Throwable {
 
-        Student student = studentMapper.studentDtoToStudent(studentDto);
-        setSchoolClassOrThrowsException(student, classId);
+        Student student = customStudentMapper.studentDtoToStudent(studentDto, classId);
         Student storedStudent = studentService.saveStudent(student);
         StudentDto dto = studentMapper.studentToStudentDto(storedStudent);
 
@@ -60,8 +60,7 @@ public class StudentController {
                                                     @PathVariable("classId") Long classId,
                                                     @RequestBody StudentDto studentDto) throws Throwable {
 
-        Student student = studentMapper.studentDtoToStudent(studentDto);
-        setSchoolClassOrThrowsException(student, classId);
+        Student student = customStudentMapper.studentDtoToStudent(studentDto, classId);
         Student updatedStudent = studentService.updateStudent(studentId, student, classId);
         StudentDto dto = studentMapper.studentToStudentDto(updatedStudent);
 
@@ -87,13 +86,5 @@ public class StudentController {
 
         return new ResponseEntity<>(
                                     dtoList, HttpStatus.OK);
-    }
-
-
-    private void setSchoolClassOrThrowsException(Student student, Long classId) throws Throwable {
-
-        SchoolClass validSchoolClass = classService.getSchoolClassById(classId);
-
-        student.setSchoolClass(validSchoolClass);
     }
 }
