@@ -1,6 +1,7 @@
 package by.itechart.mapping.student;
 
 import by.itechart.mapping.dto.StudentDto;
+import by.itechart.mapping.dto.StudentDtoId;
 import by.itechart.model.Student;
 
 import java.util.List;
@@ -11,5 +12,5 @@ public interface StudentMapping {
 
     StudentDto fromStudentToStudentDto(Student student);
 
-    List<StudentDto> fromStudentListToStudentDtoList(List<Student> students);
+    List<StudentDtoId> fromStudentListToStudentDtoIdList(List<Student> students);
 }

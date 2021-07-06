@@ -1,2 +1,7 @@
-by\itechart\model\SchoolClass.class
+by\itechart\model\exception\StudentNotFoundException.class
+by\itechart\model\SchoolClass$SchoolClassBuilder.class
+by\itechart\model\util\ValidationUtil.class
 by\itechart\model\Student.class
+by\itechart\model\exception\SchoolClassNotFound.class
+by\itechart\model\SchoolClass.class
+by\itechart\model\Student$StudentBuilder.class

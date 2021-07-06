@@ -1,13 +1,13 @@
 package by.itechart.mapping.student;
 
 import by.itechart.mapping.dto.StudentDto;
-import by.itechart.mapping.exception.SchoolClassNotFound;
+import by.itechart.mapping.dto.StudentDtoId;
+import by.itechart.model.exception.SchoolClassNotFound;
 import by.itechart.model.Student;
 import by.itechart.repository.SchoolClassRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import java.util.List;
@@ -59,9 +59,9 @@ class StudentMappingTest {
 
         log.info("Mapping from a list of student to a list of student dto");
         List<Student> studentList = List.of(TEST_STUDENT_1, TEST_STUDENT_2);
-        List<StudentDto> expectedList = List.of(TEST_DTO_1, TEST_DTO_2);
+        List<StudentDtoId> expectedList = List.of(TEST_DTO_ID_1, TEST_DTO_ID_2);
 
-        List<StudentDto> actualList = studentMapping.fromStudentListToStudentDtoList(studentList);
+        List<StudentDtoId> actualList = studentMapping.fromStudentListToStudentDtoIdList(studentList);
 
         assertThat(actualList)
                                 .usingRecursiveComparison()

@@ -1,6 +1,6 @@
 package by.itechart.web.integration.service;
 
-import by.itechart.mapping.exception.StudentNotFoundException;
+import by.itechart.model.exception.StudentNotFoundException;
 import by.itechart.model.Student;
 import by.itechart.service.student.StudentService;
 import lombok.extern.slf4j.Slf4j;

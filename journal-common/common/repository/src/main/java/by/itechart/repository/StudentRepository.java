@@ -2,8 +2,9 @@ package by.itechart.repository;
 
 import by.itechart.model.Student;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
+
 import java.util.List;
 import java.util.Optional;
 

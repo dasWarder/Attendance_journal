@@ -1,7 +1,7 @@
 package by.itechart.service.student;
 
-import by.itechart.mapping.exception.StudentNotFoundException;
 import by.itechart.model.Student;
+import by.itechart.model.exception.StudentNotFoundException;
 import by.itechart.repository.StudentRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
