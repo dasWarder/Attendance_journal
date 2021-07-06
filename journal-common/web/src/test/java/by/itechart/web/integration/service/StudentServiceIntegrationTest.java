@@ -14,7 +14,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.List;
 
-import static by.itechart.web.integration.service.StudentServiceTestData.*;
+import static by.itechart.web.data.StudentTestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j
