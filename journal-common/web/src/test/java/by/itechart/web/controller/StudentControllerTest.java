@@ -42,9 +42,6 @@ class StudentControllerTest {
     @Autowired
     private StudentMapping studentMapping;
 
-    @Autowired
-    private StudentController studentController;
-
     private static final String BASE_URL = "/classes/class/1";
 
     @Test
