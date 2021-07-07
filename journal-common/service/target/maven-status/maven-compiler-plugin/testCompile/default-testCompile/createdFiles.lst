@@ -1,2 +1,4 @@
-by\itechart\service\student\StudentServiceTest.class
+by\itechart\service\schoolClass\SchoolClassServiceTest.class
 by\itechart\service\student\StudentTestData.class
+by\itechart\service\student\StudentServiceTest.class
+by\itechart\service\schoolClass\SchoolClassData.class

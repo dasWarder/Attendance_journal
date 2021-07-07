@@ -1,11 +1,10 @@
-DELETE FROM school_class;
 DELETE FROM student;
-
+DELETE FROM school_class;
 
 INSERT INTO school_class(id, name) VALUES
-    (1, '1А');
+    (12, '1A');
 
 INSERT INTO student(id, name, surname, class_id) VALUES
-    (2, 'Alex', 'Petrov', 1),
-    (3, 'Jack', 'Sparrow', 1),
-    (4, 'David', 'Blane', 1);
+    (6, 'Alex', 'Petrov', 12),
+    (7, 'Jack', 'Sparrow', 12),
+    (8, 'David', 'Blane', 12);

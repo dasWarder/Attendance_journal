@@ -1,4 +1,7 @@
-by\itechart\web\controller\StudentControllerTest.class
+by\itechart\web\integration\service\SchoolClassIntegrationTest.class
+by\itechart\web\controller\student\StudentControllerTest.class
+by\itechart\web\controller\schoolClass\SchoolClassControllerTest.class
 by\itechart\web\data\StudentTestData.class
+by\itechart\web\data\SchoolClassTestData.class
 by\itechart\web\integration\service\StudentServiceIntegrationTest.class
 by\itechart\web\controller\util\JsonParser.class
