@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7db09f3-a94f-44c6-a68e-c6ff28e24bde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/common/model/src/main/java/by/itechart/model/SchoolClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/src/main/java/by/itechart/model/SchoolClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass$SchoolClassBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass$SchoolClassBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/src/main/java/by/itechart/repository/SchoolClassRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/repository/src/main/java/by/itechart/repository/SchoolClassRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/target/classes/by/itechart/repository/SchoolClassRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/repository/target/classes/by/itechart/repository/SchoolClassRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/controller/StudentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/controller/student/StudentControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/data/StudentTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/data/StudentTestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/integration/service/StudentServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/integration/service/StudentServiceIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/resources/db/student/init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/resources/db/student/populate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/resources/db/student/populate.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/controller/StudentControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/data/StudentTestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/data/StudentTestData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/service/StudentServiceIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/service/StudentServiceIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/db/student/init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/db/student/populate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/db/student/populate.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -31,6 +48,18 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="test" />
+      </list>
+    </option>
+    <option name="disabledProfiles">
+      <list>
+        <option value="dev" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1uksVyQ4ucWKR7BFYjoY8B7EGax" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -64,23 +93,27 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\test\resources\db" />
+      <recent name="C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\test\resources" />
       <recent name="C:\Users\user\IdeaProjects\AttendingsJournal\journal-common" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="by.itechart.web.controller.student" />
       <recent name="by.itechart.web" />
       <recent name="by.itechart.service.student" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="by.itechart.web.controller.schoolClass" />
       <recent name="by.itechart.service.schoolClass" />
       <recent name="by.itechart.web.controller" />
       <recent name="by.itechart.service" />
       <recent name="by.itechart.mapping.student" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SchoolClassServiceTest">
+  <component name="RunManager" selected="JUnit.SchoolClassControllerTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -92,80 +125,79 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchoolClassServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
+    <configuration name="SchoolClassControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itechart.service.schoolClass.*" />
+          <option name="PATTERN" value="by.itechart.web.controller.schoolClass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.service.schoolClass" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.service.schoolClass.SchoolClassServiceTest" />
+      <option name="PACKAGE_NAME" value="by.itechart.web.controller.schoolClass" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.web.controller.schoolClass.SchoolClassControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchoolClassServiceTest.shouldThrowExceptionWhenUpdateSchoolClassWithNullableId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
+    <configuration name="SchoolClassControllerTest.shouldBeStatusOkAndReturnAllSchoolClassesProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itechart.service.schoolClass.*" />
+          <option name="PATTERN" value="by.itechart.web.controller.schoolClass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.service.schoolClass" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.service.schoolClass.SchoolClassServiceTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenUpdateSchoolClassWithNullableId" />
+      <option name="PACKAGE_NAME" value="by.itechart.web.controller.schoolClass" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.web.controller.schoolClass.SchoolClassControllerTest" />
+      <option name="METHOD_NAME" value="shouldBeStatusOkAndReturnAllSchoolClassesProperly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchoolClassServiceTest.shouldThrowExceptionWhenUpdateSchoolClassWithNullableUpdateSchoolClassObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
+    <configuration name="SchoolClassControllerTest.shouldStatusBeOkAndReturnDeleteSchoolClassByNameProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itechart.service.schoolClass.*" />
+          <option name="PATTERN" value="by.itechart.web.controller.schoolClass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.service.schoolClass" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.service.schoolClass.SchoolClassServiceTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenUpdateSchoolClassWithNullableUpdateSchoolClassObject" />
+      <option name="PACKAGE_NAME" value="by.itechart.web.controller.schoolClass" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.web.controller.schoolClass.SchoolClassControllerTest" />
+      <option name="METHOD_NAME" value="shouldStatusBeOkAndReturnDeleteSchoolClassByNameProperly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchoolClassServiceTest.shouldThrowExceptionWhenUpdateSchoolClassWithWrongId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
+    <configuration name="StudentControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itechart.service.schoolClass.*" />
+          <option name="PATTERN" value="by.itechart.web.controller.student.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.service.schoolClass" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.service.schoolClass.SchoolClassServiceTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenUpdateSchoolClassWithWrongId" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="by.itechart.web.controller.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.web.controller.student.StudentControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchoolClassServiceTest.shouldUpdateSchoolClassMethodWorksProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
+    <configuration name="StudentControllerTest.shouldStatusBeOkAndReturnDeleteStudentProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.itechart.service.schoolClass.*" />
+          <option name="PATTERN" value="by.itechart.web.controller.student.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.service.schoolClass" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.service.schoolClass.SchoolClassServiceTest" />
-      <option name="METHOD_NAME" value="shouldUpdateSchoolClassMethodWorksProperly" />
+      <option name="PACKAGE_NAME" value="by.itechart.web.controller.student" />
+      <option name="MAIN_CLASS_NAME" value="by.itechart.web.controller.student.StudentControllerTest" />
+      <option name="METHOD_NAME" value="shouldStatusBeOkAndReturnDeleteStudentProperly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SchoolClassServiceTest" />
-        <item itemvalue="JUnit.SchoolClassServiceTest.shouldThrowExceptionWhenUpdateSchoolClassWithWrongId" />
-        <item itemvalue="JUnit.SchoolClassServiceTest.shouldThrowExceptionWhenUpdateSchoolClassWithNullableUpdateSchoolClassObject" />
-        <item itemvalue="JUnit.SchoolClassServiceTest.shouldThrowExceptionWhenUpdateSchoolClassWithNullableId" />
-        <item itemvalue="JUnit.SchoolClassServiceTest.shouldUpdateSchoolClassMethodWorksProperly" />
+        <item itemvalue="JUnit.SchoolClassControllerTest" />
+        <item itemvalue="JUnit.SchoolClassControllerTest.shouldStatusBeOkAndReturnDeleteSchoolClassByNameProperly" />
+        <item itemvalue="JUnit.SchoolClassControllerTest.shouldBeStatusOkAndReturnAllSchoolClassesProperly" />
+        <item itemvalue="JUnit.StudentControllerTest" />
+        <item itemvalue="JUnit.StudentControllerTest.shouldStatusBeOkAndReturnDeleteStudentProperly" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +236,7 @@
       <workItem from="1625474885067" duration="12889000" />
       <workItem from="1625548626613" duration="8590000" />
       <workItem from="1625561823184" duration="11018000" />
-      <workItem from="1625636844600" duration="7024000" />
+      <workItem from="1625636844600" duration="13440000" />
     </task>
     <servers />
   </component>

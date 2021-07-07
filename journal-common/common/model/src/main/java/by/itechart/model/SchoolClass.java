@@ -26,7 +26,7 @@ public class SchoolClass {
     @Column
     private String name;
 
-    @OneToMany(mappedBy = "schoolClass")
+    @OneToMany(mappedBy = "schoolClass", cascade = CascadeType.ALL)
     private Set<Student> students;
 
     public SchoolClass(String name) {

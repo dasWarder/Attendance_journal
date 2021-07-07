@@ -1,4 +1,4 @@
-package by.itechart.web.controller;
+package by.itechart.web.controller.student;
 
 import by.itechart.mapping.dto.student.StudentDto;
 import by.itechart.mapping.dto.student.StudentDtoId;
@@ -19,7 +19,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.util.List;
 
 import static by.itechart.web.data.StudentTestData.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -29,7 +28,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 @ExtendWith(SpringExtension.class)
-@Sql(scripts = { "/db/student/init.sql", "/db/student/populate.sql" })
+@Sql(scripts = { "/db/student/populate.sql" })
 class StudentControllerTest {
 
     @Autowired
@@ -41,7 +40,7 @@ class StudentControllerTest {
     @Autowired
     private StudentMapper studentMapper;
 
-    private static final String BASE_URL = "/classes/class/1";
+    private static final String BASE_URL = "/classes/class/12";
 
     @Test
     public void shouldBeStatusOkAndReturnAllStudentsProperly() throws Exception {
@@ -115,8 +114,8 @@ class StudentControllerTest {
         log.info("Remove a student by its id from the method deleteStudentById() and status OK");
         String response = String.format(
                                 "The student with ID = %d for a school class with ID = %d was successfully removed",
-                                                                                                              TEST_STUDENT_2.getId(),
-                                                                                                                                   1);
+                                                                                            TEST_STUDENT_2.getId(),
+                                                                                            TEST_SCHOOL_CLASS_1.getId());
         mockMvc.perform(delete(BASE_URL + "/students/student/" + TEST_STUDENT_2.getId()))
                     .andDo(print())
                     .andExpect(content().string(response))

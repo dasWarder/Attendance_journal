@@ -7,7 +7,7 @@ import by.itechart.model.Student;
 
 public class StudentTestData {
 
-    public static final SchoolClass TEST_SCHOOL_CLASS_1 = new SchoolClass(1L, "1А");
+    public static final SchoolClass TEST_SCHOOL_CLASS_1 = new SchoolClass(12L, "1А");
 
     public static final Student TEST_STUDENT_1 = new Student(null, "Stored", "Stored", TEST_SCHOOL_CLASS_1);
 
