@@ -1,0 +1,9 @@
+by\itechart\mapping\dto\student\StudentDto.class
+by\itechart\mapping\student\StudentMapperWithSchoolClassImpl.class
+by\itechart\mapping\schoolClass\SchoolClassMapper.class
+by\itechart\mapping\dto\student\StudentDtoId.class
+by\itechart\mapping\dto\schoolClass\SchoolClassDto.class
+by\itechart\mapping\student\StudentMapperWithSchoolClass.class
+by\itechart\mapping\student\StudentMapperImpl.class
+by\itechart\mapping\schoolClass\SchoolClassMapperImpl.class
+by\itechart\mapping\student\StudentMapper.class

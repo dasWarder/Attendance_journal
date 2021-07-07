@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Slf4j
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
-@Sql(scripts = { "/db/student/init.sql", "/db/student/populate.sql" })
+@Sql(scripts = { "/db/student/populate.sql" })
 public class StudentServiceIntegrationTest {
 
     @Autowired
@@ -37,6 +37,7 @@ public class StudentServiceIntegrationTest {
 
         assertThat(student)
                             .usingRecursiveComparison()
+                            .ignoringFields("schoolClass")
                             .isEqualTo(expectedStudent);
     }
 
