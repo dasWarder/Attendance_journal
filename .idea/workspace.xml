@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7db09f3-a94f-44c6-a68e-c6ff28e24bde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass$SchoolClassBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass$SchoolClassBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/classes/by/itechart/model/SchoolClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/model/target/model-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/model/target/model-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/target/classes/by/itechart/repository/SchoolClassRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/repository/target/classes/by/itechart/repository/SchoolClassRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/common/repository/target/repository-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/common/repository/target/repository-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/map-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/map-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/map-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/service-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/surefire-reports/TEST-by.itechart.service.student.StudentServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/surefire-reports/TEST-by.itechart.service.student.StudentServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/service/target/surefire-reports/by.itechart.service.student.StudentServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/service/target/surefire-reports/by.itechart.service.student.StudentServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/controller/student/StudentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/controller/student/StudentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/data/SchoolClassTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/data/SchoolClassTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/data/StudentTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/java/by/itechart/web/data/StudentTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/src/test/resources/db/student/populate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/src/test/resources/db/student/populate.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/TEST-by.itechart.web.controller.StudentControllerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/TEST-by.itechart.web.integration.service.StudentServiceIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/TEST-by.itechart.web.integration.service.StudentServiceIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/by.itechart.web.controller.StudentControllerTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/by.itechart.web.integration.service.StudentServiceIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/surefire-reports/by.itechart.web.integration.service.StudentServiceIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/data/StudentTestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/data/StudentTestData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/service/StudentServiceIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/by/itechart/web/integration/service/StudentServiceIntegrationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/test-classes/db/student/populate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/journal-common/web/target/test-classes/db/student/populate.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-common/web/target/web-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="f7db09f3-a94f-44c6-a68e-c6ff28e24bde" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,11 +32,6 @@
   </component>
   <component name="MavenImportPreferences">
     <option name="enabledProfiles">
-      <list>
-        <option value="test" />
-      </list>
-    </option>
-    <option name="disabledProfiles">
       <list>
         <option value="dev" />
       </list>
@@ -127,7 +89,7 @@
       <recent name="by.itechart.mapping.student" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentServiceIntegrationTest.shouldSaveStudentProperly">
+  <component name="RunManager" selected="Spring Boot.ApplicationWeb">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -149,21 +111,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="by.itechart.web.controller.schoolClass" />
       <option name="MAIN_CLASS_NAME" value="by.itechart.web.controller.schoolClass.SchoolClassControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SchoolClassIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.itechart.web.integration.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.itechart.web.integration.service" />
-      <option name="MAIN_CLASS_NAME" value="by.itechart.web.integration.service.SchoolClassIntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -216,6 +163,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApplicationWeb" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itechart.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="by.itechart.web.ApplicationWeb" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AttendingsJournalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="AttendingsJournal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="by.itechart.attendingsjournal.AttendingsJournalApplication" />
@@ -225,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ApplicationWeb" />
         <item itemvalue="JUnit.StudentServiceIntegrationTest.shouldSaveStudentProperly" />
         <item itemvalue="JUnit.StudentControllerTest.shouldBeStatusCreateAndReturnSaveStudentProperly" />
         <item itemvalue="JUnit.SchoolClassControllerTest" />
         <item itemvalue="JUnit.StudentControllerTest" />
-        <item itemvalue="JUnit.SchoolClassIntegrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +209,7 @@
       <workItem from="1625474885067" duration="12889000" />
       <workItem from="1625548626613" duration="8590000" />
       <workItem from="1625561823184" duration="11018000" />
-      <workItem from="1625636844600" duration="14842000" />
+      <workItem from="1625636844600" duration="15167000" />
     </task>
     <servers />
   </component>
