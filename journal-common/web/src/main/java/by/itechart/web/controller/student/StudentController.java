@@ -1,13 +1,10 @@
-package by.itechart.web.controller;
+package by.itechart.web.controller.student;
 
-import by.itechart.mapping.dto.StudentDto;
-import by.itechart.mapping.dto.StudentDtoId;
+import by.itechart.mapping.dto.student.StudentDto;
+import by.itechart.mapping.dto.student.StudentDtoId;
 import by.itechart.mapping.student.StudentMapper;
 import by.itechart.mapping.student.StudentMapperWithSchoolClass;
-import by.itechart.model.SchoolClass;
 import by.itechart.model.Student;
-import by.itechart.repository.SchoolClassRepository;
-import by.itechart.service.schoolClass.SchoolClassService;
 import by.itechart.service.student.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -15,7 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 
 @RestController
@@ -82,7 +78,7 @@ public class StudentController {
     public ResponseEntity<List<StudentDtoId>> getAllStudentsByClassId(@PathVariable("classId") Long classId) {
 
         List<Student> allStudents = studentService.findAllStudents(classId);
-        List<StudentDtoId> dtoList = studentMapper.map(allStudents);
+        List<StudentDtoId> dtoList = studentMapper.studentListToStudentDtoIdList(allStudents);
 
         return new ResponseEntity<>(
                                     dtoList, HttpStatus.OK);

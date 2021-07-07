@@ -1,7 +1,7 @@
 package by.itechart.web.controller;
 
-import by.itechart.mapping.dto.StudentDto;
-import by.itechart.mapping.dto.StudentDtoId;
+import by.itechart.mapping.dto.student.StudentDto;
+import by.itechart.mapping.dto.student.StudentDtoId;
 import by.itechart.mapping.student.StudentMapper;
 import by.itechart.model.Student;
 import by.itechart.web.controller.util.JsonParser;
@@ -49,7 +49,7 @@ class StudentControllerTest {
         log.info("Receive a list of Student dto with id from method findAllStudents() and status OK");
 
         List<Student> studentsOrigin = List.of(TEST_STUDENT_2, TEST_STUDENT_3, TEST_STUDENT_4);
-        List<StudentDtoId> students = studentMapper.map(studentsOrigin);
+        List<StudentDtoId> students = studentMapper.studentListToStudentDtoIdList(studentsOrigin);
 
         mockMvc.perform(get(BASE_URL + "/students"))
                 .andDo(print())
@@ -118,9 +118,9 @@ class StudentControllerTest {
                                                                                                               TEST_STUDENT_2.getId(),
                                                                                                                                    1);
         mockMvc.perform(delete(BASE_URL + "/students/student/" + TEST_STUDENT_2.getId()))
-                .andDo(print())
-                .andExpect(content().string(response))
-                .andExpect(status().isOk())
-                .andReturn();
+                    .andDo(print())
+                    .andExpect(content().string(response))
+                    .andExpect(status().isOk())
+                    .andReturn();
     }
 }

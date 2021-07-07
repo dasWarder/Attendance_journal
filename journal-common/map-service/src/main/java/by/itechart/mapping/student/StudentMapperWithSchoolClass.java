@@ -1,18 +1,14 @@
 package by.itechart.mapping.student;
 
 
-import by.itechart.mapping.dto.StudentDto;
+import by.itechart.mapping.dto.student.StudentDto;
 import by.itechart.model.SchoolClass;
 import by.itechart.model.Student;
-import by.itechart.model.util.ValidationUtil;
 import by.itechart.repository.SchoolClassRepository;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.mapstruct.Mapper;
-import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 

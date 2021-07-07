@@ -1,4 +1,5 @@
-package by.itechart.mapping.dto;
+package by.itechart.mapping.dto.schoolClass;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,12 +10,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class StudentDtoId {
+public class SchoolClassDto {
 
     private Long id;
 
     private String name;
-
-    private String surname;
 
 }

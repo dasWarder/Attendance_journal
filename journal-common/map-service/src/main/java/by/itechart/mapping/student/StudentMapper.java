@@ -1,8 +1,8 @@
 package by.itechart.mapping.student;
 
 
-import by.itechart.mapping.dto.StudentDto;
-import by.itechart.mapping.dto.StudentDtoId;
+import by.itechart.mapping.dto.student.StudentDto;
+import by.itechart.mapping.dto.student.StudentDtoId;
 import by.itechart.model.Student;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
@@ -27,5 +27,5 @@ public interface StudentMapper {
     Student studentDtoIdToStudent(StudentDtoId studentDtoId);
 
     @Mapping(target = "schoolClass", ignore = true)
-    List<StudentDtoId> map(List<Student> students);
+    List<StudentDtoId> studentListToStudentDtoIdList(List<Student> students);
 }
