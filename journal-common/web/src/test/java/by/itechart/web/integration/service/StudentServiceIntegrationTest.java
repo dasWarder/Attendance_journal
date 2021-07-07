@@ -37,6 +37,7 @@ public class StudentServiceIntegrationTest {
 
         assertThat(student)
                             .usingRecursiveComparison()
+                            .ignoringFields("schoolClass")
                             .isEqualTo(expectedStudent);
     }
 

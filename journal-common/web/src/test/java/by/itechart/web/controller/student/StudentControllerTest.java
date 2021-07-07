@@ -77,11 +77,12 @@ class StudentControllerTest {
     public void shouldBeStatusCreateAndReturnSaveStudentProperly() throws Exception {
 
         log.info("Store a student and return student dto without id from method saveStudent() and status CREATE");
-        StudentDto response = TEST_STORE_STUDENT_1;
+        StudentDto request = TEST_STORE_STUDENT_1;
+        StudentDto response = request;
 
         mockMvc.perform(post(BASE_URL + "/students/student")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(jsonParser.getJsonObject(TEST_STORE_STUDENT_1)))
+                .content(jsonParser.getJsonObject(request)))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(content().json(jsonParser.getJsonObject(response)))
