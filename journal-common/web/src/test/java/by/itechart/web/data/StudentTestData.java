@@ -1,7 +1,7 @@
 package by.itechart.web.data;
 
-import by.itechart.mapping.dto.StudentDto;
-import by.itechart.mapping.dto.StudentDtoId;
+import by.itechart.mapping.dto.student.StudentDto;
+import by.itechart.mapping.dto.student.StudentDtoId;
 import by.itechart.model.SchoolClass;
 import by.itechart.model.Student;
 

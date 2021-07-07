@@ -9,4 +9,6 @@ public interface SchoolClassRepository extends CrudRepository<SchoolClass, Long>
 
     Optional<SchoolClass> getSchoolClassByName(String name);
 
+    void deleteSchoolClassByName(String name);
+
 }

@@ -1,4 +1,4 @@
-package by.itechart.mapping.dto;
+package by.itechart.mapping.dto.student;
 
 import lombok.*;
 
