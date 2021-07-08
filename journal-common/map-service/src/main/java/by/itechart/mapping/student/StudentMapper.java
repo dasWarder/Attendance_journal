@@ -14,8 +14,6 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface StudentMapper {
 
-    StudentMapper INSTANCE = Mappers.getMapper( StudentMapper.class );
-
     @InheritInverseConfiguration
     StudentDto studentToStudentDto(Student student);
 
