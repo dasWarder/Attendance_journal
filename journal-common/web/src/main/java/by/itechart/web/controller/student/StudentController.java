@@ -11,6 +11,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import javax.validation.constraints.Min;
 import java.util.List;
 
 
@@ -29,8 +31,13 @@ public class StudentController {
 
 
     @PostMapping("/student")
-    public ResponseEntity<StudentDto> saveStudent(@RequestBody StudentDto studentDto,
-                                                  @PathVariable("classId") Long classId) throws Throwable {
+    public ResponseEntity<StudentDto> saveStudent(@RequestBody
+                                                  @Valid StudentDto studentDto,
+                                                  @PathVariable("classId")
+                                                  @Min(value = 1,
+                                                          message = "The ID must be greater that 0")
+                                                  Long classId)
+                                                               throws Throwable {
 
         Student student = customStudentMapper.studentDtoToStudent(studentDto, classId);
         Student storedStudent = studentService.saveStudent(student);
@@ -41,8 +48,15 @@ public class StudentController {
     }
 
     @GetMapping("/student/{studentId}")
-    public ResponseEntity<StudentDto> getStudentById(@PathVariable("studentId") Long studentId,
-                                                     @PathVariable("classId") Long classId) throws Throwable {
+    public ResponseEntity<StudentDto> getStudentById(@PathVariable("studentId")
+                                                     @Min(value = 1,
+                                                          message = "The ID must be greater that 0")
+                                                     Long studentId,
+                                                     @PathVariable("classId")
+                                                     @Min(value = 1,
+                                                          message = "The ID must be greater that 0")
+                                                     Long classId)
+                                                                 throws Throwable {
 
         Student studentById = studentService.getStudentByIdAndClassId(studentId, classId);
         StudentDto dto = studentMapper.studentToStudentDto(studentById);
@@ -52,9 +66,17 @@ public class StudentController {
     }
 
     @PutMapping("/student/{studentId}")
-    public ResponseEntity<StudentDto> updateStudent(@PathVariable("studentId") Long studentId,
-                                                    @PathVariable("classId") Long classId,
-                                                    @RequestBody StudentDto studentDto) throws Throwable {
+    public ResponseEntity<StudentDto> updateStudent(@PathVariable("studentId")
+                                                    @Min(value = 1,
+                                                         message = "The ID must be greater that 0")
+                                                    Long studentId,
+                                                    @PathVariable("classId")
+                                                    @Min(value = 1,
+                                                         message = "The ID must be greater that 0")
+                                                    Long classId,
+                                                    @RequestBody
+                                                    @Valid StudentDto studentDto)
+                                                                                throws Throwable {
 
         Student student = customStudentMapper.studentDtoToStudent(studentDto, classId);
         Student updatedStudent = studentService.updateStudent(studentId, student, classId);
@@ -65,8 +87,14 @@ public class StudentController {
     }
 
     @DeleteMapping("/student/{studentId}")
-    public ResponseEntity<String> deleteStudent(@PathVariable("studentId") Long studentId,
-                                                @PathVariable("classId") Long classId) {
+    public ResponseEntity<String> deleteStudent(@PathVariable("studentId")
+                                                @Min(value = 1,
+                                                     message = "The ID must be greater that 0")
+                                                Long studentId,
+                                                @PathVariable("classId")
+                                                @Min(value = 1,
+                                                     message = "The ID must be greater that 0")
+                                                Long classId) {
 
         studentService.deleteStudentByIdAndClassId(studentId, classId);
 
@@ -75,7 +103,10 @@ public class StudentController {
     }
 
     @GetMapping
-    public ResponseEntity<List<StudentDtoId>> getAllStudentsByClassId(@PathVariable("classId") Long classId) {
+    public ResponseEntity<List<StudentDtoId>> getAllStudentsByClassId(@PathVariable("classId")
+                                                                      @Min(value = 1,
+                                                                           message = "The ID must be greater that 0")
+                                                                      Long classId) {
 
         List<Student> allStudents = studentService.findAllStudents(classId);
         List<StudentDtoId> dtoList = studentMapper.studentListToStudentDtoIdList(allStudents);
