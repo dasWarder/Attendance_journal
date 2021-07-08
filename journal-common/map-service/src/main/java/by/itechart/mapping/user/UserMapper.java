@@ -12,9 +12,6 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface UserMapper {
 
-    UserMapper INSTANCE = Mappers.getMapper( UserMapper.class );
-
-
     @Mapping(source = "username", target = "email")
     UserDto userToUserDto(User user);
 
@@ -23,7 +20,5 @@ public interface UserMapper {
     User userDtoToUser(UserDto userDto);
 
     List<UserDto> userListToUserDtoList(List<User> users);
-
-    List<User> userDtoListToUserList(List<UserDto> userDtoList);
 
 }

@@ -12,8 +12,6 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface SchoolClassMapper {
 
-    SchoolClassMapper INSTANCE = Mappers.getMapper( SchoolClassMapper.class );
-
     @Mapping(target = "students", ignore = true)
     SchoolClass schoolClassDtoToSchoolClass(SchoolClassDto dto);
 

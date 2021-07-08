@@ -86,27 +86,27 @@ public class UserController {
     }
 
     @DeleteMapping("/user/{userId}")
-    public ResponseEntity<String> deleteUserById(@PathVariable("userId")
+    public ResponseEntity<Void> deleteUserById(@PathVariable("userId")
                                                   @Min(value = 1,
                                                        message = "The ID must be grater than 0")
                                                   Long userId) {
 
         userService.deleteUserById(userId);
 
-        return new ResponseEntity<>(
-                                    String.format(DELETE_USER_BY_ID_MESSAGE, userId), HttpStatus.OK);
+        return ResponseEntity.noContent()
+                                        .build();
     }
 
     @DeleteMapping("/user")
-    public ResponseEntity<String> deleteUserByUsername(@RequestParam("email")
+    public ResponseEntity<Void> deleteUserByUsername(@RequestParam("email")
                                                         @Min(value = 1,
                                                              message = "The email size must be grater than 0")
                                                          String email) {
 
         userService.deleteUserByName(email);
 
-        return new ResponseEntity<>(
-                                    String.format(DELETE_USER_BY_USERNAME_MESSAGE, email), HttpStatus.OK);
+        return ResponseEntity.noContent()
+                                        .build();
     }
 
     @GetMapping
