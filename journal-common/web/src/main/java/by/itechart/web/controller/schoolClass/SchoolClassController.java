@@ -13,6 +13,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @RestController
@@ -30,7 +33,8 @@ public class SchoolClassController {
 
 
     @PostMapping("/class")
-    public ResponseEntity<SchoolClassDto> saveSchoolClass(@RequestBody SchoolClassDto schoolClassDto) {
+    public ResponseEntity<SchoolClassDto> saveSchoolClass(@RequestBody
+                                                          @Valid SchoolClassDto schoolClassDto) {
 
         SchoolClass schoolClass = classMapper.schoolClassDtoToSchoolClass(schoolClassDto);
         SchoolClass storedSchoolClass = classService.saveSchoolClass(schoolClass);
@@ -42,8 +46,11 @@ public class SchoolClassController {
 
     @GetMapping("/class/{classId}")
     public ResponseEntity<SchoolClassDto> getSchoolClassById(@PathVariable("classId")
-                                                                                    Long classId)
-                                                                                    throws Throwable {
+                                                             @Min(value = 1,
+                                                                  message = "The ID must be greater that 0")
+                                                             @NotNull(message = "The ID of a class must be not NULL")
+                                                             Long classId)
+                                                                           throws Throwable {
 
         SchoolClass validSchoolClass = classService.getSchoolClassById(classId);
         SchoolClassDto dto = classMapper.schoolClassToSchoolClassDto(validSchoolClass);
@@ -54,8 +61,10 @@ public class SchoolClassController {
 
     @GetMapping("/class")
     public ResponseEntity<SchoolClassDto> getSchoolClassByName(@RequestParam(value = "name")
-                                                                                            String name)
-                                                                                            throws Throwable {
+                                                               @Min(value = 1,
+                                                                    message = "The size of the name must be greater than 1")
+                                                               String name)
+                                                                           throws Throwable {
 
         SchoolClass validSchoolClass = classService.getSchoolClassByName(name);
         SchoolClassDto dto = classMapper.schoolClassToSchoolClassDto(validSchoolClass);
@@ -65,9 +74,13 @@ public class SchoolClassController {
     }
 
     @PutMapping("/class/{classId}")
-    public ResponseEntity<SchoolClassDto> updateSchoolClass(@PathVariable("classId") Long classId,
-                                                            @RequestBody SchoolClassDto schoolClassDto)
-                                                                                         throws Throwable {
+    public ResponseEntity<SchoolClassDto> updateSchoolClass(@PathVariable("classId")
+                                                            @Min(value = 1,
+                                                                 message = "The ID must be greater that 0")
+                                                            Long classId,
+                                                            @RequestBody
+                                                            @Valid SchoolClassDto schoolClassDto)
+                                                                                                throws Throwable {
 
         SchoolClass schoolClass = classMapper.schoolClassDtoToSchoolClass(schoolClassDto);
         SchoolClass updatedSchoolClass = classService.updateSchoolClass(classId, schoolClass);
@@ -79,7 +92,9 @@ public class SchoolClassController {
 
     @DeleteMapping("/class/{classId}")
     public ResponseEntity<String> deleteSchoolClassById(@PathVariable("classId")
-                                                                                Long classId) {
+                                                        @Min(value = 1,
+                                                             message = "The ID must be greater that 0")
+                                                        Long classId) {
         classService.deleteSchoolClassById(classId);
 
         return new ResponseEntity<>(
@@ -88,7 +103,9 @@ public class SchoolClassController {
 
     @DeleteMapping("/class")
     public ResponseEntity<String> deleteSchoolClassByName(@RequestParam("name")
-                                                                               String name) {
+                                                          @Min(value = 1,
+                                                               message = "The size of the name must be greater than 1")
+                                                          String name) {
         classService.deleteSchoolClassByName(name);
 
         return new ResponseEntity<>(

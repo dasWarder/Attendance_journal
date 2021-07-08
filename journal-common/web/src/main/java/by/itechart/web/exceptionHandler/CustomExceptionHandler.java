@@ -1,0 +1,96 @@
+package by.itechart.web.exceptionHandler;
+
+
+import by.itechart.model.exception.SchoolClassNotFound;
+import by.itechart.model.exception.StudentNotFoundException;
+import by.itechart.web.exceptionHandler.exception.ExceptionResponse;
+import by.itechart.web.exceptionHandler.violation.Violation;
+import by.itechart.web.exceptionHandler.violation.ViolationResponse;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.validation.ConstraintViolation;
+import javax.validation.ConstraintViolationException;
+import java.util.List;
+import java.util.Set;
+
+@RestController
+@ControllerAdvice
+public class CustomExceptionHandler {
+
+
+    @ExceptionHandler(value = { StudentNotFoundException.class,
+                                SchoolClassNotFound.class })
+    public ResponseEntity<ExceptionResponse> onNotFoundException(Throwable throwable) {
+
+        ExceptionResponse response = new ExceptionResponse();
+
+        response.setClassName(throwable
+                                        .getClass()
+                                        .getName());
+
+        response.setMessage(throwable.getMessage());
+
+        return new ResponseEntity<>(
+                                    response, HttpStatus.NOT_FOUND);
+    }
+
+
+    @ExceptionHandler(value = {  ConstraintViolationException.class })
+    public ResponseEntity<ViolationResponse> onConstraintValidationException(ConstraintViolationException exception) {
+
+        ViolationResponse response = new ViolationResponse();
+
+        Set<ConstraintViolation<?>> constraintViolations = exception
+                                                                    .getConstraintViolations();
+
+        constraintViolations.forEach(violation -> {
+
+            Violation singleViolation = new Violation();
+
+            singleViolation.setFieldName(violation
+                                                  .getPropertyPath()
+                                                  .toString());
+
+            singleViolation.setMessage(violation
+                                                .getMessage());
+
+            response.getViolations()
+                    .add(singleViolation);
+        });
+
+        return new ResponseEntity(
+                                  response, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(value = { MethodArgumentNotValidException.class })
+    public ResponseEntity<ViolationResponse> onMethodArgumentException(MethodArgumentNotValidException exception) {
+
+        ViolationResponse response = new ViolationResponse();
+        List<FieldError> fieldErrors = exception
+                                                .getBindingResult()
+                                                .getFieldErrors();
+
+        fieldErrors.forEach(error -> {
+
+            Violation singleViolation = new Violation();
+
+            singleViolation.setFieldName(error
+                                              .getField());
+
+            singleViolation.setMessage(error
+                                            .getDefaultMessage());
+
+            response.getViolations()
+                    .add(singleViolation);
+        });
+
+        return new ResponseEntity(
+                                  response, HttpStatus.BAD_REQUEST);
+    }
+}
