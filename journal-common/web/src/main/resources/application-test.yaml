@@ -21,3 +21,5 @@ spring:
         enable_lazy_load_no_trans: true
     hibernate:
       ddl-auto: create
+
+  
