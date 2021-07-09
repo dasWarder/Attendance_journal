@@ -2,7 +2,10 @@
 <configuration>
 
     <!-- Formatted output: %date indicates the date, %thread indicates the thread name, %-5level: the level is displayed from the left with a width of 5 characters %msg: log message, %n is a newline character -->
-    <property name="LOG_PATTERN"
+    <property name="LOG_PATTERN_NO_COLOR"
+              value="[%d{yyyy-MM-dd HH\:mm\:ss}] [%p] [%c] %m%n" />
+
+    <property name="LOG_PATTERN_COLORED"
               value="[%date] %highlight([%level]) [%logger{10} %file:%line] %msg%n" />
 
     <!-- Log output path -->
@@ -13,7 +16,7 @@
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <!-- Print the log according to the LOG_PATTERN configured above -->
-            <pattern>${LOG_PATTERN}</pattern>
+            <pattern>${LOG_PATTERN_COLORED}</pattern>
         </encoder>
     </appender>
 
@@ -34,7 +37,7 @@
         </rollingPolicy>
 
         <encoder>
-            <pattern>${LOG_PATTERN}</pattern>
+            <pattern>${LOG_PATTERN_NO_COLOR}</pattern>
         </encoder>
     </appender>
 
