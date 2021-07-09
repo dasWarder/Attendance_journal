@@ -11,6 +11,8 @@ import org.mockito.Mockito;
 import java.util.List;
 import java.util.Optional;
 
+import static by.itechart.service.TestData.TEST_SCHOOL_CLASS_1;
+import static by.itechart.service.TestData.WRONG_ID;
 import static by.itechart.service.student.StudentTestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -190,7 +192,7 @@ class StudentServiceTest {
 
         log.info("Test findAllStudents() method");
         Long classId = TEST_SCHOOL_CLASS_1.getId();
-        List<Student> expectedStudents = List.of(TEST_STUDENT_1, TEST_STUDENT_2);
+        List<Student> expectedStudents = List.of(TEST_STUDENT_1, TEST_STUDENT_2, TEST_STUDENT_3);
         Mockito.when(studentRepository.findAllBySchoolClass_Id(classId)).thenReturn(expectedStudents);
 
         List<Student> actualStudents = studentService.findAllStudents(classId);
