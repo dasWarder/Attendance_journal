@@ -4,6 +4,7 @@ import by.itechart.model.user.User;
 import by.itechart.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,6 +20,8 @@ import static by.itechart.model.util.ValidationUtil.validateParams;
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
+
+    private final PasswordEncoder encoder;
 
     @Override
     public User getUserById(Long userId) throws Throwable {
@@ -53,7 +56,7 @@ public class UserServiceImpl implements UserService {
 
         log.info("Store a user with the name = {}",
                                                   user.getUsername());
-
+        setPasswordToEncryptedOne(user);
         User storedUser = userRepository.save(user);
 
         return storedUser;
@@ -113,5 +116,14 @@ public class UserServiceImpl implements UserService {
         User updatedUser = userRepository.save(updateUser);
 
         return updatedUser;
+    }
+
+    private void setPasswordToEncryptedOne(User user) {
+
+        String notSecurePass = user.getPassword();
+
+        String encodedPass = encoder.encode(notSecurePass);
+
+        user.setPassword(encodedPass);
     }
 }

@@ -7,6 +7,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.springframework.security.crypto.bcrypt.BCrypt;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,7 +24,9 @@ class UserServiceTest {
 
     private final UserRepository userRepository = Mockito.mock(UserRepository.class);
 
-    private final UserService userService = new UserServiceImpl(userRepository);
+    private final PasswordEncoder encoder = new BCryptPasswordEncoder();
+
+    private final UserService userService = new UserServiceImpl(userRepository, encoder);
 
 
     @Test

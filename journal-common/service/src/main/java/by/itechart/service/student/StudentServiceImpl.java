@@ -27,6 +27,7 @@ public class StudentServiceImpl implements StudentService {
 
         log.info("Storing a student for the class with ID = {}",
                                                                 student.getSchoolClass().getId());
+
         Student storedStudent = studentRepository.save(student);
 
         return storedStudent;

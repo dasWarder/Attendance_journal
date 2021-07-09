@@ -42,15 +42,19 @@ public class ValidationUtil {
         Throwable exceptionMessage = getExceptionByClassName(
                                                             objectClass.getSimpleName());
 
-        T validObject = optionalObject.orElseThrow(() -> exceptionMessage);
+        T validObject = optionalObject.orElseThrow(() -> {
+
+            log.error("The exception has occurred for the class = {}",
+                                                                     objectClass.getName());
+            return exceptionMessage;
+        });
 
         return validObject;
     }
 
     private static Throwable getExceptionByClassName(String className) {
 
-        log.error("The exception has occurred for the class = {}",
-                                                                 className);
+
 
         switch (className) {
 

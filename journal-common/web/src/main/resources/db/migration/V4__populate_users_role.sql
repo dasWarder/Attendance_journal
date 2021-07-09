@@ -10,5 +10,5 @@ INSERT INTO authorities (authority) VALUES
     ('ADMIN');
 
 INSERT INTO users(role_id, username, password, enabled) VALUES
-(100000, 'alex@gmail.com', '12345', true),
-(100001, 'petr@gmail.com', '12345', true);
+(100000, 'alex@gmail.com', '$2a$10$o53h1x/Y2shcaj0XTM71ju3G06I9EVxoH1wcNwYpY4cf3vvscNsiu', true),
+(100001, 'petr@gmail.com', '$2a$10$o53h1x/Y2shcaj0XTM71ju3G06I9EVxoH1wcNwYpY4cf3vvscNsiu', true);
