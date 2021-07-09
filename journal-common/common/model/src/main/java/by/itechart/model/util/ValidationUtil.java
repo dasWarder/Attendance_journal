@@ -23,7 +23,7 @@ public class ValidationUtil {
         Arrays.stream(params).forEach(param -> {
             if (param == null) {
 
-                log.info("Input parameter with type = {} is NULL", param
+                log.error("Input parameter with type = {} is NULL", param
                                                                         .getClass()
                                                                         .getName());
 
@@ -48,6 +48,9 @@ public class ValidationUtil {
     }
 
     private static Throwable getExceptionByClassName(String className) {
+
+        log.error("The exception has occurred for the class = {}",
+                                                                 className);
 
         switch (className) {
 

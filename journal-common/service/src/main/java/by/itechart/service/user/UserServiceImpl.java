@@ -1,7 +1,6 @@
 package by.itechart.service.user;
 
 import by.itechart.model.user.User;
-import by.itechart.model.util.ValidationUtil;
 import by.itechart.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

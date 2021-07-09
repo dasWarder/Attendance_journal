@@ -1,7 +1,6 @@
 package by.itechart.service.authority;
 
 import by.itechart.model.user.UserAuthority;
-import by.itechart.model.util.ValidationUtil;
 import by.itechart.repository.AuthorityRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

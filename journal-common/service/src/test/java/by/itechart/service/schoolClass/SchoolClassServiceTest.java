@@ -11,6 +11,7 @@ import org.mockito.Mockito;
 import java.util.List;
 import java.util.Optional;
 
+import static by.itechart.service.TestData.*;
 import static by.itechart.service.schoolClass.SchoolClassData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -228,11 +229,6 @@ class SchoolClassServiceTest {
         Assertions.assertThrows(SchoolClassNotFound.class,
                                                 () -> schoolClassService.updateSchoolClass(classId, updateSchoolClass));
     }
-
-
-
-
-
 
 
 }
