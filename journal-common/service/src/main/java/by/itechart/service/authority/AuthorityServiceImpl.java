@@ -24,7 +24,7 @@ public class AuthorityServiceImpl implements AuthorityService {
 
         validateParams(authority);
 
-        log.info("Store a authority with a name = {}",
+        log.info("Store an authority with a name = {}",
                                                       authority.getAuthority());
         UserAuthority storedAuthority = authorityRepository.save(authority);
 

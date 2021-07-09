@@ -1,4 +1,9 @@
 by\itechart\service\schoolClass\SchoolClassServiceTest.class
+by\itechart\service\authority\AuthorityServiceTest.class
+by\itechart\service\authority\AuthorityTestData.class
+by\itechart\service\user\UserServiceTest.class
+by\itechart\service\user\UserTestData.class
 by\itechart\service\student\StudentTestData.class
 by\itechart\service\student\StudentServiceTest.class
 by\itechart\service\schoolClass\SchoolClassData.class
+by\itechart\service\TestData.class

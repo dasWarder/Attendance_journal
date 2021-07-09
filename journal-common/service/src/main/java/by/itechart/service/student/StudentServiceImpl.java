@@ -4,6 +4,7 @@ import by.itechart.model.Student;
 import by.itechart.repository.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -70,13 +71,13 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public List<Student> findAllStudents(Long classId) {
+    public List<Student> findAllStudents(Long classId, Pageable pageable) {
 
         validateParams(classId);
 
         log.info("Receive a collection of all student for a class with ID = {}",
                                                                                 classId);
-        List<Student> studentsList = studentRepository.findAllBySchoolClass_Id(classId);
+        List<Student> studentsList = studentRepository.findAllBySchoolClass_Id(classId, pageable);
 
         return studentsList;
     }

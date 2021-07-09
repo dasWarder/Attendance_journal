@@ -7,6 +7,8 @@ import by.itechart.mapping.student.StudentMapperWithSchoolClass;
 import by.itechart.model.Student;
 import by.itechart.service.student.StudentService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -106,9 +108,11 @@ public class StudentController {
     public ResponseEntity<List<StudentDtoId>> getAllStudentsByClassId(@PathVariable("classId")
                                                                       @Min(value = 1,
                                                                            message = "The ID must be greater that 0")
-                                                                      Long classId) {
+                                                                      Long classId,
+                                                                      @PageableDefault(page = 0, size = 25, sort = { "id" })
+                                                                      Pageable pageable) {
 
-        List<Student> allStudents = studentService.findAllStudents(classId);
+        List<Student> allStudents = studentService.findAllStudents(classId, pageable);
         List<StudentDtoId> dtoList = studentMapper.studentListToStudentDtoIdList(allStudents);
 
         return new ResponseEntity<>(

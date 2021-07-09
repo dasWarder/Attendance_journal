@@ -1,7 +1,7 @@
 package by.itechart.web.integration.service;
 
-import by.itechart.model.exception.StudentNotFoundException;
 import by.itechart.model.Student;
+import by.itechart.model.exception.StudentNotFoundException;
 import by.itechart.service.student.StudentService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
@@ -14,6 +14,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.List;
 
+import static by.itechart.web.data.GeneralTestData.PAGE_PARAM;
 import static by.itechart.web.data.StudentTestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -101,7 +102,7 @@ public class StudentServiceIntegrationTest {
                                                 TEST_STUDENT_3,
                                                 TEST_STUDENT_4);
 
-        List<Student> actualStudents = studentService.findAllStudents(classId);
+        List<Student> actualStudents = studentService.findAllStudents(classId, PAGE_PARAM);
 
         assertThat(actualStudents)
                                 .usingRecursiveComparison()

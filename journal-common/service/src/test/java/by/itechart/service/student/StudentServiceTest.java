@@ -7,12 +7,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 import java.util.Optional;
 
-import static by.itechart.service.TestData.TEST_SCHOOL_CLASS_1;
-import static by.itechart.service.TestData.WRONG_ID;
+import static by.itechart.service.TestData.*;
 import static by.itechart.service.student.StudentTestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -193,9 +195,9 @@ class StudentServiceTest {
         log.info("Test findAllStudents() method");
         Long classId = TEST_SCHOOL_CLASS_1.getId();
         List<Student> expectedStudents = List.of(TEST_STUDENT_1, TEST_STUDENT_2, TEST_STUDENT_3);
-        Mockito.when(studentRepository.findAllBySchoolClass_Id(classId)).thenReturn(expectedStudents);
+        Mockito.when(studentRepository.findAllBySchoolClass_Id(classId, PAGE_PARAM)).thenReturn(expectedStudents);
 
-        List<Student> actualStudents = studentService.findAllStudents(classId);
+        List<Student> actualStudents = studentService.findAllStudents(classId, PAGE_PARAM);
 
         assertThat(actualStudents)
                                     .usingRecursiveComparison()
@@ -209,7 +211,7 @@ class StudentServiceTest {
 
         Assertions
                 .assertThrows(NullPointerException.class,
-                        () -> studentService.findAllStudents(null));
+                        () -> studentService.findAllStudents(null, PAGE_PARAM));
     }
 
 

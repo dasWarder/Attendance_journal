@@ -2,6 +2,9 @@ package by.itechart.service;
 
 import by.itechart.model.SchoolClass;
 import by.itechart.model.user.UserAuthority;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 
 public class TestData {
 
@@ -16,6 +19,8 @@ public class TestData {
     public static final SchoolClass TEST_SCHOOL_CLASS_1 = new SchoolClass(1L, "1А");
 
     public static final SchoolClass TEST_SCHOOL_CLASS_2 = new SchoolClass(2L, "1Б");
+
+    public static final Pageable PAGE_PARAM = PageRequest.of(0, 25);
 
 
 }

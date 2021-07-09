@@ -1,4 +1,5 @@
 by\itechart\web\integration\service\SchoolClassIntegrationTest.class
+by\itechart\web\data\GeneralTestData.class
 by\itechart\web\controller\student\StudentControllerTest.class
 by\itechart\web\controller\schoolClass\SchoolClassControllerTest.class
 by\itechart\web\data\StudentTestData.class

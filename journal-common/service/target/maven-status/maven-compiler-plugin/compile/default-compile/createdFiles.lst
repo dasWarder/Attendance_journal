@@ -1,4 +1,8 @@
 by\itechart\service\schoolClass\SchoolClassService.class
+by\itechart\service\user\UserServiceImpl.class
+by\itechart\service\authority\AuthorityServiceImpl.class
+by\itechart\service\user\UserService.class
+by\itechart\service\authority\AuthorityService.class
 by\itechart\service\student\StudentServiceImpl.class
 by\itechart\service\schoolClass\SchoolClassServiceImpl.class
 by\itechart\service\student\StudentService.class
