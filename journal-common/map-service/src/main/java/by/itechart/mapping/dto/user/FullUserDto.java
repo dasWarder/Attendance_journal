@@ -1,5 +1,6 @@
 package by.itechart.mapping.dto.user;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,7 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 public class FullUserDto extends BaseUserDto {
 
+    @JsonProperty(index = 1)
     private Long id;
 
     @NotBlank(

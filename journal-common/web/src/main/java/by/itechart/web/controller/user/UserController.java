@@ -6,11 +6,10 @@ import by.itechart.mapping.user.UserMapper;
 import by.itechart.mapping.user.UserMapperWithUserRole;
 import by.itechart.model.user.User;
 import by.itechart.service.user.UserService;
+import by.itechart.web.security.util.SecurityUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -26,46 +25,46 @@ public class UserController {
 
     private final UserMapperWithUserRole customMapper;
 
+    private final SecurityUtil securityUtil;
+
     @GetMapping("/details")
     public ResponseEntity<FullUserDto> getUserInfo() throws Throwable {
 
-        String username = getLoggedUser();
+        String username = securityUtil.getLoggedUser();
+
         User userById = userService.getUserByUsername(username);
         FullUserDto dto = mapper.userToFullUserDto(userById);
 
         return new ResponseEntity<>(
-                dto, HttpStatus.OK);
+                                    dto, HttpStatus.OK);
     }
 
     @PutMapping("/details")
     public ResponseEntity<FullUserDto> updateUserInfo(@RequestBody
                                                       @Valid UserPassDto passDto) throws Throwable {
 
-        String userName = getLoggedUser();
+        String username = securityUtil.getLoggedUser();
 
-        User updateUser = customMapper.userPassDtoToUserWithRole(passDto, userName);
-        User user = userService.updateUserByUsername(userName, updateUser);
+        User updateUser = customMapper.userPassDtoToUserWithRole(passDto, username);
+        User user = userService.updateUserByUsername(username, updateUser);
         FullUserDto dto = mapper.userToFullUserDto(user);
 
         return new ResponseEntity<>(
-                dto, HttpStatus.OK);
+                                    dto, HttpStatus.OK);
     }
 
 
     @DeleteMapping("/details")
     public ResponseEntity<Void> deleteUserById() {
 
-        String username = getLoggedUser();
+        String username = securityUtil.getLoggedUser();
+
         userService.deleteUserByName(username);
 
         return ResponseEntity.noContent()
-                .build();
+                                        .build();
     }
 
 
-    private String getLoggedUser() {
-        UserDetails customer = (UserDetails) SecurityContextHolder.getContext()
-                .getAuthentication().getPrincipal();
-        return customer.getUsername();
-    }
+
 }

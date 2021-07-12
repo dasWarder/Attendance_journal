@@ -1,5 +1,6 @@
 package by.itechart.model;
 
+import by.itechart.model.user.User;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -29,7 +30,16 @@ public class SchoolClass {
     @OneToMany(mappedBy = "schoolClass", cascade = CascadeType.ALL)
     private Set<Student> students;
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id")
+    private User user;
+
     public SchoolClass(String name) {
+        this.name = name;
+    }
+
+    public SchoolClass(Long id, String name) {
+        this.id = id;
         this.name = name;
     }
 
@@ -44,8 +54,10 @@ public class SchoolClass {
         this.students = students;
     }
 
-    public SchoolClass(Long id, String name) {
+    public SchoolClass(Long id, String name, Set<Student> students, User user) {
         this.id = id;
         this.name = name;
+        this.students = students;
+        this.user = user;
     }
 }
