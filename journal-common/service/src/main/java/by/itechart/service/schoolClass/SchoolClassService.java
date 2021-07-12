@@ -8,16 +8,16 @@ public interface SchoolClassService {
 
     SchoolClass saveSchoolClass(SchoolClass schoolClass);
 
-    SchoolClass getSchoolClassById(Long classId) throws Throwable;
+    SchoolClass getSchoolClassById(Long classId, String username) throws Throwable;
 
-    SchoolClass getSchoolClassByName(String name) throws Throwable;
+    SchoolClass getSchoolClassByName(String name, String username) throws Throwable;
 
-    SchoolClass updateSchoolClass(Long classId, SchoolClass updateSchoolClass) throws Throwable;
+    SchoolClass updateSchoolClass(Long classId, SchoolClass updateSchoolClass, String username) throws Throwable;
 
-    void deleteSchoolClassById(Long classId);
+    void deleteSchoolClassById(Long classId, String username);
 
-    void deleteSchoolClassByName(String name);
+    void deleteSchoolClassByName(String name, String username);
 
-    List<SchoolClass> getAllSchoolClasses();
+    List<SchoolClass> getAllSchoolClasses(String username);
 
 }

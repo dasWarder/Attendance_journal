@@ -118,6 +118,22 @@ public class UserServiceImpl implements UserService {
         return updatedUser;
     }
 
+    @Override
+    public User updateUserByUsername(String userName, User updateUser) throws Throwable {
+
+        validateParams(userName, updateUser);
+
+        log.info("Update a user with the name = {}",
+                                                    userName);
+        User userByUsername = this.getUserByUsername(userName);
+        updateUser.setId(userByUsername.getId());
+        User updatedUser = userRepository.save(updateUser);
+
+        return updatedUser;
+    }
+
+
+
     private void setPasswordToEncryptedOne(User user) {
 
         String notSecurePass = user.getPassword();

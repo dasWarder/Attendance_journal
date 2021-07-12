@@ -33,39 +33,39 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
-    public SchoolClass getSchoolClassById(Long classId) throws Throwable {
+    public SchoolClass getSchoolClassById(Long classId, String username) throws Throwable {
 
-        validateParams(classId);
+        validateParams(classId, username);
 
         log.info("Receive a school class by Id = {}",
                                                      classId);
-        Optional<SchoolClass> possibleSchoolClass = classRepository.findById(classId);
+        Optional<SchoolClass> possibleSchoolClass = classRepository.getSchoolClassByIdAndUser_Username(classId, username);
         SchoolClass validSchoolClass = validateOptional(possibleSchoolClass, SchoolClass.class);
 
         return validSchoolClass;
     }
 
     @Override
-    public SchoolClass getSchoolClassByName(String name) throws Throwable {
+    public SchoolClass getSchoolClassByName(String name, String username) throws Throwable {
 
-        validateParams(name);
+        validateParams(name, username);
 
         log.info("Receive a school class with the name = {}",
                                                             name);
-        Optional<SchoolClass> possibleSchoolClass = classRepository.getSchoolClassByName(name);
+        Optional<SchoolClass> possibleSchoolClass = classRepository.getSchoolClassByNameAndUser_Username(name, username);
         SchoolClass validSchoolClass = validateOptional(possibleSchoolClass, SchoolClass.class);
 
         return validSchoolClass;
     }
 
     @Override
-    public SchoolClass updateSchoolClass(Long classId, SchoolClass updateSchoolClass) throws Throwable {
+    public SchoolClass updateSchoolClass(Long classId, SchoolClass updateSchoolClass, String username) throws Throwable {
 
         validateParams(classId, updateSchoolClass);
 
         log.info("Update a school class with ID = {}",
                                                       classId);
-        SchoolClass schoolClassById = getSchoolClassById(classId);
+        SchoolClass schoolClassById = getSchoolClassById(classId, username);
         updateSchoolClass.setId(schoolClassById.getId());
 
         SchoolClass storedClass = classRepository.save(updateSchoolClass);
@@ -74,31 +74,33 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
-    public void deleteSchoolClassById(Long classId) {
+    public void deleteSchoolClassById(Long classId, String username) {
 
-        validateParams(classId);
+        validateParams(classId, username);
 
         log.info("Remove a school class with ID = {}",
                                                       classId);
-        classRepository.deleteById(classId);
+        classRepository.deleteSchoolClassByIdAndUserUsername(classId, username);
     }
 
     @Override
-    public void deleteSchoolClassByName(String name) {
+    public void deleteSchoolClassByName(String name, String username) {
 
-        validateParams(name);
+        validateParams(name, username);
 
         log.info("Remove a school class with the name = {}",
                                                             name);
-        classRepository.deleteSchoolClassByName(name);
+        classRepository.deleteSchoolClassByNameAndUserUsername(name, username);
     }
 
     @Override
-    public List<SchoolClass> getAllSchoolClasses() {
+    public List<SchoolClass> getAllSchoolClasses(String username) {
+
+        validateParams(username);
 
         log.info("Receive a list of all school classes");
 
-        List schoolClasses = (List) classRepository.findAll();
+        List schoolClasses = (List) classRepository.getSchoolClassByUser_Username(username);
 
         return schoolClasses;
     }
