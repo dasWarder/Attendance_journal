@@ -57,6 +57,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers("/admin/**").hasAuthority("SUPER_ADMIN")
                     .antMatchers("/users/**").hasAuthority("ADMIN")
                     .antMatchers("/classes/**").authenticated()
+                    .antMatchers("/details/**").authenticated()
                     .and()
                     .httpBasic()
                     .authenticationEntryPoint(authEntryPoint);

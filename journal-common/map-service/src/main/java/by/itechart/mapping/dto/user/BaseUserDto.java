@@ -13,8 +13,6 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 public class BaseUserDto {
 
-    private Long id;
-
     @NotBlank(
             message = "The email must be not null or empty")
     @Email(message = "The field must be an email")

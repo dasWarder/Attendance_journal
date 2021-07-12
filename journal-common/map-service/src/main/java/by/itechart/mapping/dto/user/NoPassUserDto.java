@@ -14,6 +14,8 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 public class NoPassUserDto extends BaseUserDto {
 
+    private Long id;
+
     @NotNull(
             message = "This field must have one of possible value")
     private boolean enabled;

@@ -1,9 +1,7 @@
 package by.itechart.mapping.user;
 
 
-import by.itechart.mapping.dto.user.FullUserDto;
-import by.itechart.mapping.dto.user.NoPassUserDto;
-import by.itechart.mapping.dto.user.UserDto;
+import by.itechart.mapping.dto.user.*;
 import by.itechart.model.user.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -29,4 +27,10 @@ public interface UserMapper {
 
     List<NoPassUserDto> userListToNoPassUserList(List<User> users);
 
+    @Mapping(target = "role", ignore = true)
+    @Mapping(target = "enabled", ignore = true)
+    User registerUserDtoToUser(RegisterUserDto dto);
+
+    @Mapping(source = "username", target = "email")
+    FullUserDto userToFullUserDto(User user);
 }
