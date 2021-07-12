@@ -1,12 +1,13 @@
-DELETE FROM school_class;
 DELETE FROM student;
+DELETE FROM school_class;
+
 
 ALTER SEQUENCE global_seq RESTART WITH 1;
 
-INSERT INTO school_class(id, name) VALUES
-(1, '1А'),
-(2, '1Б'),
-(3, '1В');
+INSERT INTO school_class(id, name, user_id) VALUES
+(1, '1А', 100002),
+(2, '1Б', 100002),
+(3, '1В', 100002);
 
 SELECT setval('global_seq', max(id))
 FROM school_class;
@@ -21,3 +22,6 @@ INSERT INTO student(id, name, surname, class_id) VALUES
 
 SELECT setval('global_seq', max(id))
 FROM student;
+
+ALTER TABLE school_class
+ALTER COLUMN user_id SET NOT NULL;

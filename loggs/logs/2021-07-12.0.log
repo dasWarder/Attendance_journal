@@ -4167,3 +4167,2039 @@ by.itechart.model.exception.UserNotFoundException: A user not found
 [2021-07-12 13:27:49] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-12 13:27:49] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
 [2021-07-12 13:27:49] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-12 13:28:41] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-12 13:28:41] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-12 13:28:41] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-12 13:28:41] [INFO] [by.itechart.service.user.UserServiceImpl] Store a user with the name = testing@gmail.com
+[2021-07-12 13:28:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-12 13:28:57] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = testing@gmail.com
+[2021-07-12 13:28:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-12 13:29:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-12 13:29:07] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = testing@gmail.com
+[2021-07-12 13:29:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-12 13:29:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-12 13:29:07] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = testing@gmail.com
+[2021-07-12 13:29:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-12 13:53:18] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 13:53:18] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 1720 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 13:53:18] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 13:53:19] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 13:53:19] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 106 ms. Found 4 JPA repository interfaces.
+[2021-07-12 13:53:20] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 13:53:20] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 13:53:20] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 13:53:20] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 13:53:20] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 13:53:20] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2170 ms
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 13:53:20] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 13:53:20] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.044s)
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory] Creating Schema History table "public"."flyway_schema_history" ...
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": << Empty Schema >>
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "1 - Init"
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "school_class" does not exist, skipping
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "student" does not exist, skipping
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "global_seq" does not exist, skipping
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "2 - populate"
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 3      |
++--------+
+
+[2021-07-12 13:53:20] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 13:53:20] [ERROR] [org.flywaydb.core.internal.command.DbMigrate] Migration of schema "public" to version "2 - populate" failed! Changes successfully rolled back.
+[2021-07-12 13:53:20] [WARN] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V2__populate.sql failed
+---------------------------------
+SQL State  : 42P01
+Error Code : 0
+Message    : ERROR: relation "students" does not exist
+  Позиция: 44
+Location   : db/migration/V2__populate.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V2__populate.sql)
+Line       : 22
+Statement  : SELECT setval('global_seq', max(id))
+FROM students
+
+[2021-07-12 13:53:20] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-12 13:53:20] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-12 13:53:20] [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[2021-07-12 13:53:20] [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2021-07-12 13:53:20] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V2__populate.sql failed
+---------------------------------
+SQL State  : 42P01
+Error Code : 0
+Message    : ERROR: relation "students" does not exist
+  Позиция: 44
+Location   : db/migration/V2__populate.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V2__populate.sql)
+Line       : 22
+Statement  : SELECT setval('global_seq', max(id))
+FROM students
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at by.itechart.web.ApplicationWeb.main(ApplicationWeb.java:22)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V2__populate.sql failed
+---------------------------------
+SQL State  : 42P01
+Error Code : 0
+Message    : ERROR: relation "students" does not exist
+  Позиция: 44
+Location   : db/migration/V2__populate.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V2__populate.sql)
+Line       : 22
+Statement  : SELECT setval('global_seq', max(id))
+FROM students
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:427)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:331)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:328)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:291)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:195)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:192)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:69)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:99)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:192)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:152)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:216)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:165)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:572)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V2__populate.sql failed
+---------------------------------
+SQL State  : 42P01
+Error Code : 0
+Message    : ERROR: relation "students" does not exist
+  Позиция: 44
+Location   : db/migration/V2__populate.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V2__populate.sql)
+Line       : 22
+Statement  : SELECT setval('global_seq', max(id))
+FROM students
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:271)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:218)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:78)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:67)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:424)
+	... 38 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "students" does not exist
+  Позиция: 44
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:241)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:111)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:206)
+	... 44 common frames omitted
+[2021-07-12 13:54:33] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 10532 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 13:54:33] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 13:54:33] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 13:54:34] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 13:54:34] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+[2021-07-12 13:54:34] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 13:54:34] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 13:54:34] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 13:54:34] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 13:54:35] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 13:54:35] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1425 ms
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 13:54:35] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 13:54:35] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.028s)
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 1
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "2 - populate"
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 3      |
++--------+
+
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 9      |
++--------+
+
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "3 - create security tables"
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "authorities" does not exist, skipping
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "users" does not exist, skipping
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "user_seq" does not exist, skipping
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "4 - populate users role"
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:35] [ERROR] [org.flywaydb.core.internal.command.DbMigrate] Migration of schema "public" to version "4 - populate users role" failed! Changes successfully rolled back.
+[2021-07-12 13:54:35] [WARN] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+[2021-07-12 13:54:35] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-12 13:54:35] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-12 13:54:35] [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[2021-07-12 13:54:35] [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2021-07-12 13:54:35] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at by.itechart.web.ApplicationWeb.main(ApplicationWeb.java:22)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:427)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:331)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:328)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:291)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:195)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:192)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:69)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:99)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:192)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:152)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:216)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:165)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:572)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:271)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:218)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:78)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:67)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:424)
+	... 38 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:241)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:111)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:206)
+	... 44 common frames omitted
+[2021-07-12 13:54:49] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 2464 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 13:54:49] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 13:54:49] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 13:54:49] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 13:54:49] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
+[2021-07-12 13:54:50] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 13:54:50] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 13:54:50] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 13:54:50] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 13:54:50] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 13:54:50] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1361 ms
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 13:54:50] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 13:54:50] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.020s)
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory] Creating Schema History table "public"."flyway_schema_history" ...
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": << Empty Schema >>
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "1 - Init"
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "school_class" does not exist, skipping
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "student" does not exist, skipping
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "global_seq" does not exist, skipping
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "2 - populate"
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 3      |
++--------+
+
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 9      |
++--------+
+
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "3 - create security tables"
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "authorities" does not exist, skipping
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "users" does not exist, skipping
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "user_seq" does not exist, skipping
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "4 - populate users role"
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:50] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:51] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:54:51] [ERROR] [org.flywaydb.core.internal.command.DbMigrate] Migration of schema "public" to version "4 - populate users role" failed! Changes successfully rolled back.
+[2021-07-12 13:54:51] [WARN] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+[2021-07-12 13:54:51] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-12 13:54:51] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-12 13:54:51] [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[2021-07-12 13:54:51] [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2021-07-12 13:54:51] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at by.itechart.web.ApplicationWeb.main(ApplicationWeb.java:22)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:427)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:331)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:328)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:291)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:195)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:192)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:69)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:99)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:192)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:152)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:216)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:165)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:572)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:271)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:218)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:78)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:67)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:424)
+	... 38 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:241)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:111)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:206)
+	... 44 common frames omitted
+[2021-07-12 13:56:04] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 4840 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 13:56:04] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 13:56:04] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 13:56:05] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 13:56:05] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+[2021-07-12 13:56:06] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 13:56:06] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 13:56:06] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 13:56:06] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 13:56:06] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 13:56:06] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1643 ms
+[2021-07-12 13:56:06] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 13:56:06] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 13:56:06] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 13:56:06] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 13:56:06] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 5 migrations (execution time 00:00.021s)
+[2021-07-12 13:56:06] [INFO] [org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory] Creating Schema History table "public"."flyway_schema_history" ...
+[2021-07-12 13:56:06] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:06] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:06] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": << Empty Schema >>
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "1 - Init"
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "school_class" does not exist, skipping
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "student" does not exist, skipping
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "global_seq" does not exist, skipping
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "2 - populate"
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 3      |
++--------+
+
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 9      |
++--------+
+
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "3 - create security tables"
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "authorities" does not exist, skipping
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "users" does not exist, skipping
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "user_seq" does not exist, skipping
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "4 - populate users role"
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:07] [ERROR] [org.flywaydb.core.internal.command.DbMigrate] Migration of schema "public" to version "4 - populate users role" failed! Changes successfully rolled back.
+[2021-07-12 13:56:07] [WARN] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+[2021-07-12 13:56:07] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-12 13:56:07] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-12 13:56:07] [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[2021-07-12 13:56:07] [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2021-07-12 13:56:07] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at by.itechart.web.ApplicationWeb.main(ApplicationWeb.java:22)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:427)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:331)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:328)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:291)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:195)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:192)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:69)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:99)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:192)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:152)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:216)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:165)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:572)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V4__populate_users_role.sql failed
+--------------------------------------------
+SQL State  : 42601
+Error Code : 0
+Message    : ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+Location   : db/migration/V4__populate_users_role.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V4__populate_users_role.sql)
+Line       : 8
+Statement  : INSERT INTO authorities (authority) VALUES
+    (100000,'USER'),
+    (100001, 'ADMIN')
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:271)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:218)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:78)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:67)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:424)
+	... 38 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: INSERT has more expressions than target columns
+  Позиция: 57
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:241)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:111)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:206)
+	... 44 common frames omitted
+[2021-07-12 13:56:54] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 13160 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 13:56:54] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 13:56:54] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 13:56:55] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 13:56:55] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+[2021-07-12 13:56:56] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 13:56:56] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 13:56:56] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 13:56:56] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 13:56:56] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 13:56:56] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1349 ms
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 13:56:56] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 13:56:56] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.027s)
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 3
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "4 - populate users role"
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 2 rows affected
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100001 |
++--------+
+
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 2 rows affected
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100003 |
++--------+
+
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "5 - create super admin"
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100001 |
++--------+
+
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 1 rows affected
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100004 |
++--------+
+
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100003 |
++--------+
+
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 1 rows affected
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100005 |
++--------+
+
+[2021-07-12 13:56:56] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "6 - conncetion user class"
+[2021-07-12 13:56:56] [ERROR] [org.flywaydb.core.internal.command.DbMigrate] Migration of schema "public" to version "6 - conncetion user class" failed! Changes successfully rolled back.
+[2021-07-12 13:56:56] [WARN] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V6__conncetion_user_class.sql failed
+----------------------------------------------
+SQL State  : 23502
+Error Code : 0
+Message    : ERROR: column "user_id" contains null values
+Location   : db/migration/V6__conncetion_user_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V6__conncetion_user_class.sql)
+Line       : 1
+Statement  : ALTER TABLE school_class
+ADD COLUMN user_id BIGINT NOT NULL
+
+[2021-07-12 13:56:56] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-12 13:56:56] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-12 13:56:56] [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[2021-07-12 13:56:56] [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2021-07-12 13:56:56] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V6__conncetion_user_class.sql failed
+----------------------------------------------
+SQL State  : 23502
+Error Code : 0
+Message    : ERROR: column "user_id" contains null values
+Location   : db/migration/V6__conncetion_user_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V6__conncetion_user_class.sql)
+Line       : 1
+Statement  : ALTER TABLE school_class
+ADD COLUMN user_id BIGINT NOT NULL
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at by.itechart.web.ApplicationWeb.main(ApplicationWeb.java:22)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V6__conncetion_user_class.sql failed
+----------------------------------------------
+SQL State  : 23502
+Error Code : 0
+Message    : ERROR: column "user_id" contains null values
+Location   : db/migration/V6__conncetion_user_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V6__conncetion_user_class.sql)
+Line       : 1
+Statement  : ALTER TABLE school_class
+ADD COLUMN user_id BIGINT NOT NULL
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:427)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:331)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:328)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:291)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:195)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:192)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:69)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:99)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:192)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:152)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:216)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:165)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:572)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V6__conncetion_user_class.sql failed
+----------------------------------------------
+SQL State  : 23502
+Error Code : 0
+Message    : ERROR: column "user_id" contains null values
+Location   : db/migration/V6__conncetion_user_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V6__conncetion_user_class.sql)
+Line       : 1
+Statement  : ALTER TABLE school_class
+ADD COLUMN user_id BIGINT NOT NULL
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:271)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:218)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:78)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:67)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:424)
+	... 38 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: column "user_id" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:241)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:111)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:206)
+	... 44 common frames omitted
+[2021-07-12 13:57:27] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 13:57:27] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 8732 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 13:57:27] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 13:57:28] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 13:57:28] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+[2021-07-12 13:57:29] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 13:57:29] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 13:57:29] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 13:57:29] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 13:57:29] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 13:57:29] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1688 ms
+[2021-07-12 13:57:29] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 13:57:29] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 13:57:29] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 13:57:29] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 13:57:29] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.032s)
+[2021-07-12 13:57:29] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 5
+[2021-07-12 13:57:29] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "6 - conncetion user class"
+[2021-07-12 13:57:29] [ERROR] [org.flywaydb.core.internal.command.DbMigrate] Migration of schema "public" to version "6 - conncetion user class" failed! Changes successfully rolled back.
+[2021-07-12 13:57:29] [WARN] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V6__conncetion_user_class.sql failed
+----------------------------------------------
+SQL State  : 23502
+Error Code : 0
+Message    : ERROR: column "user_id" contains null values
+Location   : db/migration/V6__conncetion_user_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V6__conncetion_user_class.sql)
+Line       : 1
+Statement  : ALTER TABLE school_class
+ADD COLUMN user_id BIGINT NOT NULL
+
+[2021-07-12 13:57:29] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-12 13:57:29] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-12 13:57:29] [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[2021-07-12 13:57:29] [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2021-07-12 13:57:29] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V6__conncetion_user_class.sql failed
+----------------------------------------------
+SQL State  : 23502
+Error Code : 0
+Message    : ERROR: column "user_id" contains null values
+Location   : db/migration/V6__conncetion_user_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V6__conncetion_user_class.sql)
+Line       : 1
+Statement  : ALTER TABLE school_class
+ADD COLUMN user_id BIGINT NOT NULL
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at by.itechart.web.ApplicationWeb.main(ApplicationWeb.java:22)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V6__conncetion_user_class.sql failed
+----------------------------------------------
+SQL State  : 23502
+Error Code : 0
+Message    : ERROR: column "user_id" contains null values
+Location   : db/migration/V6__conncetion_user_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V6__conncetion_user_class.sql)
+Line       : 1
+Statement  : ALTER TABLE school_class
+ADD COLUMN user_id BIGINT NOT NULL
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:427)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:331)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:328)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:291)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:195)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:192)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:69)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:99)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:192)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:152)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:216)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:165)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:572)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V6__conncetion_user_class.sql failed
+----------------------------------------------
+SQL State  : 23502
+Error Code : 0
+Message    : ERROR: column "user_id" contains null values
+Location   : db/migration/V6__conncetion_user_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V6__conncetion_user_class.sql)
+Line       : 1
+Statement  : ALTER TABLE school_class
+ADD COLUMN user_id BIGINT NOT NULL
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:271)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:218)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:78)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:67)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:424)
+	... 38 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: column "user_id" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:241)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:111)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:206)
+	... 44 common frames omitted
+[2021-07-12 13:58:57] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 13:58:57] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 5956 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 13:58:57] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 13:58:58] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 13:58:58] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+[2021-07-12 13:58:58] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 13:58:58] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 13:58:58] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 13:58:58] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 13:58:59] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 13:58:59] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1639 ms
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 13:58:59] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 13:58:59] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 6 migrations (execution time 00:00.025s)
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory] Creating Schema History table "public"."flyway_schema_history" ...
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": << Empty Schema >>
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "1 - Init"
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "school_class" does not exist, skipping
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "student" does not exist, skipping
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "global_seq" does not exist, skipping
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "2 - populate"
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 3      |
++--------+
+
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 9      |
++--------+
+
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "3 - create security tables"
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "authorities" does not exist, skipping
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "users" does not exist, skipping
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "user_seq" does not exist, skipping
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "4 - populate users role"
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 2 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100001 |
++--------+
+
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 2 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100003 |
++--------+
+
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "5 - create super admin"
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100001 |
++--------+
+
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 1 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100004 |
++--------+
+
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100003 |
++--------+
+
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 1 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100005 |
++--------+
+
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "6 - conncetion user class"
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 13:58:59] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Successfully applied 6 migrations to schema "public", now at version v6 (execution time 00:00.239s)
+[2021-07-12 13:58:59] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-12 13:58:59] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-12 13:59:00] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-12 13:59:00] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-12 13:59:00] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-12 13:59:00] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-12 13:59:01] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-12 13:59:01] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-12 13:59:01] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@724c26e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@3369e2ce, org.springframework.security.web.header.HeaderWriterFilter@4693d24f, org.springframework.security.web.authentication.logout.LogoutFilter@1cc81ea1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@35e357b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a2a56f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72a61e61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6055e899, org.springframework.security.web.session.SessionManagementFilter@77925f76, org.springframework.security.web.access.ExceptionTranslationFilter@5cc87de4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c108c05]
+[2021-07-12 13:59:01] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-12 13:59:01] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-12 13:59:01] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 5.228 seconds (JVM running for 6.697)
+[2021-07-12 14:02:40] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 14:02:40] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 7960 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 14:02:40] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 14:02:40] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 14:02:41] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+[2021-07-12 14:02:41] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 14:02:41] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 14:02:41] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 14:02:41] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 14:02:41] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 14:02:41] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1631 ms
+[2021-07-12 14:02:42] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 14:02:42] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 14:02:42] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 14:02:42] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 14:02:42] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.031s)
+[2021-07-12 14:02:42] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 6
+[2021-07-12 14:02:42] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "7 - populate school class"
+[2021-07-12 14:02:42] [ERROR] [org.flywaydb.core.internal.command.DbMigrate] Migration of schema "public" to version "7 - populate school class" failed! Changes successfully rolled back.
+[2021-07-12 14:02:42] [WARN] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+[2021-07-12 14:02:42] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-12 14:02:42] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-12 14:02:42] [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[2021-07-12 14:02:42] [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2021-07-12 14:02:42] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at by.itechart.web.ApplicationWeb.main(ApplicationWeb.java:22)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:427)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:331)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:328)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:291)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:195)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:192)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:69)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:99)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:192)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:152)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:216)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:165)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:572)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:271)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:218)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:78)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:67)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:424)
+	... 38 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:241)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:111)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:206)
+	... 44 common frames omitted
+[2021-07-12 14:03:19] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 14:03:19] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 11656 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 14:03:19] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 14:03:19] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 14:03:19] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+[2021-07-12 14:03:20] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 14:03:20] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 14:03:20] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 14:03:20] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 14:03:20] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 14:03:20] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1332 ms
+[2021-07-12 14:03:20] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 14:03:20] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 14:03:20] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 14:03:20] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 14:03:20] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.035s)
+[2021-07-12 14:03:20] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 6
+[2021-07-12 14:03:20] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "7 - populate school class"
+[2021-07-12 14:03:20] [ERROR] [org.flywaydb.core.internal.command.DbMigrate] Migration of schema "public" to version "7 - populate school class" failed! Changes successfully rolled back.
+[2021-07-12 14:03:20] [WARN] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+[2021-07-12 14:03:20] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-12 14:03:20] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-12 14:03:20] [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[2021-07-12 14:03:21] [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2021-07-12 14:03:21] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at by.itechart.web.ApplicationWeb.main(ApplicationWeb.java:22)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:427)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:331)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:328)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:291)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:195)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:192)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:69)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:99)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:192)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:152)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:216)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:165)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:572)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:271)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:218)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:78)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:67)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:424)
+	... 38 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:241)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:111)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:206)
+	... 44 common frames omitted
+[2021-07-12 14:03:43] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 14:03:43] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 6636 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 14:03:43] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 14:03:44] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 14:03:44] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+[2021-07-12 14:03:44] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 14:03:44] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 14:03:44] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 14:03:44] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 14:03:45] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 14:03:45] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1322 ms
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 14:03:45] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 14:03:45] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.020s)
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory] Creating Schema History table "public"."flyway_schema_history" ...
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": << Empty Schema >>
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "1 - Init"
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "school_class" does not exist, skipping
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "student" does not exist, skipping
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "global_seq" does not exist, skipping
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "2 - populate"
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 3      |
++--------+
+
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 9      |
++--------+
+
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "3 - create security tables"
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "authorities" does not exist, skipping
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "users" does not exist, skipping
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "user_seq" does not exist, skipping
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "4 - populate users role"
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 2 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100001 |
++--------+
+
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 2 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100003 |
++--------+
+
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "5 - create super admin"
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100001 |
++--------+
+
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 1 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100004 |
++--------+
+
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100003 |
++--------+
+
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 1 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100005 |
++--------+
+
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "6 - conncetion user class"
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:03:45] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "7 - populate school class"
+[2021-07-12 14:03:45] [ERROR] [org.flywaydb.core.internal.command.DbMigrate] Migration of schema "public" to version "7 - populate school class" failed! Changes successfully rolled back.
+[2021-07-12 14:03:45] [WARN] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+[2021-07-12 14:03:45] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-12 14:03:45] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-12 14:03:45] [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[2021-07-12 14:03:45] [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2021-07-12 14:03:45] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at by.itechart.web.ApplicationWeb.main(ApplicationWeb.java:22)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:427)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:331)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:328)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:291)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:195)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:192)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:69)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:99)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:192)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:152)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:216)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:165)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:572)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 23503
+Error Code : 0
+Message    : ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 1
+Statement  : DELETE FROM school_class
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:271)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:218)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:78)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:67)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:424)
+	... 38 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: update or delete on table "school_class" violates foreign key constraint "student_class_id_fkey" on table "student"
+  Подробности: Key (id)=(1) is still referenced from table "student".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:241)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:111)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:206)
+	... 44 common frames omitted
+[2021-07-12 14:04:13] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 14:04:13] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 10580 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 14:04:13] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 14:04:14] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 14:04:14] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+[2021-07-12 14:04:14] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 14:04:14] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 14:04:14] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 14:04:14] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 14:04:14] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 14:04:14] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1337 ms
+[2021-07-12 14:04:15] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 14:04:15] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 14:04:15] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 14:04:15] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 14:04:15] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.026s)
+[2021-07-12 14:04:15] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 6
+[2021-07-12 14:04:15] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "7 - populate school class"
+[2021-07-12 14:04:15] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 14:04:15] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 14:04:15] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:04:15] [ERROR] [org.flywaydb.core.internal.command.DbMigrate] Migration of schema "public" to version "7 - populate school class" failed! Changes successfully rolled back.
+[2021-07-12 14:04:15] [WARN] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 22P02
+Error Code : 0
+Message    : ERROR: invalid input syntax for type bigint: "1А"
+  Позиция: 57
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 7
+Statement  : INSERT INTO school_class(id, user_id, name) VALUES
+(1, '1А', 100002),
+(2, '1Б', 100002),
+(3, '1В', 100002)
+
+[2021-07-12 14:04:15] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-12 14:04:15] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-12 14:04:15] [INFO] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+[2021-07-12 14:04:15] [INFO] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2021-07-12 14:04:15] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 22P02
+Error Code : 0
+Message    : ERROR: invalid input syntax for type bigint: "1А"
+  Позиция: 57
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 7
+Statement  : INSERT INTO school_class(id, user_id, name) VALUES
+(1, '1А', 100002),
+(2, '1Б', 100002),
+(3, '1В', 100002)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at by.itechart.web.ApplicationWeb.main(ApplicationWeb.java:22)
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 22P02
+Error Code : 0
+Message    : ERROR: invalid input syntax for type bigint: "1А"
+  Позиция: 57
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 7
+Statement  : INSERT INTO school_class(id, user_id, name) VALUES
+(1, '1А', 100002),
+(2, '1Б', 100002),
+(3, '1В', 100002)
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:427)
+	at org.flywaydb.core.internal.command.DbMigrate.access$200(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$3.call(DbMigrate.java:331)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:328)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:291)
+	at org.flywaydb.core.internal.command.DbMigrate.access$100(DbMigrate.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:195)
+	at org.flywaydb.core.internal.command.DbMigrate$2.call(DbMigrate.java:192)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLAdvisoryLockTemplate.execute(PostgreSQLAdvisoryLockTemplate.java:69)
+	at org.flywaydb.core.internal.database.postgresql.PostgreSQLConnection.lock(PostgreSQLConnection.java:99)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:141)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:192)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:152)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:216)
+	at org.flywaydb.core.Flyway$1.execute(Flyway.java:165)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:572)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:165)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: 
+Migration V7__populate_school_class.sql failed
+----------------------------------------------
+SQL State  : 22P02
+Error Code : 0
+Message    : ERROR: invalid input syntax for type bigint: "1А"
+  Позиция: 57
+Location   : db/migration/V7__populate_school_class.sql (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes\db\migration\V7__populate_school_class.sql)
+Line       : 7
+Statement  : INSERT INTO school_class(id, user_id, name) VALUES
+(1, '1А', 100002),
+(2, '1Б', 100002),
+(3, '1В', 100002)
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:271)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:218)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:78)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:67)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:424)
+	... 38 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: invalid input syntax for type bigint: "1А"
+  Позиция: 57
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2284)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:322)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:279)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:241)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:111)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:206)
+	... 44 common frames omitted
+[2021-07-12 14:04:37] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 14:04:37] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 12436 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 14:04:37] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 14:04:38] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 14:04:38] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+[2021-07-12 14:04:39] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 14:04:39] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 14:04:39] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 14:04:39] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 14:04:39] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 14:04:39] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1316 ms
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 14:04:39] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 14:04:39] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.026s)
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 6
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "7 - populate school class"
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 3      |
++--------+
+
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 9      |
++--------+
+
+[2021-07-12 14:04:39] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Successfully applied 1 migration to schema "public", now at version v7 (execution time 00:00.288s)
+[2021-07-12 14:04:39] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-12 14:04:39] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-12 14:04:40] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-12 14:04:40] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-12 14:04:40] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-12 14:04:40] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-12 14:04:41] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-12 14:04:41] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-12 14:04:41] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2093bb6c, org.springframework.security.web.context.SecurityContextPersistenceFilter@236a3e4, org.springframework.security.web.header.HeaderWriterFilter@5598dff2, org.springframework.security.web.authentication.logout.LogoutFilter@332fa6ce, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@185b7cc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d36add1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79c2bc34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@528a16fb, org.springframework.security.web.session.SessionManagementFilter@59aba3c3, org.springframework.security.web.access.ExceptionTranslationFilter@7698a3d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@361c4981]
+[2021-07-12 14:04:41] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-12 14:04:41] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-12 14:04:41] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 4.6 seconds (JVM running for 5.779)
+[2021-07-12 14:05:24] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-12 14:05:24] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 11316 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-12 14:05:24] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-12 14:05:24] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-12 14:05:24] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+[2021-07-12 14:05:25] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-12 14:05:25] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-12 14:05:25] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-12 14:05:25] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-12 14:05:25] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-12 14:05:25] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1621 ms
+[2021-07-12 14:05:25] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-12 14:05:25] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-12 14:05:26] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.021s)
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory] Creating Schema History table "public"."flyway_schema_history" ...
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": << Empty Schema >>
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "1 - Init"
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "school_class" does not exist, skipping
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "student" does not exist, skipping
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "global_seq" does not exist, skipping
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "2 - populate"
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 3      |
++--------+
+
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 9      |
++--------+
+
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "3 - create security tables"
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "authorities" does not exist, skipping
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: table "users" does not exist, skipping
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] DB: sequence "user_seq" does not exist, skipping
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "4 - populate users role"
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 2 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100001 |
++--------+
+
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 2 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100003 |
++--------+
+
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "5 - create super admin"
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100001 |
++--------+
+
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 1 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100004 |
++--------+
+
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100003 |
++--------+
+
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 1 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 100005 |
++--------+
+
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "6 - conncetion user class"
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Migrating schema "public" to version "7 - populate school class"
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 3 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 3      |
++--------+
+
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 6 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] +--------+
+| setval |
++--------+
+| 9      |
++--------+
+
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor] 0 rows affected
+[2021-07-12 14:05:26] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Successfully applied 7 migrations to schema "public", now at version v7 (execution time 00:00.292s)
+[2021-07-12 14:05:26] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-12 14:05:26] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-12 14:05:26] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-12 14:05:26] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-12 14:05:27] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-12 14:05:27] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-12 14:05:28] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-12 14:05:28] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-12 14:05:28] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69d61a6f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a3383dc, org.springframework.security.web.header.HeaderWriterFilter@15549dd7, org.springframework.security.web.authentication.logout.LogoutFilter@361c4981, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@408d12fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47c15468, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5357de0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@759b05d1, org.springframework.security.web.session.SessionManagementFilter@56ec6ac0, org.springframework.security.web.access.ExceptionTranslationFilter@716eae1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b24d5e4]
+[2021-07-12 14:05:28] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-12 14:05:28] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-12 14:05:28] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 5.249 seconds (JVM running for 6.28)
