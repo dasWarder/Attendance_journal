@@ -6652,3 +6652,4 @@ java.lang.NullPointerException: null
 [2021-07-12 21:12:50] [WARN] [org.apache.catalina.util.SessionIdGeneratorBase] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [224] milliseconds.
 [2021-07-12 21:12:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-12 21:12:50] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-12 21:12:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
