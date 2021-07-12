@@ -1,6 +1,7 @@
 package by.itechart.web.controller.user;
 
 
+import by.itechart.mapping.dto.user.NoPassUserDto;
 import by.itechart.mapping.dto.user.UserDto;
 import by.itechart.mapping.user.UserMapper;
 import by.itechart.mapping.user.UserMapperWithUserRole;
@@ -18,7 +19,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/users")
-public class UserController {
+public class AdminController {
 
     private final UserService userService;
 
@@ -26,16 +27,12 @@ public class UserController {
 
     private final UserMapperWithUserRole customMapper;
 
-    private static final String DELETE_USER_BY_ID_MESSAGE = "The user with ID = %d was successfully deleted";
-
-    private static final String DELETE_USER_BY_USERNAME_MESSAGE = "The user with a name = %s was successfully deleted";
-
 
     @PostMapping("/user")
     public ResponseEntity<UserDto> saveUser(@RequestBody
                                             @Valid UserDto userDto) throws Throwable {
 
-        User user = customMapper.userDtoToUserWithUserRole(userDto);
+        User user = customMapper.userDtoToUserWithUserRoleAndDefaultPassword(userDto);
         User storedUser = userService.saveUser(user);
         UserDto dto = mapper.userToUserDto(storedUser);
 
@@ -44,27 +41,27 @@ public class UserController {
     }
 
     @GetMapping("/user/{userId}")
-    public ResponseEntity<UserDto> getUserById(@PathVariable("userId")
+    public ResponseEntity<NoPassUserDto> getUserById(@PathVariable("userId")
                                                @Min(value = 1,
                                                     message = "The ID must be greater than 0")
                                                Long userId)
                                                           throws Throwable {
         User userById = userService.getUserById(userId);
-        UserDto dto = mapper.userToUserDto(userById);
+        NoPassUserDto dto = mapper.userToNoPassUserDto(userById);
 
         return new ResponseEntity<>(
                                     dto, HttpStatus.OK);
     }
 
     @GetMapping("/user")
-    public ResponseEntity<UserDto> getUserByUsername(@RequestParam("email")
+    public ResponseEntity<NoPassUserDto> getUserByUsername(@RequestParam("email")
                                                      @Min(value = 1,
                                                           message = "The size of the email must be not null")
                                                      String email)
                                                                  throws Throwable {
 
         User userByUsername = userService.getUserByUsername(email);
-        UserDto dto = mapper.userToUserDto(userByUsername);
+        NoPassUserDto dto = mapper.userToNoPassUserDto(userByUsername);
 
         return new ResponseEntity<>(
                                     dto, HttpStatus.OK);
@@ -76,8 +73,10 @@ public class UserController {
                                                    message = "The ID must be greater than 0")
                                               Long userId,
                                               @RequestBody
-                                              @Valid User updateUser)
+                                              @Valid UserDto userDto)
                                                                     throws Throwable {
+
+        User updateUser = customMapper.userDtoToUserWithUserRoleAndPassword(userDto, userId);
         User user = userService.updateUser(userId, updateUser);
         UserDto dto = mapper.userToUserDto(user);
 
@@ -110,12 +109,12 @@ public class UserController {
     }
 
     @GetMapping
-    public ResponseEntity<List<UserDto>> getAllUsersByAuthorityName(@RequestParam(value = "role", required = false)
+    public ResponseEntity<List<NoPassUserDto>> getAllUsersByAuthorityName(@RequestParam(value = "role", required = false)
                                                                     @Min(value = 1,
                                                                          message = "The authority name size must be greater than 0")
                                                                     String authorityName) {
 
-        List<UserDto> response = getAllUserOrAllByAuthority(authorityName);
+        List<NoPassUserDto> response = getAllUserOrAllByAuthority(authorityName);
 
         return new ResponseEntity<>(
                                     response, HttpStatus.OK);
@@ -123,7 +122,7 @@ public class UserController {
 
 
 
-    private List<UserDto> getAllUserOrAllByAuthority(String authorityName) {
+    private List<NoPassUserDto> getAllUserOrAllByAuthority(String authorityName) {
 
         List<User> users;
 
@@ -137,7 +136,7 @@ public class UserController {
 
         }
 
-        List<UserDto> responseList = mapper.userListToUserDtoList(users);
+        List<NoPassUserDto> responseList = mapper.userListToNoPassUserList(users);
 
         return responseList;
     }
