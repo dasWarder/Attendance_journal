@@ -26,7 +26,7 @@ public class Student {
     @Column
     private String surname;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "class_id")
     private SchoolClass schoolClass;
 
