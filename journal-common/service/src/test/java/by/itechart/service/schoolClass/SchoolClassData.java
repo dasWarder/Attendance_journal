@@ -6,6 +6,8 @@ import static by.itechart.service.TestData.TEST_SCHOOL_CLASS_1;
 
 public class SchoolClassData {
 
+    public static final String LOGGED_USER = "alex@gmail.com";
+
     public static final SchoolClass TEST_SCHOOL_CLASS_3 = new SchoolClass(3L, "1В");
 
     public static final SchoolClass TEST_UPDATE_SCHOOL_CLASS = new SchoolClass(null, "UPDATED");
