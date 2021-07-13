@@ -1,7 +1,7 @@
 package by.itechart.web.controller.user;
 
 import by.itechart.mapping.dto.user.FullUserDto;
-import by.itechart.mapping.dto.user.UserPassDto;
+import by.itechart.mapping.dto.user.RegisterUserDto;
 import by.itechart.mapping.user.UserMapper;
 import by.itechart.mapping.user.UserMapperWithUserRole;
 import by.itechart.model.user.User;
@@ -41,11 +41,11 @@ public class UserController {
 
     @PutMapping("/details")
     public ResponseEntity<FullUserDto> updateUserInfo(@RequestBody
-                                                      @Valid UserPassDto passDto) throws Throwable {
+                                                      @Valid RegisterUserDto passDto) throws Throwable {
 
         String username = securityUtil.getLoggedUser();
 
-        User updateUser = customMapper.userPassDtoToUserWithRole(passDto, username);
+        User updateUser = customMapper.registerUserDtoToUserWithRoleAuth(passDto, username);
         User user = userService.updateUserByUsername(username, updateUser);
         FullUserDto dto = mapper.userToFullUserDto(user);
 

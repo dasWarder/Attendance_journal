@@ -47,6 +47,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${jws.verion}</version>
+        </dependency>
+
     </dependencies>
 
 </project>

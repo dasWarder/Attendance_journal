@@ -98,7 +98,7 @@ public abstract class UserMapperWithUserRole {
         return user;
     }
 
-    public User userPassDtoToUserWithRole(UserPassDto dto, String username) throws Throwable {
+    public User registerUserDtoToUserWithRoleAuth(RegisterUserDto dto, String username) throws Throwable {
 
         log.info("Mapping a user pass dto to the user with USER role");
 
