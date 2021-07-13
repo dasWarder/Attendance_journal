@@ -1,10 +1,11 @@
-package by.itechart.web.integration.service;
+package by.itechart.web.integration;
 
 import by.itechart.model.SchoolClass;
 import by.itechart.model.exception.SchoolClassNotFound;
 import by.itechart.service.schoolClass.SchoolClassService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -74,6 +75,7 @@ public class SchoolClassIntegrationTest {
     }
 
     @Test
+    @Sql(scripts = "/db/student/populate.sql")
     public void shouldUpdateSchoolClassProperly() throws Throwable {
 
         log.info("Test updateSchoolClass() method");

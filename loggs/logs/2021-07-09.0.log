@@ -145,10 +145,10 @@ Caused by: java.lang.IllegalArgumentException: At least 2 parameter(s) provided 
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$CountQueryPreparer.<init>(PartTreeJpaQuery.java:348)
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:91)
 	... 56 common frames omitted
-[2021-07-09 13:22:53] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [by.itechart.web.integration.service.StudentServiceIntegrationTest], using SpringBootContextLoader
-[2021-07-09 13:22:53] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [by.itechart.web.integration.service.StudentServiceIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-[2021-07-09 13:22:53] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [by.itechart.web.integration.service.StudentServiceIntegrationTest]: StudentServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[2021-07-09 13:22:53] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class by.itechart.web.integration.service.StudentServiceIntegrationTest
+[2021-07-09 13:22:53] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [StudentServiceIntegrationTest], using SpringBootContextLoader
+[2021-07-09 13:22:53] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [StudentServiceIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2021-07-09 13:22:53] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [StudentServiceIntegrationTest]: StudentServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2021-07-09 13:22:53] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class StudentServiceIntegrationTest
 [2021-07-09 13:22:54] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
 [2021-07-09 13:22:54] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@757d6814, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@649725e3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3c0fae6c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c168660, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@52b56a3e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@fd0e5b6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4eed46ee, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36b0fcd5, org.springframework.test.context.event.EventPublishingTestExecutionListener@4fad94a7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@475835b1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6326d182, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5241cf67, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@716a7124, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@77192705, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@226642a5]
 [2021-07-09 13:22:54] [ERROR] [org.springframework.boot.SpringApplication] Application run failed
@@ -282,7 +282,7 @@ found character '@' that cannot start any token. (Do not use @ for indentation)
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-[2021-07-09 13:22:54] [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@757d6814] to prepare test instance [by.itechart.web.integration.service.StudentServiceIntegrationTest@1e411d81]
+[2021-07-09 13:22:54] [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@757d6814] to prepare test instance [StudentServiceIntegrationTest@1e411d81]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -547,7 +547,7 @@ found character '@' that cannot start any token. (Do not use @ for indentation)
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-[2021-07-09 13:22:54] [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@757d6814] to prepare test instance [by.itechart.web.integration.service.StudentServiceIntegrationTest@7fae4d4a]
+[2021-07-09 13:22:54] [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@757d6814] to prepare test instance [StudentServiceIntegrationTest@7fae4d4a]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -812,7 +812,7 @@ found character '@' that cannot start any token. (Do not use @ for indentation)
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-[2021-07-09 13:22:54] [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@757d6814] to prepare test instance [by.itechart.web.integration.service.StudentServiceIntegrationTest@4ee33af7]
+[2021-07-09 13:22:54] [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@757d6814] to prepare test instance [StudentServiceIntegrationTest@4ee33af7]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -1077,7 +1077,7 @@ found character '@' that cannot start any token. (Do not use @ for indentation)
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-[2021-07-09 13:22:54] [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@757d6814] to prepare test instance [by.itechart.web.integration.service.StudentServiceIntegrationTest@2c42b421]
+[2021-07-09 13:22:54] [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@757d6814] to prepare test instance [StudentServiceIntegrationTest@2c42b421]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -1342,7 +1342,7 @@ found character '@' that cannot start any token. (Do not use @ for indentation)
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-[2021-07-09 13:22:54] [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@757d6814] to prepare test instance [by.itechart.web.integration.service.StudentServiceIntegrationTest@294bdeb4]
+[2021-07-09 13:22:54] [ERROR] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@757d6814] to prepare test instance [StudentServiceIntegrationTest@294bdeb4]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -1557,14 +1557,14 @@ found character '@' that cannot start any token. (Do not use @ for indentation)
 [2021-07-09 13:26:17] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a student by ID = 6 for a school class with ID = 12
 [2021-07-09 13:26:17] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 13:26:17] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = Student
-[2021-07-09 13:26:17] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [by.itechart.web.integration.service.SchoolClassIntegrationTest], using SpringBootContextLoader
-[2021-07-09 13:26:17] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [by.itechart.web.integration.service.SchoolClassIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-[2021-07-09 13:26:17] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [by.itechart.web.integration.service.SchoolClassIntegrationTest]: SchoolClassIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[2021-07-09 13:26:17] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class by.itechart.web.integration.service.SchoolClassIntegrationTest
+[2021-07-09 13:26:17] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [SchoolClassIntegrationTest], using SpringBootContextLoader
+[2021-07-09 13:26:17] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [SchoolClassIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2021-07-09 13:26:17] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [SchoolClassIntegrationTest]: SchoolClassIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2021-07-09 13:26:17] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class SchoolClassIntegrationTest
 [2021-07-09 13:26:17] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
 [2021-07-09 13:26:17] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4117e0c9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@568e2d65, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5e528476, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@56728f48, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@281d3ce7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@fdfd984, org.springframework.test.context.transaction.TransactionalTestExecutionListener@45e49d3d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@72e5206, org.springframework.test.context.event.EventPublishingTestExecutionListener@4615bc00, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@37f75ebf, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@569b3009, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@23d0f6be, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@48cebb78, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@45c10678, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4ad57db1]
-[2021-07-09 13:26:17] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Starting SchoolClassIntegrationTest using Java 16.0.1 on WIN-DQOGFATQ970 with PID 8260 (started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web)
-[2021-07-09 13:26:17] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] The following profiles are active: test
+[2021-07-09 13:26:17] [INFO] [SchoolClassIntegrationTest] Starting SchoolClassIntegrationTest using Java 16.0.1 on WIN-DQOGFATQ970 with PID 8260 (started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web)
+[2021-07-09 13:26:17] [INFO] [SchoolClassIntegrationTest] The following profiles are active: test
 [2021-07-09 13:26:17] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 [2021-07-09 13:26:17] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
 [2021-07-09 13:26:18] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
@@ -1574,8 +1574,8 @@ found character '@' that cannot start any token. (Do not use @ for indentation)
 [2021-07-09 13:26:18] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 [2021-07-09 13:26:18] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
 [2021-07-09 13:26:18] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Started SchoolClassIntegrationTest in 1.162 seconds (JVM running for 8.365)
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test deleteSchoolClassById() method
+[2021-07-09 13:26:18] [INFO] [SchoolClassIntegrationTest] Started SchoolClassIntegrationTest in 1.162 seconds (JVM running for 8.365)
+[2021-07-09 13:26:18] [INFO] [SchoolClassIntegrationTest] Test deleteSchoolClassById() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Save a new school class with a name = 12B
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
@@ -1584,10 +1584,10 @@ found character '@' that cannot start any token. (Do not use @ for indentation)
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class by Id = 1
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 13:26:18] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = SchoolClass
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test saveSchoolClass() method
+[2021-07-09 13:26:18] [INFO] [SchoolClassIntegrationTest] Test saveSchoolClass() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Save a new school class with a name = 12B
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test deleteSchoolClassById() method
+[2021-07-09 13:26:18] [INFO] [SchoolClassIntegrationTest] Test deleteSchoolClassById() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Save a new school class with a name = 12B
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
@@ -1596,50 +1596,50 @@ found character '@' that cannot start any token. (Do not use @ for indentation)
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class with the name = 12B
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 13:26:18] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = SchoolClass
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test getSchoolClassByName() method
+[2021-07-09 13:26:18] [INFO] [SchoolClassIntegrationTest] Test getSchoolClassByName() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class with the name = 1A
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 13:26:18] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = SchoolClass
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test getSchoolClassById() method
+[2021-07-09 13:26:18] [INFO] [SchoolClassIntegrationTest] Test getSchoolClassById() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class by Id = 12
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 13:26:18] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = SchoolClass
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test getAllSchoolClasses() method
+[2021-07-09 13:26:18] [INFO] [SchoolClassIntegrationTest] Test getAllSchoolClasses() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a list of all school classes
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test updateSchoolClass() method
+[2021-07-09 13:26:18] [INFO] [SchoolClassIntegrationTest] Test updateSchoolClass() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Update a school class with ID = 12
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class by Id = 12
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 13:26:18] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = SchoolClass
-[2021-07-09 13:26:18] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [by.itechart.web.integration.service.StudentServiceIntegrationTest], using SpringBootContextLoader
-[2021-07-09 13:26:18] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [by.itechart.web.integration.service.StudentServiceIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-[2021-07-09 13:26:18] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [by.itechart.web.integration.service.StudentServiceIntegrationTest]: StudentServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[2021-07-09 13:26:18] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class by.itechart.web.integration.service.StudentServiceIntegrationTest
+[2021-07-09 13:26:18] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [StudentServiceIntegrationTest], using SpringBootContextLoader
+[2021-07-09 13:26:18] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [StudentServiceIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2021-07-09 13:26:18] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [StudentServiceIntegrationTest]: StudentServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2021-07-09 13:26:18] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class StudentServiceIntegrationTest
 [2021-07-09 13:26:18] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
 [2021-07-09 13:26:18] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@996126b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d2413e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6d4b09c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4f50e974, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@76ecbfbf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6223dbed, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5713e35f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1f40bb80, org.springframework.test.context.event.EventPublishingTestExecutionListener@c42ee90, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@70c2a046, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3803bc1a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@22858c21, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@39a8c08f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c0d876c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@794b139b]
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.StudentServiceIntegrationTest] Test deleteStudent() method
+[2021-07-09 13:26:18] [INFO] [StudentServiceIntegrationTest] Test deleteStudent() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.student.StudentServiceImpl] Remove a student with ID = 6
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a student by ID = 6 for a school class with ID = 12
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 13:26:18] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = Student
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.StudentServiceIntegrationTest] Test saveStudent() method
+[2021-07-09 13:26:18] [INFO] [StudentServiceIntegrationTest] Test saveStudent() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.student.StudentServiceImpl] Storing a student for the class with ID = 12
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.StudentServiceIntegrationTest] Test getStudentById() method
+[2021-07-09 13:26:18] [INFO] [StudentServiceIntegrationTest] Test getStudentById() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a student by ID = 6 for a school class with ID = 12
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 13:26:18] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = Student
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.StudentServiceIntegrationTest] Test updateStudent() method
+[2021-07-09 13:26:18] [INFO] [StudentServiceIntegrationTest] Test updateStudent() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.student.StudentServiceImpl] Update a student with ID = 6 for a class with ID = 12
-[2021-07-09 13:26:18] [INFO] [by.itechart.web.integration.service.StudentServiceIntegrationTest] Test findAllStudent() method
+[2021-07-09 13:26:18] [INFO] [StudentServiceIntegrationTest] Test findAllStudent() method
 [2021-07-09 13:26:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 13:26:18] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a collection of all student for a class with ID = 12
 [2021-07-09 13:26:20] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
@@ -2174,14 +2174,14 @@ Using generated security password: 221925f5-a481-46a4-a10f-fc81d06db6a0
 [2021-07-09 14:58:00] [INFO] [by.itechart.web.controller.student.StudentControllerTest] Remove a student by its id from the method deleteStudentById() and status OK
 [2021-07-09 14:58:00] [INFO] [by.itechart.web.controller.student.StudentControllerTest] Receive a list of Student dto with id from method findAllStudents() and status OK
 [2021-07-09 14:58:00] [INFO] [by.itechart.web.controller.student.StudentControllerTest] Receive a student dto without id from method getStudentById() and status OK
-[2021-07-09 14:58:00] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [by.itechart.web.integration.service.SchoolClassIntegrationTest], using SpringBootContextLoader
-[2021-07-09 14:58:00] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [by.itechart.web.integration.service.SchoolClassIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-[2021-07-09 14:58:00] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [by.itechart.web.integration.service.SchoolClassIntegrationTest]: SchoolClassIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[2021-07-09 14:58:00] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class by.itechart.web.integration.service.SchoolClassIntegrationTest
+[2021-07-09 14:58:00] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [SchoolClassIntegrationTest], using SpringBootContextLoader
+[2021-07-09 14:58:00] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [SchoolClassIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2021-07-09 14:58:00] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [SchoolClassIntegrationTest]: SchoolClassIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2021-07-09 14:58:00] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class SchoolClassIntegrationTest
 [2021-07-09 14:58:00] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
 [2021-07-09 14:58:00] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1b4ade78, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45fa7fb7, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@32eeef08, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@bbf361a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@46cb800b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@505a48a2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@15096b0e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@67748053, org.springframework.test.context.event.EventPublishingTestExecutionListener@7da59f6e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7fb8d720, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@21b792c2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6202f8bf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@330d557e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@ab595e8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@170937fe]
-[2021-07-09 14:58:00] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Starting SchoolClassIntegrationTest using Java 16.0.1 on WIN-DQOGFATQ970 with PID 4220 (started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web)
-[2021-07-09 14:58:00] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] The following profiles are active: test
+[2021-07-09 14:58:00] [INFO] [SchoolClassIntegrationTest] Starting SchoolClassIntegrationTest using Java 16.0.1 on WIN-DQOGFATQ970 with PID 4220 (started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web)
+[2021-07-09 14:58:00] [INFO] [SchoolClassIntegrationTest] The following profiles are active: test
 [2021-07-09 14:58:00] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 [2021-07-09 14:58:00] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
 [2021-07-09 14:58:00] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
@@ -2191,8 +2191,8 @@ Using generated security password: 221925f5-a481-46a4-a10f-fc81d06db6a0
 [2021-07-09 14:58:00] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 [2021-07-09 14:58:00] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
 [2021-07-09 14:58:01] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Started SchoolClassIntegrationTest in 0.867 seconds (JVM running for 8.13)
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test deleteSchoolClassById() method
+[2021-07-09 14:58:01] [INFO] [SchoolClassIntegrationTest] Started SchoolClassIntegrationTest in 0.867 seconds (JVM running for 8.13)
+[2021-07-09 14:58:01] [INFO] [SchoolClassIntegrationTest] Test deleteSchoolClassById() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Save a new school class with a name = 12B
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
@@ -2201,10 +2201,10 @@ Using generated security password: 221925f5-a481-46a4-a10f-fc81d06db6a0
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class by Id = 1
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 14:58:01] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = SchoolClass
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test saveSchoolClass() method
+[2021-07-09 14:58:01] [INFO] [SchoolClassIntegrationTest] Test saveSchoolClass() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Save a new school class with a name = 12B
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test deleteSchoolClassById() method
+[2021-07-09 14:58:01] [INFO] [SchoolClassIntegrationTest] Test deleteSchoolClassById() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Save a new school class with a name = 12B
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
@@ -2213,50 +2213,50 @@ Using generated security password: 221925f5-a481-46a4-a10f-fc81d06db6a0
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class with the name = 12B
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 14:58:01] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = SchoolClass
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test getSchoolClassByName() method
+[2021-07-09 14:58:01] [INFO] [SchoolClassIntegrationTest] Test getSchoolClassByName() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class with the name = 1A
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 14:58:01] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = SchoolClass
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test getSchoolClassById() method
+[2021-07-09 14:58:01] [INFO] [SchoolClassIntegrationTest] Test getSchoolClassById() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class by Id = 12
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 14:58:01] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = SchoolClass
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test getAllSchoolClasses() method
+[2021-07-09 14:58:01] [INFO] [SchoolClassIntegrationTest] Test getAllSchoolClasses() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a list of all school classes
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.SchoolClassIntegrationTest] Test updateSchoolClass() method
+[2021-07-09 14:58:01] [INFO] [SchoolClassIntegrationTest] Test updateSchoolClass() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Update a school class with ID = 12
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class by Id = 12
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 14:58:01] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = SchoolClass
-[2021-07-09 14:58:01] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [by.itechart.web.integration.service.StudentServiceIntegrationTest], using SpringBootContextLoader
-[2021-07-09 14:58:01] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [by.itechart.web.integration.service.StudentServiceIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-[2021-07-09 14:58:01] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [by.itechart.web.integration.service.StudentServiceIntegrationTest]: StudentServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[2021-07-09 14:58:01] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class by.itechart.web.integration.service.StudentServiceIntegrationTest
+[2021-07-09 14:58:01] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [StudentServiceIntegrationTest], using SpringBootContextLoader
+[2021-07-09 14:58:01] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [StudentServiceIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2021-07-09 14:58:01] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [StudentServiceIntegrationTest]: StudentServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2021-07-09 14:58:01] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class StudentServiceIntegrationTest
 [2021-07-09 14:58:01] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
 [2021-07-09 14:58:01] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3d837af7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@446dc997, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@32cfd722, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@69815126, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ff3ca23, org.springframework.test.context.support.DirtiesContextTestExecutionListener@65f8933b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29422e61, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4a29520e, org.springframework.test.context.event.EventPublishingTestExecutionListener@1b5a3bba, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3a9a12a1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@21312b5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@22a89db, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4867f5cf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2202e978, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@381ed137]
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.StudentServiceIntegrationTest] Test deleteStudent() method
+[2021-07-09 14:58:01] [INFO] [StudentServiceIntegrationTest] Test deleteStudent() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.student.StudentServiceImpl] Remove a student with ID = 6
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a student by ID = 6 for a school class with ID = 12
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 14:58:01] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = Student
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.StudentServiceIntegrationTest] Test saveStudent() method
+[2021-07-09 14:58:01] [INFO] [StudentServiceIntegrationTest] Test saveStudent() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.student.StudentServiceImpl] Storing a student for the class with ID = 12
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.StudentServiceIntegrationTest] Test getStudentById() method
+[2021-07-09 14:58:01] [INFO] [StudentServiceIntegrationTest] Test getStudentById() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a student by ID = 6 for a school class with ID = 12
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-09 14:58:01] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = Student
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.StudentServiceIntegrationTest] Test updateStudent() method
+[2021-07-09 14:58:01] [INFO] [StudentServiceIntegrationTest] Test updateStudent() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.student.StudentServiceImpl] Update a student with ID = 6 for a class with ID = 12
-[2021-07-09 14:58:01] [INFO] [by.itechart.web.integration.service.StudentServiceIntegrationTest] Test findAllStudent() method
+[2021-07-09 14:58:01] [INFO] [StudentServiceIntegrationTest] Test findAllStudent() method
 [2021-07-09 14:58:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-09 14:58:01] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a collection of all student for a class with ID = 12
 [2021-07-09 14:58:03] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
