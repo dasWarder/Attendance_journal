@@ -1,4 +1,4 @@
-package by.itechart.web.integration.service;
+package by.itechart.web.integration;
 
 import by.itechart.model.Student;
 import by.itechart.model.exception.StudentNotFoundException;

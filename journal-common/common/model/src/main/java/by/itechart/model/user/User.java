@@ -1,12 +1,14 @@
 package by.itechart.model.user;
 
 
+import by.itechart.model.SchoolClass;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -32,9 +34,13 @@ public class User {
     private boolean enabled;
 
     @ManyToOne(fetch =
-               FetchType.EAGER)
+               FetchType.EAGER, cascade = CascadeType.REMOVE)
     @JoinColumn(name = "role_id")
     private UserAuthority role;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE,
+                                  fetch = FetchType.LAZY)
+    private Set<SchoolClass> classes;
 
     public User(String username, String password, boolean enabled) {
         this.username = username;
@@ -43,6 +49,14 @@ public class User {
     }
 
     public User(String username, String password, boolean enabled, UserAuthority role) {
+        this.username = username;
+        this.password = password;
+        this.enabled = enabled;
+        this.role = role;
+    }
+
+    public User(Long id, String username, String password, boolean enabled, UserAuthority role) {
+        this.id = id;
         this.username = username;
         this.password = password;
         this.enabled = enabled;

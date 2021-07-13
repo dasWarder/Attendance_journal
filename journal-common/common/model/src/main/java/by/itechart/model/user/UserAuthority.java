@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Set;
 
 
 @Getter
@@ -25,7 +26,15 @@ public class UserAuthority {
     @Column
     private String authority;
 
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE, mappedBy = "role")
+    private Set<User> users;
+
     public UserAuthority(String authority) {
+        this.authority = authority;
+    }
+
+    public UserAuthority(Long id, String authority) {
+        this.id = id;
         this.authority = authority;
     }
 }

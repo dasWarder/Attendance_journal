@@ -27,10 +27,11 @@ public class SchoolClass {
     @Column
     private String name;
 
-    @OneToMany(mappedBy = "schoolClass", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "schoolClass", fetch = FetchType.LAZY,
+                                         cascade = CascadeType.REMOVE)
     private Set<Student> students;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     @JoinColumn(name = "user_id")
     private User user;
 
