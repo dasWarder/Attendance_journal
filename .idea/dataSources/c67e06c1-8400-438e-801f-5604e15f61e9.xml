@@ -1431,7 +1431,7 @@ true posixrules
 13108||-9223372036854775808|U|G
 13108||10|U|G</Grants>
       <Owner>user</Owner>
-      <IntrospectionStateNumber>501</IntrospectionStateNumber>
+      <IntrospectionStateNumber>512</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -1501,7 +1501,7 @@ true posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>user</Owner>
-      <IntrospectionStateNumber>502</IntrospectionStateNumber>
+      <IntrospectionStateNumber>513</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="18" parent="2" name="plpgsql">
@@ -1607,39 +1607,50 @@ true posixrules
       <StateNumber>495</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="31" parent="17" name="user_seq">
+    <sequence id="31" parent="17" name="token_seq">
+      <ObjectId>16445</ObjectId>
+      <Owner>user</Owner>
+      <StateNumber>511</StateNumber>
+      <DataType>bigint|0s</DataType>
+    </sequence>
+    <sequence id="32" parent="17" name="user_seq">
       <ObjectId>16417</ObjectId>
       <Owner>user</Owner>
       <StateNumber>492</StateNumber>
       <SequenceIdentity>null(100000)</SequenceIdentity>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="32" parent="17" name="authorities">
+    <table id="33" parent="17" name="authorities">
       <ObjectId>16419</ObjectId>
       <Owner>user</Owner>
       <StateNumber>491</StateNumber>
     </table>
-    <table id="33" parent="17" name="flyway_schema_history">
+    <table id="34" parent="17" name="flyway_schema_history">
       <ObjectId>16385</ObjectId>
       <Owner>user</Owner>
       <StateNumber>488</StateNumber>
     </table>
-    <table id="34" parent="17" name="school_class">
+    <table id="35" parent="17" name="refresh_token">
+      <ObjectId>16447</ObjectId>
+      <Owner>user</Owner>
+      <StateNumber>511</StateNumber>
+    </table>
+    <table id="36" parent="17" name="school_class">
       <ObjectId>16397</ObjectId>
       <Owner>user</Owner>
       <StateNumber>494</StateNumber>
     </table>
-    <table id="35" parent="17" name="student">
+    <table id="37" parent="17" name="student">
       <ObjectId>16404</ObjectId>
       <Owner>user</Owner>
       <StateNumber>489</StateNumber>
     </table>
-    <table id="36" parent="17" name="users">
+    <table id="38" parent="17" name="users">
       <ObjectId>16426</ObjectId>
       <Owner>user</Owner>
       <StateNumber>491</StateNumber>
     </table>
-    <column id="37" parent="32" name="id">
+    <column id="39" parent="33" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1647,14 +1658,14 @@ true posixrules
       <DefaultExpression>nextval(&apos;user_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="38" parent="32" name="authority">
+    <column id="40" parent="33" name="authority">
       <Position>2</Position>
       <DataType>varchar(160)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>491</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="39" parent="32" name="user_authority">
+    <index id="41" parent="33" name="user_authority">
       <ObjectId>16425</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>id
@@ -1666,7 +1677,7 @@ authority</ColNames>
 default</CollationNames>
       <ClassIds>3124,3126</ClassIds>
     </index>
-    <index id="40" parent="32" name="authorities_pkey">
+    <index id="42" parent="33" name="authorities_pkey">
       <ObjectId>16423</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>id</ColNames>
@@ -1676,61 +1687,61 @@ default</CollationNames>
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="41" parent="32" name="authorities_pkey">
+    <key id="43" parent="33" name="authorities_pkey">
       <ObjectId>16424</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>authorities_pkey</UnderlyingIndexName>
     </key>
-    <column id="42" parent="33" name="installed_rank">
+    <column id="44" parent="34" name="installed_rank">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>488</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="43" parent="33" name="version">
+    <column id="45" parent="34" name="version">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <StateNumber>488</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="44" parent="33" name="description">
+    <column id="46" parent="34" name="description">
       <Position>3</Position>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>488</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="45" parent="33" name="type">
+    <column id="47" parent="34" name="type">
       <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>488</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="46" parent="33" name="script">
+    <column id="48" parent="34" name="script">
       <Position>5</Position>
       <DataType>varchar(1000)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>488</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="47" parent="33" name="checksum">
+    <column id="49" parent="34" name="checksum">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>488</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="48" parent="33" name="installed_by">
+    <column id="50" parent="34" name="installed_by">
       <Position>7</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>488</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="49" parent="33" name="installed_on">
+    <column id="51" parent="34" name="installed_on">
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
@@ -1738,21 +1749,21 @@ default</CollationNames>
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1114</TypeId>
     </column>
-    <column id="50" parent="33" name="execution_time">
+    <column id="52" parent="34" name="execution_time">
       <Position>9</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>488</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="51" parent="33" name="success">
+    <column id="53" parent="34" name="success">
       <Position>10</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>488</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <index id="52" parent="33" name="flyway_schema_history_pk">
+    <index id="54" parent="34" name="flyway_schema_history_pk">
       <ObjectId>16392</ObjectId>
       <StateNumber>488</StateNumber>
       <ColNames>installed_rank</ColNames>
@@ -1762,7 +1773,7 @@ default</CollationNames>
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="53" parent="33" name="flyway_schema_history_s_idx">
+    <index id="55" parent="34" name="flyway_schema_history_s_idx">
       <ObjectId>16394</ObjectId>
       <StateNumber>488</StateNumber>
       <ColNames>success</ColNames>
@@ -1770,14 +1781,60 @@ default</CollationNames>
       <CollationIds>0</CollationIds>
       <ClassIds>10003</ClassIds>
     </index>
-    <key id="54" parent="33" name="flyway_schema_history_pk">
+    <key id="56" parent="34" name="flyway_schema_history_pk">
       <ObjectId>16393</ObjectId>
       <StateNumber>488</StateNumber>
       <ColNames>installed_rank</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>flyway_schema_history_pk</UnderlyingIndexName>
     </key>
-    <column id="55" parent="34" name="id">
+    <column id="57" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>511</StateNumber>
+      <DefaultExpression>nextval(&apos;token_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="58" parent="35" name="subject">
+      <Position>2</Position>
+      <DataType>varchar(156)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>511</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="59" parent="35" name="token">
+      <Position>3</Position>
+      <DataType>varchar(256)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>511</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="60" parent="35" name="expirydate">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>511</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="61" parent="35" name="refresh_token_pkey">
+      <ObjectId>16451</ObjectId>
+      <StateNumber>511</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+    </index>
+    <key id="62" parent="35" name="refresh_token_pkey">
+      <ObjectId>16452</ObjectId>
+      <StateNumber>511</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>refresh_token_pkey</UnderlyingIndexName>
+    </key>
+    <column id="63" parent="36" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1785,21 +1842,21 @@ default</CollationNames>
       <DefaultExpression>nextval(&apos;global_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="56" parent="34" name="name">
+    <column id="64" parent="36" name="name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>489</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="57" parent="34" name="user_id">
+    <column id="65" parent="36" name="user_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>495</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="58" parent="34" name="id_name">
+    <index id="66" parent="36" name="id_name">
       <ObjectId>16403</ObjectId>
       <StateNumber>489</StateNumber>
       <ColNames>id
@@ -1811,7 +1868,7 @@ name</ColNames>
 default</CollationNames>
       <ClassIds>3124,3126</ClassIds>
     </index>
-    <index id="59" parent="34" name="school_class_pkey">
+    <index id="67" parent="36" name="school_class_pkey">
       <ObjectId>16401</ObjectId>
       <StateNumber>489</StateNumber>
       <ColNames>id</ColNames>
@@ -1821,14 +1878,14 @@ default</CollationNames>
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="60" parent="34" name="school_class_pkey">
+    <key id="68" parent="36" name="school_class_pkey">
       <ObjectId>16402</ObjectId>
       <StateNumber>489</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>school_class_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="61" parent="34" name="school_class_user_id_fkey">
+    <foreign-key id="69" parent="36" name="school_class_user_id_fkey">
       <ObjectId>16439</ObjectId>
       <StateNumber>494</StateNumber>
       <ColNames>user_id</ColNames>
@@ -1838,7 +1895,7 @@ default</CollationNames>
       <RefKeyName>users_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="62" parent="35" name="id">
+    <column id="70" parent="37" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1846,28 +1903,28 @@ default</CollationNames>
       <DefaultExpression>nextval(&apos;global_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="63" parent="35" name="name">
+    <column id="71" parent="37" name="name">
       <Position>2</Position>
       <DataType>varchar(120)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>489</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="64" parent="35" name="surname">
+    <column id="72" parent="37" name="surname">
       <Position>3</Position>
       <DataType>varchar(120)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>489</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="65" parent="35" name="class_id">
+    <column id="73" parent="37" name="class_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>489</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="66" parent="35" name="student_class_id">
+    <index id="74" parent="37" name="student_class_id">
       <ObjectId>16415</ObjectId>
       <StateNumber>489</StateNumber>
       <ColNames>id
@@ -1877,7 +1934,7 @@ class_id</ColNames>
       <CollationIds>0,0</CollationIds>
       <ClassIds>3124,3124</ClassIds>
     </index>
-    <index id="67" parent="35" name="student_pkey">
+    <index id="75" parent="37" name="student_pkey">
       <ObjectId>16408</ObjectId>
       <StateNumber>489</StateNumber>
       <ColNames>id</ColNames>
@@ -1887,14 +1944,14 @@ class_id</ColNames>
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="68" parent="35" name="student_pkey">
+    <key id="76" parent="37" name="student_pkey">
       <ObjectId>16409</ObjectId>
       <StateNumber>489</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>student_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="69" parent="35" name="student_class_id_fkey">
+    <foreign-key id="77" parent="37" name="student_class_id_fkey">
       <ObjectId>16410</ObjectId>
       <StateNumber>489</StateNumber>
       <ColNames>class_id</ColNames>
@@ -1904,7 +1961,7 @@ class_id</ColNames>
       <RefKeyName>school_class_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="70" parent="36" name="id">
+    <column id="78" parent="38" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1912,35 +1969,35 @@ class_id</ColNames>
       <DefaultExpression>nextval(&apos;user_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="71" parent="36" name="role_id">
+    <column id="79" parent="38" name="role_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>491</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="72" parent="36" name="username">
+    <column id="80" parent="38" name="username">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>491</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="73" parent="36" name="password">
+    <column id="81" parent="38" name="password">
       <Position>4</Position>
       <DataType>varchar(160)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>491</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="74" parent="36" name="enabled">
+    <column id="82" parent="38" name="enabled">
       <Position>5</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>491</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <index id="75" parent="36" name="id_username">
+    <index id="83" parent="38" name="id_username">
       <ObjectId>16437</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>id
@@ -1952,7 +2009,7 @@ username</ColNames>
 default</CollationNames>
       <ClassIds>3124,3126</ClassIds>
     </index>
-    <index id="76" parent="36" name="users_pkey">
+    <index id="84" parent="38" name="users_pkey">
       <ObjectId>16430</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>id</ColNames>
@@ -1962,14 +2019,14 @@ default</CollationNames>
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="77" parent="36" name="users_pkey">
+    <key id="85" parent="38" name="users_pkey">
       <ObjectId>16431</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="78" parent="36" name="users_role_id_fkey">
+    <foreign-key id="86" parent="38" name="users_role_id_fkey">
       <ObjectId>16432</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>role_id</ColNames>

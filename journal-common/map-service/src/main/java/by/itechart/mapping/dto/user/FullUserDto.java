@@ -20,8 +20,8 @@ public class FullUserDto extends BaseUserDto {
 
     @NotBlank(
               message = "The password must be not null or empty")
-    @Size(min = 7, max = 156,
-            message = "The password must be of size between 7 and 156 symbols")
+    @Size(min = 6, max = 156,
+            message = "The password must be of size between 6 and 156 symbols")
     private String password;
 
     @NotNull(

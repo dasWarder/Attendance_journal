@@ -1,9 +1,6 @@
 package by.itechart.model.util;
 
-import by.itechart.model.exception.AuthorityNotFoundException;
-import by.itechart.model.exception.SchoolClassNotFound;
-import by.itechart.model.exception.StudentNotFoundException;
-import by.itechart.model.exception.UserNotFoundException;
+import by.itechart.model.exception.*;
 import by.itechart.model.user.User;
 import javassist.NotFoundException;
 import lombok.extern.slf4j.Slf4j;
@@ -69,6 +66,9 @@ public class ValidationUtil {
 
             case "UserAuthority":
                 return new AuthorityNotFoundException("An authority not found");
+
+            case "RefreshToken":
+                return new TokenNotFoundException("A refresh token not found");
 
             default:
                 return new NotFoundException("An object not found");

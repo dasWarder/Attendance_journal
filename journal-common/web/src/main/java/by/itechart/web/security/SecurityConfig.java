@@ -45,7 +45,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             return super.authenticationManagerBean();
         }
 
-
         @Override
         public void configure(WebSecurity web) {
             web.ignoring().antMatchers("/");

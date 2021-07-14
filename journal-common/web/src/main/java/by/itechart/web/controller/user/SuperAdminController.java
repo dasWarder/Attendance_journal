@@ -1,9 +1,7 @@
 package by.itechart.web.controller.user;
 
 
-import by.itechart.mapping.dto.user.FullUserDto;
 import by.itechart.mapping.dto.user.NoPassUserDto;
-import by.itechart.mapping.dto.user.UserDto;
 import by.itechart.mapping.user.UserMapper;
 import by.itechart.mapping.user.UserMapperWithUserRole;
 import by.itechart.model.user.User;

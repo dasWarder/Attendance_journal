@@ -1,11 +1,13 @@
-by\itechart\service\schoolClass\SchoolClassService.class
-by\itechart\service\security\UserDetailsSecurityService.class
-by\itechart\service\user\UserServiceImpl.class
 by\itechart\service\security\CustomUserDetails.class
 by\itechart\service\authority\AuthorityServiceImpl.class
-by\itechart\service\user\UserService.class
+by\itechart\service\refreshToken\RefreshTokenServiceImpl.class
 by\itechart\service\security\Config.class
 by\itechart\service\authority\AuthorityService.class
 by\itechart\service\student\StudentServiceImpl.class
 by\itechart\service\schoolClass\SchoolClassServiceImpl.class
+by\itechart\service\schoolClass\SchoolClassService.class
+by\itechart\service\security\UserDetailsSecurityService.class
+by\itechart\service\user\UserServiceImpl.class
+by\itechart\service\user\UserService.class
+by\itechart\service\refreshToken\RefreshTokenService.class
 by\itechart\service\student\StudentService.class

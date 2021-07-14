@@ -22,4 +22,4 @@ logging:
 jwt:
   secret: ${JWS_SECRET}
   expirationMs: 1200000
-  refreshExpirationMs: 3200000;
+  refreshExpirationMs: 3200000

@@ -1,10 +1,7 @@
 package by.itechart.web.exceptionHandler;
 
 
-import by.itechart.model.exception.AuthorityNotFoundException;
-import by.itechart.model.exception.SchoolClassNotFound;
-import by.itechart.model.exception.StudentNotFoundException;
-import by.itechart.model.exception.UserNotFoundException;
+import by.itechart.model.exception.*;
 import by.itechart.web.exceptionHandler.exception.ExceptionResponse;
 import by.itechart.web.exceptionHandler.violation.Violation;
 import by.itechart.web.exceptionHandler.violation.ViolationResponse;
@@ -43,10 +40,27 @@ public class CustomExceptionHandler {
                                     response, HttpStatus.REQUEST_TIMEOUT);
     }
 
+    @ExceptionHandler(value = { TokenRefreshException.class })
+    public ResponseEntity<ExceptionResponse> tokenRefreshException(TokenRefreshException e) {
+
+        ExceptionResponse response = new ExceptionResponse();
+
+        response.setClassName(e
+                .getClass()
+                .getSimpleName());
+
+        response.setMessage(e
+                .getCause()
+                .getMessage());
+
+        return new ResponseEntity<>(
+                                    response, HttpStatus.FORBIDDEN);
+    }
+
     @ExceptionHandler(value = { StudentNotFoundException.class,
                                 SchoolClassNotFound.class,
                                 UserNotFoundException.class,
-                                AuthorityNotFoundException.class})
+                                AuthorityNotFoundException.class })
     public ResponseEntity<ExceptionResponse> onNotFoundException(Throwable throwable) {
 
         ExceptionResponse response = new ExceptionResponse();

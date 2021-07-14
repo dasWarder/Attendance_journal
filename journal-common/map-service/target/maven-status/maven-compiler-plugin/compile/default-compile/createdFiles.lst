@@ -2,6 +2,7 @@ by\itechart\mapping\user\UserMapperWithUserRoleImpl.class
 by\itechart\mapping\schoolClass\SchoolClassMapperWithUser.class
 by\itechart\mapping\dto\user\BaseUserDto.class
 by\itechart\mapping\dto\token\Token.class
+by\itechart\mapping\dto\token\TokenRefreshRequest.class
 by\itechart\mapping\dto\user\NoPassUserDto.class
 by\itechart\mapping\student\StudentMapperWithSchoolClass.class
 by\itechart\mapping\user\UserMapper.class

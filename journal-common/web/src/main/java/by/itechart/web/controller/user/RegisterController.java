@@ -2,13 +2,15 @@ package by.itechart.web.controller.user;
 
 
 import by.itechart.mapping.dto.token.Token;
+import by.itechart.mapping.dto.token.TokenRefreshRequest;
 import by.itechart.mapping.dto.user.RegisterUserDto;
 import by.itechart.mapping.dto.user.UserDto;
 import by.itechart.mapping.token.TokenMapper;
 import by.itechart.mapping.user.UserMapper;
 import by.itechart.mapping.user.UserMapperWithUserRole;
+import by.itechart.model.refreshToken.RefreshToken;
 import by.itechart.model.user.User;
-import by.itechart.service.security.CustomUserDetails;
+import by.itechart.service.refreshToken.RefreshTokenService;
 import by.itechart.service.security.UserDetailsSecurityService;
 import by.itechart.service.user.UserService;
 import by.itechart.web.security.token.TokenProvider;
@@ -17,9 +19,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -44,6 +44,8 @@ public class RegisterController {
 
     private final UserDetailsSecurityService securityService;
 
+    private final RefreshTokenService tokenService;
+
 
     @PostMapping("/register")
     public ResponseEntity<UserDto> registerNewUser(@RequestBody
@@ -59,16 +61,36 @@ public class RegisterController {
 
     @PostMapping("/auth")
     public ResponseEntity<Token> auth(@RequestBody
-                                        @Valid RegisterUserDto dto) {
+                                        @Valid RegisterUserDto dto) throws Throwable {
 
         authenticationManager.authenticate(
                                            new UsernamePasswordAuthenticationToken(dto.getEmail(), dto.getPassword()));
 
         UserDetails details = securityService.loadUserByUsername(dto.getEmail());
         String token = tokenProvider.generateToken(details.getUsername());
-        Token response = tokenMapper.fromStringToToken(token);
+
+        RefreshToken refreshToken = tokenService.createRefreshToken(details.getUsername());
+        Token response = tokenMapper.fromStringsToToken(token, refreshToken.getToken());
 
         return new ResponseEntity<>(
                                     response, HttpStatus.CREATED);
+    }
+
+    @PostMapping("/refresh")
+    public ResponseEntity<Token> refreshToken(@RequestBody
+                                              @Valid TokenRefreshRequest requestDto) throws Throwable {
+
+        String refreshToken = requestDto.getRefreshToken();
+
+        RefreshToken tokenFromDb = tokenService.findByToken(refreshToken);
+        RefreshToken validToken = tokenService.verifyExpiration(tokenFromDb);
+
+        String subject = validToken.getSubject();
+        String token = tokenProvider.generateToken(subject);
+
+        Token responseToken = tokenMapper.fromStringsToToken(token, validToken.getToken());
+
+        return new ResponseEntity<>(
+                                    responseToken, HttpStatus.OK);
     }
 }

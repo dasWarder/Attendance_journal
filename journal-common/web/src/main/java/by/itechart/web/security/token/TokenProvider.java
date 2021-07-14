@@ -1,14 +1,12 @@
 package by.itechart.web.security.token;
 
-import io.jsonwebtoken.*;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZoneOffset;
 import java.util.Date;
 
 @Slf4j
@@ -24,7 +22,8 @@ public class TokenProvider {
     public String generateToken(String login) {
         Date date =  new Date((new Date()).getTime() + jwtExpiration);
 
-        log.info("The Token is valid until {}", date);
+        log.info("The token is valid until {}",
+                                              date);
         return Jwts.builder()
                 .setSubject(login)
                 .setExpiration(date)

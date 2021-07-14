@@ -66,7 +66,7 @@ public abstract class UserMapperWithUserRole {
         User user = getUserWithoutPassword(userDto, userAuthority);
 
         user.setId(userDto.getId());
-        user.setPassword(DEFAULT_PASSWORD);
+        getCurrentUserPasswordAndSaveIt(user, userDto.getId());
         user.setEnabled(userDto.isEnabled());
 
         return user;
