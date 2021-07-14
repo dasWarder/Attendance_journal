@@ -1,11 +1,14 @@
 package by.itechart.web.exceptionHandler;
 
 
+import by.itechart.model.exception.AuthorityNotFoundException;
 import by.itechart.model.exception.SchoolClassNotFound;
 import by.itechart.model.exception.StudentNotFoundException;
+import by.itechart.model.exception.UserNotFoundException;
 import by.itechart.web.exceptionHandler.exception.ExceptionResponse;
 import by.itechart.web.exceptionHandler.violation.Violation;
 import by.itechart.web.exceptionHandler.violation.ViolationResponse;
+import io.jsonwebtoken.ExpiredJwtException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -23,9 +26,27 @@ import java.util.Set;
 @ControllerAdvice
 public class CustomExceptionHandler {
 
+    @ExceptionHandler(value = { ExpiredJwtException.class })
+    public ResponseEntity<ExceptionResponse> tokenExpiredException(ExpiredJwtException e) {
+
+        ExceptionResponse response = new ExceptionResponse();
+
+        response.setClassName(e
+                                .getClass()
+                                .getSimpleName());
+
+        response.setMessage(e
+                                .getCause()
+                                .getMessage());
+
+        return new ResponseEntity<>(
+                                    response, HttpStatus.REQUEST_TIMEOUT);
+    }
 
     @ExceptionHandler(value = { StudentNotFoundException.class,
-                                SchoolClassNotFound.class })
+                                SchoolClassNotFound.class,
+                                UserNotFoundException.class,
+                                AuthorityNotFoundException.class})
     public ResponseEntity<ExceptionResponse> onNotFoundException(Throwable throwable) {
 
         ExceptionResponse response = new ExceptionResponse();
@@ -34,7 +55,9 @@ public class CustomExceptionHandler {
                                         .getClass()
                                         .getName());
 
-        response.setMessage(throwable.getMessage());
+        response.setMessage(throwable
+                                    .getCause()
+                                    .getMessage());
 
         return new ResponseEntity<>(
                                     response, HttpStatus.NOT_FOUND);
@@ -93,4 +116,6 @@ public class CustomExceptionHandler {
         return new ResponseEntity(
                                   response, HttpStatus.BAD_REQUEST);
     }
+
+
 }

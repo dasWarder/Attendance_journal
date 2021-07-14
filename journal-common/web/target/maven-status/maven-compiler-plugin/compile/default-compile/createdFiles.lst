@@ -12,4 +12,6 @@ by\itechart\web\controller\user\AdminController.class
 by\itechart\web\controller\schoolClass\SchoolClassController.class
 by\itechart\web\controller\user\RegisterController.class
 by\itechart\web\exceptionHandler\CustomExceptionHandler.class
+by\itechart\web\security\token\TokenProvider.class
 by\itechart\web\security\util\SecurityUtil.class
+by\itechart\web\security\token\JwtFilter.class
