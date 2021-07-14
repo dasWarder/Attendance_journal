@@ -133,7 +133,6 @@ public class UserServiceImpl implements UserService {
     }
 
 
-
     private void setPasswordToEncryptedOne(User user) {
 
         String notSecurePass = user.getPassword();

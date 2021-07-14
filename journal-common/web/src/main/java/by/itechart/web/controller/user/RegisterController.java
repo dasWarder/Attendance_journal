@@ -8,11 +8,18 @@ import by.itechart.mapping.token.TokenMapper;
 import by.itechart.mapping.user.UserMapper;
 import by.itechart.mapping.user.UserMapperWithUserRole;
 import by.itechart.model.user.User;
+import by.itechart.service.security.CustomUserDetails;
+import by.itechart.service.security.UserDetailsSecurityService;
 import by.itechart.service.user.UserService;
 import by.itechart.web.security.token.TokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,6 +40,11 @@ public class RegisterController {
 
     private final TokenProvider tokenProvider;
 
+    private final AuthenticationManager authenticationManager;
+
+    private final UserDetailsSecurityService securityService;
+
+
     @PostMapping("/register")
     public ResponseEntity<UserDto> registerNewUser(@RequestBody
                                                    @Valid RegisterUserDto requestDto) throws Throwable {
@@ -47,11 +59,13 @@ public class RegisterController {
 
     @PostMapping("/auth")
     public ResponseEntity<Token> auth(@RequestBody
-                                        @Valid RegisterUserDto dto) throws Throwable {
+                                        @Valid RegisterUserDto dto) {
 
-        User userFromDto = customMapper.registerUserDtoToUserWithRole(dto);
-        User userByUsername = userService.getUserByUsername(userFromDto.getUsername());
-        String token = tokenProvider.generateToken(userByUsername.getUsername());
+        authenticationManager.authenticate(
+                                           new UsernamePasswordAuthenticationToken(dto.getEmail(), dto.getPassword()));
+
+        UserDetails details = securityService.loadUserByUsername(dto.getEmail());
+        String token = tokenProvider.generateToken(details.getUsername());
         Token response = tokenMapper.fromStringToToken(token);
 
         return new ResponseEntity<>(

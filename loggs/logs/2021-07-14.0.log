@@ -4990,3 +4990,1202 @@ by.itechart.model.exception.UserNotFoundException: A user not found
 [2021-07-14 09:03:50] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
 [2021-07-14 09:03:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-14 09:03:50] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:06:57] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:06:57] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:06:57] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:06:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:06:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:06:57] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:06:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:06:57] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 09:26:57 MSK 2021
+[2021-07-14 09:07:03] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:07:03] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:07:03] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:07:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:07:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:07:03] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:07:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:07:04] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 09:27:04 MSK 2021
+[2021-07-14 09:07:12] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:07:12] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:07:17] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:07:17] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:07:25] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:07:25] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:07:25] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:07:25] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:07:25] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:07:25] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:07:25] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:07:25] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 09:27:25 MSK 2021
+[2021-07-14 09:07:33] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:07:33] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:07:33] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:07:33] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:07:33] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:07:33] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:07:33] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:07:33] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 09:27:33 MSK 2021
+[2021-07-14 09:17:14] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 09:17:14] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 10528 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 09:17:14] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 09:17:14] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 09:17:14] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+[2021-07-14 09:17:15] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 09:17:15] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:17:15] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 09:17:15] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 09:17:15] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 09:17:15] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1638 ms
+[2021-07-14 09:17:15] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 09:17:16] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 09:17:16] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 09:17:16] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 09:17:16] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.029s)
+[2021-07-14 09:17:16] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 09:17:16] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 09:17:16] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 09:17:16] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 09:17:16] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 09:17:16] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 09:17:17] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 09:17:17] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 09:17:17] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 09:17:17] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 09:17:17] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27d0376f, org.springframework.security.web.context.SecurityContextPersistenceFilter@7abd75fc, org.springframework.security.web.header.HeaderWriterFilter@716eae1, org.springframework.security.web.authentication.logout.LogoutFilter@28e24663, by.itechart.web.security.token.JwtFilter@4fce3ed7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@af96ac9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b66bf1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14b4ce6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21948bd1, org.springframework.security.web.session.SessionManagementFilter@7bfc36d5, org.springframework.security.web.access.ExceptionTranslationFilter@6f69b0ba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b86a656]
+[2021-07-14 09:17:18] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:17:18] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 09:17:18] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 4.785 seconds (JVM running for 5.994)
+[2021-07-14 09:17:24] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 09:17:24] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 09:17:24] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2021-07-14 09:17:24] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:17:24] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:17:24] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:17:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:17:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:17:24] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = alex@gmail.com and password
+[2021-07-14 09:17:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:17:24] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:17:31] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:17:31] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:17:31] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:17:31] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:17:31] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:17:31] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = alex@gmail.com and password
+[2021-07-14 09:17:31] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:17:31] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:17:39] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:17:39] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:17:39] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:17:39] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:17:39] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:17:39] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = petr@gmail.com and password
+[2021-07-14 09:17:39] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:17:39] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:19:00] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 09:19:00] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 9804 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 09:19:00] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 09:19:02] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 09:19:02] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+[2021-07-14 09:19:03] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 09:19:03] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:19:03] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 09:19:03] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 09:19:03] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 09:19:03] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2687 ms
+[2021-07-14 09:19:03] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 09:19:03] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 09:19:03] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 09:19:03] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 09:19:03] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.027s)
+[2021-07-14 09:19:03] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 09:19:03] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 09:19:04] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 09:19:04] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 09:19:04] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 09:19:04] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 09:19:05] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 09:19:05] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 09:19:05] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 09:19:05] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 09:19:05] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@724c26e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a2a56f6, org.springframework.security.web.header.HeaderWriterFilter@2987b699, org.springframework.security.web.authentication.logout.LogoutFilter@204a02a4, by.itechart.web.security.token.JwtFilter@67671db1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@35e357b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@160e45c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54a5799f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6055e899, org.springframework.security.web.session.SessionManagementFilter@3369e2ce, org.springframework.security.web.access.ExceptionTranslationFilter@3663af34, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c108c05]
+[2021-07-14 09:19:06] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:19:06] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 09:19:06] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 6.099 seconds (JVM running for 7.607)
+[2021-07-14 09:19:13] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 09:19:13] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 09:19:13] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2021-07-14 09:19:13] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:19:13] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:19:13] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:19:13] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:19:13] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:19:13] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = petr@gmail.com and password
+[2021-07-14 09:19:13] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:19:13] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:19:38] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:19:38] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:19:38] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:19:39] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:19:39] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:19:39] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = alex@gmail.com and password
+[2021-07-14 09:19:39] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:19:39] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:19:42] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:19:42] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:19:42] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:19:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:19:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:19:42] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = alex@gmail.com and password
+[2021-07-14 09:19:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:19:42] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:19:49] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:19:49] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:19:49] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:19:49] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:19:49] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:19:49] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = alex@gmail.com and password
+[2021-07-14 09:19:49] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:19:49] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:21:23] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:21:23] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:21:23] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:21:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:21:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:21:23] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = alex@gmail.com and password
+[2021-07-14 09:21:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:21:23] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:22:47] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 09:22:47] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 9256 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 09:22:47] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 09:22:47] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 09:22:48] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+[2021-07-14 09:22:48] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 09:22:48] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:22:48] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 09:22:48] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 09:22:48] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 09:22:48] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1656 ms
+[2021-07-14 09:22:49] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 09:22:49] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 09:22:49] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 09:22:49] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 09:22:49] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.037s)
+[2021-07-14 09:22:49] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 09:22:49] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 09:22:49] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 09:22:49] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 09:22:49] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 09:22:49] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 09:22:50] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 09:22:50] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 09:22:50] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 09:22:51] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 09:22:51] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@642d34f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@29d81c22, org.springframework.security.web.header.HeaderWriterFilter@4777f71e, org.springframework.security.web.authentication.logout.LogoutFilter@3fda8dae, by.itechart.web.security.token.JwtFilter@18e76101, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@39fb5ddf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bee1c13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47eff554, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49b180c8, org.springframework.security.web.session.SessionManagementFilter@1e75af65, org.springframework.security.web.access.ExceptionTranslationFilter@74026b18, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3321fb65]
+[2021-07-14 09:22:51] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:22:51] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 09:22:51] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 4.895 seconds (JVM running for 6.001)
+[2021-07-14 09:22:55] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 09:22:55] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 09:22:55] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2021-07-14 09:22:55] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:22:55] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:22:56] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:22:56] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:22:56] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:22:56] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = alex@gmail.com and password
+[2021-07-14 09:22:56] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:22:56] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:23:43] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 09:23:43] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 2108 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 09:23:43] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 09:23:44] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 09:23:44] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+[2021-07-14 09:23:44] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 09:23:44] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:23:44] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 09:23:44] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 09:23:45] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 09:23:45] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1640 ms
+[2021-07-14 09:23:45] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 09:23:45] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 09:23:45] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 09:23:45] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 09:23:45] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.035s)
+[2021-07-14 09:23:45] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 09:23:45] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 09:23:45] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 09:23:45] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 09:23:45] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 09:23:45] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 09:23:46] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 09:23:46] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 09:23:47] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 09:23:47] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 09:23:47] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@642d34f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bee1c13, org.springframework.security.web.header.HeaderWriterFilter@4a68cbc5, org.springframework.security.web.authentication.logout.LogoutFilter@7135e8cd, by.itechart.web.security.token.JwtFilter@18e76101, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@39fb5ddf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71098fb3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54b35809, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49b180c8, org.springframework.security.web.session.SessionManagementFilter@29d81c22, org.springframework.security.web.access.ExceptionTranslationFilter@5cf1bbd3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3321fb65]
+[2021-07-14 09:23:47] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:23:47] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 09:23:47] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 5.019 seconds (JVM running for 6.256)
+[2021-07-14 09:23:51] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 09:23:51] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 09:23:51] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2021-07-14 09:23:51] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:23:51] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:23:51] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:23:51] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:23:51] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:23:51] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = alex@gmail.com and password
+[2021-07-14 09:23:51] [INFO] [by.itechart.service.user.UserServiceImpl] Decoded pass = 12345
+[2021-07-14 09:23:52] [INFO] [by.itechart.service.user.UserServiceImpl] Encoded pass = $2a$10$7jk/ahjUH20YdFhgimdhAuiweKnsa/oXHgFHRuYEc4d5AO8ef1iaq
+[2021-07-14 09:23:52] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:23:52] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:24:21] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 09:24:21] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 12228 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 09:24:21] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 09:24:21] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 09:24:21] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+[2021-07-14 09:24:22] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 09:24:22] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:24:22] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 09:24:22] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 09:24:22] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 09:24:22] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1499 ms
+[2021-07-14 09:24:22] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 09:24:22] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 09:24:22] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 09:24:22] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 09:24:23] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.029s)
+[2021-07-14 09:24:23] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 09:24:23] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 09:24:23] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 09:24:23] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 09:24:23] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 09:24:23] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 09:24:24] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 09:24:24] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 09:24:24] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 09:24:24] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 09:24:24] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@630febd7, org.springframework.security.web.context.SecurityContextPersistenceFilter@47eff554, org.springframework.security.web.header.HeaderWriterFilter@25a52a60, org.springframework.security.web.authentication.logout.LogoutFilter@48697181, by.itechart.web.security.token.JwtFilter@54033a65, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@22617270, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54b35809, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cb929a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45c2c396, org.springframework.security.web.session.SessionManagementFilter@31b67d61, org.springframework.security.web.access.ExceptionTranslationFilter@25587290, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55cc4c61]
+[2021-07-14 09:24:25] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:24:25] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 09:24:25] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 4.427 seconds (JVM running for 5.588)
+[2021-07-14 09:24:30] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 09:24:30] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 09:24:30] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2021-07-14 09:24:30] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:24:30] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:24:30] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:24:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:24:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:24:30] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by username = alex@gmail.com and password
+[2021-07-14 09:24:30] [INFO] [by.itechart.service.user.UserServiceImpl] Decoded pass = 12345
+[2021-07-14 09:24:30] [INFO] [by.itechart.service.user.UserServiceImpl] Encoded pass = $2a$10$H1KZB3CEi7PaZMKHxGlmI.o1ygeUFNfzAnzNpD8.R9jTy8MYK7xsW
+[2021-07-14 09:24:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:24:30] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 09:30:40] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 09:30:40] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 9984 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 09:30:40] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 09:30:41] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 09:30:41] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+[2021-07-14 09:30:42] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 09:30:42] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:30:42] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 09:30:42] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 09:30:42] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 09:30:42] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1909 ms
+[2021-07-14 09:30:42] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 09:30:42] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 09:30:42] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 09:30:42] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 09:30:43] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.030s)
+[2021-07-14 09:30:43] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 09:30:43] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 09:30:43] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 09:30:43] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 09:30:43] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 09:30:43] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 09:30:44] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 09:30:44] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 09:30:44] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 09:30:44] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 09:30:44] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58189b85, org.springframework.security.web.context.SecurityContextPersistenceFilter@54a5799f, org.springframework.security.web.header.HeaderWriterFilter@77925f76, org.springframework.security.web.authentication.logout.LogoutFilter@430f0c63, by.itechart.web.security.token.JwtFilter@66048c9e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58041b11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54b96813, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77978658, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49222187, org.springframework.security.web.session.SessionManagementFilter@72a61e61, org.springframework.security.web.access.ExceptionTranslationFilter@6d4c7248, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72015156]
+[2021-07-14 09:30:45] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:30:45] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 09:30:45] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 5.29 seconds (JVM running for 6.715)
+[2021-07-14 09:52:25] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 09:52:25] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 10056 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 09:52:25] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 09:52:26] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 09:52:26] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+[2021-07-14 09:52:27] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 09:52:27] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:52:27] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 09:52:27] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 09:52:27] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 09:52:27] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1957 ms
+[2021-07-14 09:52:27] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 09:52:27] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 09:52:27] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 09:52:27] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 09:52:27] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.029s)
+[2021-07-14 09:52:27] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 09:52:27] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 09:52:28] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 09:52:28] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 09:52:28] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 09:52:28] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 09:52:29] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 09:52:29] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 09:52:29] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 09:52:29] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 09:52:29] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@336e17be, org.springframework.security.web.context.SecurityContextPersistenceFilter@6987b74e, org.springframework.security.web.header.HeaderWriterFilter@282aea3c, org.springframework.security.web.authentication.logout.LogoutFilter@56ec6ac0, by.itechart.web.security.token.JwtFilter@4fce3ed7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63846fa4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4270705f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3897f9ae, org.springframework.security.web.session.SessionManagementFilter@498b697, org.springframework.security.web.access.ExceptionTranslationFilter@66779435, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49222187]
+[2021-07-14 09:52:30] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:52:30] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 09:52:30] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 5.613 seconds (JVM running for 9.513)
+[2021-07-14 09:52:36] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 09:52:36] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 09:52:36] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2021-07-14 09:52:36] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:52:36] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:52:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:52:36] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:52:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:52:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:52:36] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:52:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:52:36] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 10:12:36 MSK 2021
+[2021-07-14 09:52:42] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:52:42] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:52:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:52:42] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:52:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:52:51] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:52:51] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:52:51] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:52:51] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:52:51] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:52:55] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:52:55] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:52:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:52:55] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:52:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:52:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:52:55] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:52:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:52:55] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 10:12:55 MSK 2021
+[2021-07-14 09:53:03] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:03] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:03] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = petr@gmail.com
+[2021-07-14 09:53:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:03] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = petr@gmail.com
+[2021-07-14 09:53:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:03] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 10:13:03 MSK 2021
+[2021-07-14 09:53:07] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:07] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:07] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = petr@gmail.com
+[2021-07-14 09:53:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:11] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:11] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:11] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:11] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = petr@gmail.com
+[2021-07-14 09:53:11] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:11] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:11] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = petr@gmail.com
+[2021-07-14 09:53:11] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:11] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 10:13:11 MSK 2021
+[2021-07-14 09:53:37] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:37] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:37] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:53:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:37] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:53:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:37] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 10:13:37 MSK 2021
+[2021-07-14 09:53:50] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:50] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:53:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:50] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:50] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:53:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:50] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:53:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:59] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:59] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:59] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:53:59] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:59] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:53:59] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:59] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:53:59] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:53:59] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:53:59] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a list of all school classes
+[2021-07-14 09:54:03] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:54:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:54:03] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:54:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:54:03] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:54:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:54:03] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:54:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:54:09] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:54:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:54:09] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:54:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:54:09] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:54:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:54:09] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:54:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:08] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:08] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:08] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:55:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:09] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:09] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:55:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:09] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a register user dto to a user with USER role
+[2021-07-14 09:55:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:09] [INFO] [by.itechart.service.user.UserServiceImpl] Store a user with the name = test@gmail.com
+[2021-07-14 09:55:18] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:18] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:55:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:18] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:18] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 09:55:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:18] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:18] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:18] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 10:15:18 MSK 2021
+[2021-07-14 09:55:26] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:26] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:26] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:26] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:26] [WARN] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[2021-07-14 09:55:26] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:26] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:34] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:34] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:34] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:34] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:34] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a list of all school classes
+[2021-07-14 09:55:38] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:38] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:38] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:38] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:38] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:38] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:38] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:38] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:38] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:38] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:38] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:42] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:42] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:42] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:42] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:57] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:57] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:57] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:55:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:57] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = test@gmail.com
+[2021-07-14 09:55:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:57] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 09:55:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:55:57] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 09:55:57] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:55:57] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 10:15:57 MSK 2021
+[2021-07-14 09:56:10] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:56:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:56:10] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 09:56:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:56:10] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:56:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:56:10] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 09:56:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:56:10] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users
+[2021-07-14 09:57:44] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:57:44] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:57:44] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 09:57:44] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:57:44] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:57:44] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:57:44] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 09:57:44] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:57:44] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a no pass user dto to the user with a role
+[2021-07-14 09:57:44] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:57:44] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:57:44] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:57:44] [INFO] [by.itechart.service.user.UserServiceImpl] Update a user with the ID = 100006
+[2021-07-14 09:57:44] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:57:44] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the ID = 100006
+[2021-07-14 09:57:44] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:58:57] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 09:58:57] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 4580 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 09:58:57] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 09:58:58] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 09:58:58] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
+[2021-07-14 09:58:59] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 09:58:59] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:58:59] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 09:58:59] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 09:58:59] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 09:58:59] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2055 ms
+[2021-07-14 09:58:59] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 09:58:59] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 09:58:59] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 09:58:59] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 09:58:59] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.042s)
+[2021-07-14 09:58:59] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 09:58:59] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 09:58:59] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 09:58:59] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 09:59:00] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 09:59:00] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 09:59:01] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 09:59:01] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 09:59:01] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 09:59:02] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 09:59:02] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34e53c02, org.springframework.security.web.context.SecurityContextPersistenceFilter@73eae5f, org.springframework.security.web.header.HeaderWriterFilter@717b0d81, org.springframework.security.web.authentication.logout.LogoutFilter@3369e2ce, by.itechart.web.security.token.JwtFilter@c96c497, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7698a3d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@337eeceb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7135e8cd, org.springframework.security.web.session.SessionManagementFilter@38b0e2a7, org.springframework.security.web.access.ExceptionTranslationFilter@7187078a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57ac2910]
+[2021-07-14 09:59:02] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 09:59:02] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 09:59:02] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 6.334 seconds (JVM running for 7.967)
+[2021-07-14 09:59:05] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 09:59:05] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 09:59:05] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2021-07-14 09:59:05] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:59:05] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:59:05] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 09:59:05] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:59:05] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 09:59:05] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 09:59:05] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 09:59:05] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 09:59:05] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users
+[2021-07-14 10:00:02] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:00:02] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:00:02] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:00:02] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:00:02] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:00:02] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:00:02] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:00:02] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:00:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:00:03] [INFO] [by.itechart.service.user.UserServiceImpl] Remove a user by the name = test@gmail.com
+[2021-07-14 10:00:09] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:00:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:00:09] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:00:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:00:09] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:00:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:00:09] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:00:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:00:09] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users
+[2021-07-14 10:00:26] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:00:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:00:26] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:00:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:00:26] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:00:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:00:26] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:00:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:00:26] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users
+[2021-07-14 10:01:30] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:01:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:01:30] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:01:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:01:30] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:01:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:01:30] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:01:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:01:31] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a no pass user dto to the user with a role
+[2021-07-14 10:01:31] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:01:31] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.UserAuthority
+[2021-07-14 10:05:10] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 10:05:10] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 5460 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 10:05:10] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 10:05:11] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 10:05:11] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+[2021-07-14 10:05:12] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 10:05:12] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 10:05:12] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 10:05:12] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 10:05:12] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 10:05:12] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1984 ms
+[2021-07-14 10:05:13] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 10:05:13] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 10:05:13] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 10:05:13] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 10:05:13] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.049s)
+[2021-07-14 10:05:13] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 10:05:13] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 10:05:13] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 10:05:13] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 10:05:13] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 10:05:13] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 10:05:14] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 10:05:14] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:05:17] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 10:05:18] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 10:05:18] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3321fb65, org.springframework.security.web.context.SecurityContextPersistenceFilter@25587290, org.springframework.security.web.header.HeaderWriterFilter@6987b74e, org.springframework.security.web.authentication.logout.LogoutFilter@4a29a1e6, by.itechart.web.security.token.JwtFilter@2728add3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ffe8a82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71098fb3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7272914b, org.springframework.security.web.session.SessionManagementFilter@63537871, org.springframework.security.web.access.ExceptionTranslationFilter@74a3160d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2627335c]
+[2021-07-14 10:05:19] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 10:05:19] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 10:05:19] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 9.0 seconds (JVM running for 12.029)
+[2021-07-14 10:05:29] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 10:05:29] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 10:05:29] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2021-07-14 10:05:29] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:05:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:05:30] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:05:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:05:30] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:05:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:05:30] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:05:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:05:43] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a no pass user dto to the user with a role
+[2021-07-14 10:06:46] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:06:46] [WARN] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s675ms718µs701ns).
+[2021-07-14 10:06:46] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.UserAuthority
+[2021-07-14 10:06:47] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:06:47] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-14 10:06:47] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-14 10:06:58] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 10:06:58] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 5444 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 10:06:58] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 10:06:59] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 10:06:59] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 82 ms. Found 4 JPA repository interfaces.
+[2021-07-14 10:07:00] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 10:07:00] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 10:07:00] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 10:07:00] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 10:07:00] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 10:07:00] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1960 ms
+[2021-07-14 10:07:00] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 10:07:00] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 10:07:00] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 10:07:01] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 10:07:01] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.031s)
+[2021-07-14 10:07:01] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 10:07:01] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 10:07:01] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 10:07:01] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 10:07:01] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 10:07:01] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 10:07:02] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 10:07:02] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:07:03] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 10:07:04] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 10:07:04] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3897f9ae, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f8da82, org.springframework.security.web.header.HeaderWriterFilter@72a61e61, org.springframework.security.web.authentication.logout.LogoutFilter@47eff554, by.itechart.web.security.token.JwtFilter@289da1bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22e95960, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a47bf0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c767288, org.springframework.security.web.session.SessionManagementFilter@77978658, org.springframework.security.web.access.ExceptionTranslationFilter@7488c183, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e41e6ad]
+[2021-07-14 10:07:05] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 10:07:05] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 10:07:05] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 7.032 seconds (JVM running for 8.989)
+[2021-07-14 10:07:11] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 10:07:11] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 10:07:11] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2021-07-14 10:07:11] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:07:12] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:07:12] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:07:13] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:07:13] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:07:13] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:07:13] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:07:13] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:07:20] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a no pass user dto to the user with a role
+[2021-07-14 10:08:29] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:08:29] [WARN] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s259ms196µs701ns).
+[2021-07-14 10:08:29] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.UserAuthority
+[2021-07-14 10:08:29] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:08:29] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-14 10:08:29] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-14 10:10:50] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 10:10:50] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 148 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 10:10:50] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 10:10:51] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 10:10:51] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+[2021-07-14 10:10:52] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 10:10:52] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 10:10:52] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 10:10:52] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 10:10:52] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 10:10:52] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1809 ms
+[2021-07-14 10:10:52] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 10:10:52] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 10:10:52] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 10:10:52] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 10:10:52] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.030s)
+[2021-07-14 10:10:52] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 10:10:52] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 10:10:52] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 10:10:52] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 10:10:53] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 10:10:53] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 10:10:54] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 10:10:54] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:10:56] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 10:10:57] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 10:10:57] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1756a471, org.springframework.security.web.context.SecurityContextPersistenceFilter@8aa1562, org.springframework.security.web.header.HeaderWriterFilter@5527dbb0, org.springframework.security.web.authentication.logout.LogoutFilter@20e41f13, by.itechart.web.security.token.JwtFilter@753e4eb5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@346690d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d0333c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2190508d, org.springframework.security.web.session.SessionManagementFilter@3f2afa8b, org.springframework.security.web.access.ExceptionTranslationFilter@3fda8dae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7bf94e91]
+[2021-07-14 10:11:02] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 10:11:02] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 10:11:02] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 13.087 seconds (JVM running for 15.174)
+[2021-07-14 10:11:17] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 10:11:17] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 10:11:17] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 27 ms
+[2021-07-14 10:11:17] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:11:18] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:11:18] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:11:19] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:11:19] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:11:19] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:11:19] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:11:19] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:11:22] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:11:22] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:11:22] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:11:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:11:24] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:11:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:11:24] [INFO] [by.itechart.web.security.token.TokenProvider] The Token is valid until Wed Jul 14 10:31:24 MSK 2021
+[2021-07-14 10:12:10] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:12:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:12:10] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:12:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:12:10] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:12:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:12:10] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:12:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:12:32] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a no pass user dto to the user with a role
+[2021-07-14 10:14:26] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:14:39] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:14:39] [INFO] [by.itechart.service.user.UserServiceImpl] Store a user with the name = tester@gmail.com
+[2021-07-14 10:15:47] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:15:47] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-14 10:15:47] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-14 10:16:55] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 10:16:55] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 6308 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 10:16:55] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 10:16:57] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 10:16:57] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 101 ms. Found 4 JPA repository interfaces.
+[2021-07-14 10:16:58] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 10:16:58] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 10:16:58] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 10:16:58] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 10:16:58] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 10:16:58] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 2633 ms
+[2021-07-14 10:16:58] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 10:16:58] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 10:16:58] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 10:16:58] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 10:16:58] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.047s)
+[2021-07-14 10:16:58] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 10:16:58] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 10:16:58] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 10:16:59] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 10:16:59] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 10:16:59] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 10:17:00] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 10:17:00] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:17:02] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 10:17:03] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 10:17:04] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37393dab, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c108c05, org.springframework.security.web.header.HeaderWriterFilter@7263b0c4, org.springframework.security.web.authentication.logout.LogoutFilter@336e17be, by.itechart.web.security.token.JwtFilter@12a9e864, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d0333c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72015156, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4866a755, org.springframework.security.web.session.SessionManagementFilter@3adbd038, org.springframework.security.web.access.ExceptionTranslationFilter@2ee5c08d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72e1e587]
+[2021-07-14 10:17:08] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 10:17:08] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 10:17:09] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 14.262 seconds (JVM running for 16.79)
+[2021-07-14 10:18:11] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:18:11] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-14 10:18:12] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-14 10:18:20] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 10:18:20] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 11168 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-14 10:18:20] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-14 10:18:21] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 10:18:21] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 107 ms. Found 4 JPA repository interfaces.
+[2021-07-14 10:18:22] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-14 10:18:22] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-14 10:18:22] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-14 10:18:22] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-14 10:18:22] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-14 10:18:22] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1677 ms
+[2021-07-14 10:18:22] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-14 10:18:22] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 10:18:22] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 10:18:22] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-14 10:18:22] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 7 migrations (execution time 00:00.028s)
+[2021-07-14 10:18:22] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 7
+[2021-07-14 10:18:22] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-14 10:18:23] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 10:18:23] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 10:18:23] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 10:18:23] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-14 10:18:24] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 10:18:24] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:18:24] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 10:18:24] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-14 10:18:24] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f877009, org.springframework.security.web.context.SecurityContextPersistenceFilter@717b0d81, org.springframework.security.web.header.HeaderWriterFilter@782143e8, org.springframework.security.web.authentication.logout.LogoutFilter@4693d24f, by.itechart.web.security.token.JwtFilter@67ceaa9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d793390, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@328bc067, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@591ba330, org.springframework.security.web.session.SessionManagementFilter@1d38cdde, org.springframework.security.web.access.ExceptionTranslationFilter@4f1a5b93, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54b35809]
+[2021-07-14 10:18:24] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-14 10:18:24] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-14 10:18:25] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 4.936 seconds (JVM running for 6.3)
+[2021-07-14 10:19:03] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-14 10:19:03] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-14 10:19:03] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 129 ms
+[2021-07-14 10:19:03] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:19:03] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:19:03] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:19:04] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:19:04] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:19:04] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:19:04] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:19:04] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:19:04] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Receive a list of all authorities
+[2021-07-14 10:19:32] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:19:32] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:19:32] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:19:32] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:19:32] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:19:32] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:19:32] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:19:32] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:19:33] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:19:33] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Store an authority with a name = ADMIN
+[2021-07-14 10:19:48] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:19:48] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:19:48] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:19:48] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:19:48] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:19:48] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:19:48] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:19:48] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:19:48] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users
+[2021-07-14 10:20:07] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:20:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:20:07] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:20:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:20:07] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:20:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:20:07] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:20:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:20:07] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a no pass user dto to the user with a role
+[2021-07-14 10:20:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:20:07] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:20:07] [INFO] [by.itechart.service.user.UserServiceImpl] Store a user with the name = petr@gmail.com
+[2021-07-14 10:20:23] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:20:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:20:23] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:20:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:20:23] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:20:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:20:23] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:20:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:20:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:20:23] [INFO] [by.itechart.service.user.UserServiceImpl] Remove a user by the name = petr@gmail.com
+[2021-07-14 10:20:29] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:20:29] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:20:29] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:20:29] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:20:29] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:20:29] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:20:29] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:20:29] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:20:29] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users
+[2021-07-14 10:20:35] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:20:35] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:20:35] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:20:35] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:20:35] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:20:35] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:20:35] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:20:35] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:20:35] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Receive a list of all authorities
+[2021-07-14 10:21:48] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [by.itechart.web.integration.AuthorityServiceIntegrationTest], using SpringBootContextLoader
+[2021-07-14 10:21:48] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [by.itechart.web.integration.AuthorityServiceIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2021-07-14 10:21:48] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [by.itechart.web.integration.AuthorityServiceIntegrationTest]: AuthorityServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2021-07-14 10:21:48] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class by.itechart.web.integration.AuthorityServiceIntegrationTest
+[2021-07-14 10:21:49] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener]
+[2021-07-14 10:21:49] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4a9f80d3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@35beb15e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@41fe9859, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5ac86ba5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6c67e137, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c9399a4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@191ae03f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@9635fa, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@53ab0286, org.springframework.test.context.event.EventPublishingTestExecutionListener@63c5efee, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2d10e0b1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c98290c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@172ca72b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5bda80bf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@71e5f61d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2ce86164, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5e8f9e2d]
+[2021-07-14 10:21:49] [INFO] [by.itechart.web.integration.AuthorityServiceIntegrationTest] Starting AuthorityServiceIntegrationTest using Java 11.0.10 on WIN-DQOGFATQ970 with PID 12980 (started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web)
+[2021-07-14 10:21:49] [INFO] [by.itechart.web.integration.AuthorityServiceIntegrationTest] The following profiles are active: test
+[2021-07-14 10:21:49] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 10:21:50] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 10:21:50] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+[2021-07-14 10:21:51] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 10:21:52] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 10:21:52] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 10:21:52] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 10:21:52] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 10:21:52] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-07-14 10:21:53] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 10:21:53] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:21:54] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 10:21:54] [INFO] [by.itechart.web.integration.AuthorityServiceIntegrationTest] Started AuthorityServiceIntegrationTest in 5.487 seconds (JVM running for 7.354)
+[2021-07-14 10:21:54] [INFO] [by.itechart.web.integration.AuthorityServiceIntegrationTest] Test saveAuthority() method
+[2021-07-14 10:21:54] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:21:54] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Store an authority with a name = TESTER
+[2021-07-14 10:21:55] [INFO] [by.itechart.web.integration.AuthorityServiceIntegrationTest] Test updateAuthority() method
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:21:55] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Update an authority with the ID = 100000
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:21:55] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Receive an authority by ID = 100000
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:21:55] [INFO] [by.itechart.web.integration.AuthorityServiceIntegrationTest] Test getAuthorityByName() method
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:21:55] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Receive an authority by the name = USER
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:21:55] [INFO] [by.itechart.web.integration.AuthorityServiceIntegrationTest] Test deleteAuthorityById() method
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:21:55] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Remove an authority by the ID = 100000
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:21:55] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Receive an authority by ID = 100000
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:21:55] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.UserAuthority
+[2021-07-14 10:21:55] [INFO] [by.itechart.web.integration.AuthorityServiceIntegrationTest] Test deleteAuthorityByName() method
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:21:55] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Remove an authority by the name = USER
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:21:55] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Receive an authority by the name = USER
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:21:55] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.UserAuthority
+[2021-07-14 10:21:55] [INFO] [by.itechart.web.integration.AuthorityServiceIntegrationTest] Test getAuthorityById() method
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:21:55] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Receive an authority by ID = 100000
+[2021-07-14 10:21:55] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:21:55] [INFO] [by.itechart.web.integration.AuthorityServiceIntegrationTest] Test getAllAuthorities() method
+[2021-07-14 10:21:55] [INFO] [by.itechart.service.authority.AuthorityServiceImpl] Receive a list of all authorities
+[2021-07-14 10:21:55] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:21:55] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-14 10:21:55] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-14 10:22:01] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [by.itechart.web.integration.SchoolClassIntegrationTest], using SpringBootContextLoader
+[2021-07-14 10:22:01] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [by.itechart.web.integration.SchoolClassIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2021-07-14 10:22:01] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [by.itechart.web.integration.SchoolClassIntegrationTest]: SchoolClassIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2021-07-14 10:22:01] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class by.itechart.web.integration.SchoolClassIntegrationTest
+[2021-07-14 10:22:02] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener]
+[2021-07-14 10:22:02] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4a9f80d3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@35beb15e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@41fe9859, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5ac86ba5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6c67e137, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c9399a4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@191ae03f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@9635fa, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@53ab0286, org.springframework.test.context.event.EventPublishingTestExecutionListener@63c5efee, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2d10e0b1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c98290c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@172ca72b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5bda80bf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@71e5f61d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2ce86164, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5e8f9e2d]
+[2021-07-14 10:22:02] [INFO] [by.itechart.web.integration.SchoolClassIntegrationTest] Starting SchoolClassIntegrationTest using Java 11.0.10 on WIN-DQOGFATQ970 with PID 11272 (started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web)
+[2021-07-14 10:22:02] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 10:22:02] [INFO] [by.itechart.web.integration.SchoolClassIntegrationTest] The following profiles are active: test
+[2021-07-14 10:22:03] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 10:22:03] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+[2021-07-14 10:22:05] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 10:22:05] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 10:22:06] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 10:22:06] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 10:22:06] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 10:22:06] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-07-14 10:22:08] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 10:22:08] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:22:08] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 10:22:08] [INFO] [by.itechart.web.integration.SchoolClassIntegrationTest] Started SchoolClassIntegrationTest in 6.544 seconds (JVM running for 8.142)
+[2021-07-14 10:22:08] [INFO] [by.itechart.web.integration.SchoolClassIntegrationTest] Test deleteSchoolClassById() method
+[2021-07-14 10:22:08] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:08] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Save a new school class with a name = 12B
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Remove a school class with ID = 9
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class by Id = 9
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:09] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.SchoolClass
+[2021-07-14 10:22:09] [INFO] [by.itechart.web.integration.SchoolClassIntegrationTest] Test saveSchoolClass() method
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Save a new school class with a name = 12B
+[2021-07-14 10:22:09] [INFO] [by.itechart.web.integration.SchoolClassIntegrationTest] Test deleteSchoolClassById() method
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Save a new school class with a name = 12B
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Remove a school class with the name = 12B
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class with the name = 12B
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:09] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.SchoolClass
+[2021-07-14 10:22:09] [INFO] [by.itechart.web.integration.SchoolClassIntegrationTest] Test getSchoolClassByName() method
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class with the name = 1A
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:09] [INFO] [by.itechart.web.integration.SchoolClassIntegrationTest] Test getSchoolClassById() method
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class by Id = 12
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:09] [INFO] [by.itechart.web.integration.SchoolClassIntegrationTest] Test getAllSchoolClasses() method
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a list of all school classes
+[2021-07-14 10:22:09] [INFO] [by.itechart.web.integration.SchoolClassIntegrationTest] Test updateSchoolClass() method
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Update a school class with ID = 12
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:09] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class by Id = 12
+[2021-07-14 10:22:09] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:09] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:22:09] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-14 10:22:09] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-14 10:22:14] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [by.itechart.web.integration.StudentServiceIntegrationTest], using SpringBootContextLoader
+[2021-07-14 10:22:14] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [by.itechart.web.integration.StudentServiceIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2021-07-14 10:22:14] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [by.itechart.web.integration.StudentServiceIntegrationTest]: StudentServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2021-07-14 10:22:15] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class by.itechart.web.integration.StudentServiceIntegrationTest
+[2021-07-14 10:22:15] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener]
+[2021-07-14 10:22:15] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3d08f3f5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@119f1f2a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1a1da881, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5b970f7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7fd4acee, org.springframework.test.context.support.DirtiesContextTestExecutionListener@165b8a71, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6175619b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f058b8a, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@756cf158, org.springframework.test.context.event.EventPublishingTestExecutionListener@3f2ef586, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@751d3241, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@76c7beb3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@64337702, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2cf92cc7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@30ea8c23, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7b139eab, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4e76dac]
+[2021-07-14 10:22:16] [INFO] [by.itechart.web.integration.StudentServiceIntegrationTest] Starting StudentServiceIntegrationTest using Java 11.0.10 on WIN-DQOGFATQ970 with PID 9644 (started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web)
+[2021-07-14 10:22:16] [INFO] [by.itechart.web.integration.StudentServiceIntegrationTest] The following profiles are active: test
+[2021-07-14 10:22:16] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 10:22:17] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 10:22:17] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+[2021-07-14 10:22:18] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 10:22:18] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 10:22:18] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 10:22:19] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 10:22:19] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 10:22:19] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-07-14 10:22:20] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 10:22:20] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:22:21] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 10:22:21] [INFO] [by.itechart.web.integration.StudentServiceIntegrationTest] Started StudentServiceIntegrationTest in 5.762 seconds (JVM running for 8.111)
+[2021-07-14 10:22:21] [INFO] [by.itechart.web.integration.StudentServiceIntegrationTest] Test deleteStudent() method
+[2021-07-14 10:22:21] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:21] [INFO] [by.itechart.service.student.StudentServiceImpl] Remove a student with ID = 6
+[2021-07-14 10:22:21] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:21] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a student by ID = 6 for a school class with ID = 12
+[2021-07-14 10:22:21] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:21] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.Student
+[2021-07-14 10:22:21] [INFO] [by.itechart.web.integration.StudentServiceIntegrationTest] Test saveStudent() method
+[2021-07-14 10:22:21] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:21] [INFO] [by.itechart.service.student.StudentServiceImpl] Storing a student for the class with ID = 12
+[2021-07-14 10:22:22] [INFO] [by.itechart.web.integration.StudentServiceIntegrationTest] Test getStudentById() method
+[2021-07-14 10:22:22] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:22] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a student by ID = 6 for a school class with ID = 12
+[2021-07-14 10:22:22] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:22] [INFO] [by.itechart.web.integration.StudentServiceIntegrationTest] Test updateStudent() method
+[2021-07-14 10:22:22] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:22] [INFO] [by.itechart.service.student.StudentServiceImpl] Update a student with ID = 6 for a class with ID = 12
+[2021-07-14 10:22:22] [INFO] [by.itechart.web.integration.StudentServiceIntegrationTest] Test findAllStudent() method
+[2021-07-14 10:22:22] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:22] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a collection of all student for a class with ID = 12
+[2021-07-14 10:22:22] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:22:22] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-14 10:22:22] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-14 10:22:27] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Neither @ContextConfiguration nor @ContextHierarchy found for test class [by.itechart.web.integration.UserServiceIntegrationTest], using SpringBootContextLoader
+[2021-07-14 10:22:27] [INFO] [org.springframework.test.context.support.AbstractContextLoader] Could not detect default resource locations for test class [by.itechart.web.integration.UserServiceIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2021-07-14 10:22:27] [INFO] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [by.itechart.web.integration.UserServiceIntegrationTest]: UserServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2021-07-14 10:22:27] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration by.itechart.web.ApplicationWeb for test class by.itechart.web.integration.UserServiceIntegrationTest
+[2021-07-14 10:22:28] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener]
+[2021-07-14 10:22:28] [INFO] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6175619b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2f058b8a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@756cf158, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3f2ef586, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@751d3241, org.springframework.test.context.support.DirtiesContextTestExecutionListener@76c7beb3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@64337702, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2cf92cc7, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@30ea8c23, org.springframework.test.context.event.EventPublishingTestExecutionListener@7b139eab, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@4e76dac, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@611df6e3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f2f577, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6273c5a4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5d465e4b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53e211ee, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@41a90fa8]
+[2021-07-14 10:22:28] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-14 10:22:28] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] Starting UserServiceIntegrationTest using Java 11.0.10 on WIN-DQOGFATQ970 with PID 10692 (started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web)
+[2021-07-14 10:22:28] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] The following profiles are active: test
+[2021-07-14 10:22:29] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-14 10:22:29] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+[2021-07-14 10:22:30] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-14 10:22:30] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-14 10:22:31] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-14 10:22:31] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-14 10:22:31] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-14 10:22:31] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2021-07-14 10:22:33] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-14 10:22:33] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:22:33] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-14 10:22:33] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] Started UserServiceIntegrationTest in 5.458 seconds (JVM running for 7.404)
+[2021-07-14 10:22:33] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] Test deleteUserByName() method
+[2021-07-14 10:22:33] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:33] [INFO] [by.itechart.service.user.UserServiceImpl] Remove a user by the name = alex@gmail.com
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:34] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:34] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 10:22:34] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] Test deleteUserById() method
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:34] [INFO] [by.itechart.service.user.UserServiceImpl] Remove a user by the ID = 100002
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:34] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the ID = 100002
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:34] [ERROR] [by.itechart.model.util.ValidationUtil] The exception has occurred for the class = by.itechart.model.user.User
+[2021-07-14 10:22:34] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] Test getAllUserByAuthority() method
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:34] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users by the authority name = USER
+[2021-07-14 10:22:34] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] Test getUserByName() method
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:34] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:34] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] Test getAllUsers() method
+[2021-07-14 10:22:34] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users
+[2021-07-14 10:22:34] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] Test updateUser() method
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:34] [INFO] [by.itechart.service.user.UserServiceImpl] Update a user with the ID = 100002
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:34] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the ID = 100002
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:34] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] Test saveUser() method
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:34] [INFO] [by.itechart.service.user.UserServiceImpl] Store a user with the name = stored@gmail.com
+[2021-07-14 10:22:34] [INFO] [by.itechart.web.integration.UserServiceIntegrationTest] Test getUserById() method
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:22:34] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the ID = 100002
+[2021-07-14 10:22:34] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:22:34] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-14 10:22:34] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2021-07-14 10:22:34] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2021-07-14 10:23:08] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:23:08] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:23:08] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:23:08] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:23:08] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:23:08] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:23:08] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:23:08] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:23:08] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:23:08] [INFO] [by.itechart.service.user.UserServiceImpl] Remove a user by the name = tester@gmail.com
+[2021-07-14 10:23:14] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:23:14] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:23:14] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:23:14] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:23:14] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:23:14] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:23:14] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:23:14] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:23:14] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users
+[2021-07-14 10:23:24] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:23:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:23:24] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:23:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:23:24] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:23:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:23:24] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:23:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:23:24] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a no pass user dto to the user with a role
+[2021-07-14 10:23:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:23:24] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:23:24] [INFO] [by.itechart.service.user.UserServiceImpl] Store a user with the name = petr@gmail.com
+[2021-07-14 10:23:30] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:23:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:23:30] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:23:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:23:30] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-14 10:23:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-14 10:23:30] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-14 10:23:30] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-14 10:23:30] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users

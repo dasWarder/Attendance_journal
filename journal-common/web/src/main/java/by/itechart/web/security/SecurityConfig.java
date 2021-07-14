@@ -2,10 +2,9 @@ package by.itechart.web.security;
 
 import by.itechart.web.security.token.JwtFilter;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
@@ -14,6 +13,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint;
 
@@ -24,26 +24,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         private final UserDetailsService userDetails;
 
-        private final BasicAuthenticationEntryPoint authEntryPoint;
+        private final UserJwtAuthEntryPoint authEntryPoint;
 
         private final PasswordEncoder encoder;
 
         private final JwtFilter jwtFilter;
 
 
-        @Autowired
-        public void configureGlobal(AuthenticationManagerBuilder auth) {
-            auth.authenticationProvider(daoAuthenticationProvider());
+        @Override
+        protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+
+                auth
+                    .userDetailsService(userDetails)
+                    .passwordEncoder(encoder);
         }
 
         @Bean
-        public DaoAuthenticationProvider daoAuthenticationProvider() {
-
-            DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
-            provider.setPasswordEncoder(encoder);
-            provider.setUserDetailsService(userDetails);
-
-            return provider;
+        @Override
+        public AuthenticationManager authenticationManagerBean() throws Exception {
+            return super.authenticationManagerBean();
         }
 
 
@@ -63,9 +62,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers("/users/**").hasAuthority("ADMIN")
                     .antMatchers("/classes/**").authenticated()
                     .antMatchers("/details/**").authenticated()
+                    .antMatchers("/auth").permitAll().anyRequest().authenticated()
                     .and()
-                    .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
-                    .httpBasic()
-                    .authenticationEntryPoint(authEntryPoint);
+                    .exceptionHandling()
+                    .authenticationEntryPoint(authEntryPoint)
+                    .and()
+                    .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
         }
 }

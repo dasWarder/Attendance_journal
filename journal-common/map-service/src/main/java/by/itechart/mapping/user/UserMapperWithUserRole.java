@@ -7,6 +7,7 @@ import by.itechart.model.user.UserAuthority;
 import by.itechart.repository.AuthorityRepository;
 import by.itechart.repository.UserRepository;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.mapstruct.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,7 +67,7 @@ public abstract class UserMapperWithUserRole {
 
         user.setId(userDto.getId());
         user.setPassword(DEFAULT_PASSWORD);
-        user.setEnabled(user.isEnabled());
+        user.setEnabled(userDto.isEnabled());
 
         return user;
     }

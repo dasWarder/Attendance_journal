@@ -34,7 +34,7 @@ public class User {
     private boolean enabled;
 
     @ManyToOne(fetch =
-               FetchType.EAGER, cascade = CascadeType.REMOVE)
+               FetchType.EAGER)
     @JoinColumn(name = "role_id")
     private UserAuthority role;
 
