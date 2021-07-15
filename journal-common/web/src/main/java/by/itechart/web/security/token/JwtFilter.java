@@ -36,7 +36,7 @@ public class JwtFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
-                                                                                        throws ServletException, IOException {
+                                                                                            throws ServletException, IOException {
             log.info("Generate a JWT token");
 
             String token = getTokenFromRequest(request);

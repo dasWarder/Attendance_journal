@@ -31,7 +31,7 @@ public class AuthorityServiceIntegrationTest {
 
         log.info("Test getAllAuthorities() method");
 
-        List<UserAuthority> testAuthorities = List.of(TEST_AUTHORITY_1, TEST_AUTHORITY_2);
+        List<UserAuthority> testAuthorities = List.of(TEST_AUTHORITY_1, TEST_AUTHORITY_2, TEST_AUTHORITY_3);
 
         List<UserAuthority> authorities = authorityService.getAllAuthorities();
 

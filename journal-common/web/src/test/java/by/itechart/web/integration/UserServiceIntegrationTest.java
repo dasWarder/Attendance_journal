@@ -33,7 +33,7 @@ public class UserServiceIntegrationTest {
 
         log.info("Test getAllUsers() method");
 
-        List<User> testUsers = List.of(TEST_USER_1, TEST_USER_2);
+        List<User> testUsers = List.of(TEST_USER_1, TEST_USER_2, TEST_USER_3);
         List<User> users = userService.getAllUsers();
 
         assertThat(users)

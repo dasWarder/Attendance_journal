@@ -14,8 +14,10 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.ServletException;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
@@ -49,9 +51,7 @@ public class CustomExceptionHandler {
                 .getClass()
                 .getSimpleName());
 
-        response.setMessage(e
-                .getCause()
-                .getMessage());
+        response.setMessage(e.getMessage());
 
         return new ResponseEntity<>(
                                     response, HttpStatus.FORBIDDEN);
@@ -60,7 +60,9 @@ public class CustomExceptionHandler {
     @ExceptionHandler(value = { StudentNotFoundException.class,
                                 SchoolClassNotFound.class,
                                 UserNotFoundException.class,
-                                AuthorityNotFoundException.class })
+                                AuthorityNotFoundException.class,
+                                ServletException.class,
+                                IOException.class})
     public ResponseEntity<ExceptionResponse> onNotFoundException(Throwable throwable) {
 
         ExceptionResponse response = new ExceptionResponse();
