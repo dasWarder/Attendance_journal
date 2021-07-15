@@ -14468,3 +14468,78 @@ org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique co
 [2021-07-15 15:47:48] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-15 15:47:48] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
 [2021-07-15 15:47:48] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:16] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 6472 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-15 15:50:16] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-15 15:50:16] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-15 15:50:16] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-15 15:50:16] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
+[2021-07-15 15:50:17] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-15 15:50:17] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-15 15:50:17] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-15 15:50:17] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-15 15:50:17] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-15 15:50:17] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1419 ms
+[2021-07-15 15:50:17] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-15 15:50:17] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-15 15:50:17] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-15 15:50:17] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-15 15:50:18] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 9 migrations (execution time 00:00.026s)
+[2021-07-15 15:50:18] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 9
+[2021-07-15 15:50:18] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-15 15:50:18] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-15 15:50:18] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-15 15:50:18] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-15 15:50:18] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-15 15:50:18] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-15 15:50:18] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-15 15:50:19] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-15 15:50:19] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-15 15:50:19] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/register'] with []
+[2021-07-15 15:50:19] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d4531fa, org.springframework.security.web.context.SecurityContextPersistenceFilter@71817f66, org.springframework.security.web.header.HeaderWriterFilter@44df834c, org.springframework.security.web.authentication.logout.LogoutFilter@33845e3d, by.itechart.web.security.token.JwtFilter@345540f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ad585fb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@430db481, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68cb8e52, org.springframework.security.web.session.SessionManagementFilter@7f53b345, org.springframework.security.web.access.ExceptionTranslationFilter@21b2579d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@556944cd]
+[2021-07-15 15:50:20] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-15 15:50:20] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-15 15:50:20] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 4.57 seconds (JVM running for 5.554)
+[2021-07-15 15:50:25] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-15 15:50:25] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-15 15:50:25] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2021-07-15 15:50:25] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-15 15:50:25] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-15 15:50:25] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-15 15:50:25] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:25] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a no pass user dto to the user with a role
+[2021-07-15 15:50:25] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:25] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:25] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-15 15:50:25] [INFO] [by.itechart.service.user.UserServiceImpl] Update a user with the ID = 100002
+[2021-07-15 15:50:25] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-15 15:50:25] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the ID = 100002
+[2021-07-15 15:50:25] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:36] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-15 15:50:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-15 15:50:36] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-15 15:50:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:36] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a no pass user dto to the user with a role
+[2021-07-15 15:50:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-15 15:50:36] [INFO] [by.itechart.service.user.UserServiceImpl] Update a user with the ID = 100002
+[2021-07-15 15:50:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-15 15:50:36] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the ID = 100002
+[2021-07-15 15:50:36] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:40] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-15 15:50:40] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-15 15:50:40] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-15 15:50:40] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:40] [INFO] [by.itechart.mapping.user.UserMapperWithUserRole] Mapping a no pass user dto to the user with a role
+[2021-07-15 15:50:40] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:40] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:40] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-15 15:50:40] [INFO] [by.itechart.service.user.UserServiceImpl] Update a user with the ID = 100002
+[2021-07-15 15:50:40] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-15 15:50:40] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the ID = 100002
+[2021-07-15 15:50:40] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:46] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-15 15:50:46] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-15 15:50:46] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = admin@gmail.com
+[2021-07-15 15:50:46] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-15 15:50:46] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a list of all users
