@@ -8,7 +8,6 @@ import by.itechart.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
@@ -67,9 +66,11 @@ public class RefreshTokenServiceImpl implements RefreshTokenService {
     @Override
     public RefreshToken verifyExpiration(RefreshToken refreshToken) throws TokenRefreshException {
 
+        validateParams(refreshToken);
+        
         log.info("Verify a refresh token for expiration");
 
-        if(refreshToken.getExpiryDate().compareTo(Instant.now()) < 0) {
+        if (refreshToken.getExpiryDate().compareTo(Instant.now()) < 0) {
 
             tokenRepository.delete(refreshToken);
 
