@@ -29,7 +29,7 @@ class UserServiceTest {
 
 
     @Test
-    public void shouldSaveUserMethodWorksProperly() {
+    public void shouldSaveUserMethodWorksProperly() throws Throwable {
 
         log.info("Test saveUser() method");
 

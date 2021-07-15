@@ -100,7 +100,7 @@ public class UserServiceIntegrationTest {
     }
 
     @Test
-    public void shouldSaveUserProperly() {
+    public void shouldSaveUserProperly() throws Throwable {
 
         log.info("Test saveUser() method");
 

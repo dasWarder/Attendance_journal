@@ -1,5 +1,6 @@
 package by.itechart.service.user;
 
+import by.itechart.model.exception.UserAlreadyExistException;
 import by.itechart.model.user.User;
 import by.itechart.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -50,13 +51,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User saveUser(User user) {
+    public User saveUser(User user) throws Throwable {
 
         validateParams(user);
+        checkUserAlreadyExistOrThrowException(user);
 
         log.info("Store a user with the name = {}",
                                                   user.getUsername());
         setPasswordToEncryptedOne(user);
+
         User storedUser = userRepository.save(user);
 
         return storedUser;
@@ -140,5 +143,19 @@ public class UserServiceImpl implements UserService {
         String encodedPass = encoder.encode(notSecurePass);
 
         user.setPassword(encodedPass);
+    }
+
+    private void checkUserAlreadyExistOrThrowException(User user) throws UserAlreadyExistException {
+
+        try {
+
+            User userByUsername = getUserByUsername(user.getUsername());
+
+        } catch (Throwable throwable) {
+
+            return;
+        }
+
+        throw new UserAlreadyExistException("The user with this email already exist!");
     }
 }

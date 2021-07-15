@@ -11,7 +11,7 @@ public interface UserService {
 
     User getUserByUsername(String userName) throws Throwable;
 
-    User saveUser(User user);
+    User saveUser(User user) throws Throwable;
 
     void deleteUserById(Long userId);
 

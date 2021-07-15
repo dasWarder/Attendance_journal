@@ -61,8 +61,7 @@ public class CustomExceptionHandler {
                                 SchoolClassNotFound.class,
                                 UserNotFoundException.class,
                                 AuthorityNotFoundException.class,
-                                ServletException.class,
-                                IOException.class})
+                                UserAlreadyExistException.class })
     public ResponseEntity<ExceptionResponse> onNotFoundException(Throwable throwable) {
 
         ExceptionResponse response = new ExceptionResponse();

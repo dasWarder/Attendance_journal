@@ -24,6 +24,7 @@
     <properties>
         <java.version>11</java.version>
         <postgre.version>42.2.22</postgre.version>
+        <openapi.ui.version>1.5.1</openapi.ui.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
         <jws.verion>0.9.1</jws.verion>
     </properties>
@@ -45,6 +46,11 @@
                 <groupId>org.postgresql</groupId>
                 <artifactId>postgresql</artifactId>
                 <version>${postgre.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${openapi.ui.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

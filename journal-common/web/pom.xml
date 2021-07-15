@@ -53,6 +53,11 @@
             <version>${jws.verion}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
