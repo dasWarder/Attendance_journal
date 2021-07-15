@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @RestController
@@ -110,7 +111,7 @@ public class AdminController {
 
     @GetMapping
     public ResponseEntity<List<NoPassUserDto>> getAllUsersByAuthorityName(@RequestParam(value = "role", required = false)
-                                                                    @Min(value = 1,
+                                                                    @Size(min = 1,
                                                                          message = "The authority name size must be greater than 0")
                                                                     String authorityName) {
 

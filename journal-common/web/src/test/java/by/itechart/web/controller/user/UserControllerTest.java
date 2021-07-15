@@ -84,7 +84,7 @@ class UserControllerTest {
     }
 
     @Test
-    public void shouldBeStatusOkAndDeleteUserDetailsProperly() throws Exception {
+    public void shouldBeStatusNoContentAndDeleteUserDetailsProperly() throws Exception {
 
         log.info("Test /details DELETE with USER role");
 
