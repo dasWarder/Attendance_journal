@@ -23,9 +23,9 @@ public class UserTestData {
                                                 "$2a$10$o53h1x/Y2shcaj0XTM71ju3G06I9EVxoH1wcNwYpY4cf3vvscNsiu",
                                                 true, TEST_AUTHORITY_1);
 
-    public static final User TEST_UPDATE_USER = new User(null, "update@gmail.com",
+    public static final User TEST_UPDATE_USER = new User(TEST_USER_1.getId(), "update@gmail.com",
                                                 "$2a$10$o53h1x/Y2shcaj0XTM71ju3G06I9EVxoH1wcNwYpY4cf3vvscNsiu",
-                                                false, TEST_AUTHORITY_2);
+                                                true, TEST_AUTHORITY_2);
 
     public static final RegisterUserDto TEST_REGISTER_USER = new RegisterUserDto();
 }
