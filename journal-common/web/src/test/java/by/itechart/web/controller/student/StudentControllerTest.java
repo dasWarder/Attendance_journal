@@ -30,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @ExtendWith(SpringExtension.class)
 @Sql(scripts = { "/db/student/populate.sql" })
-@WithMockUser(username = "alex@gmail.com", roles = "USER")
+@WithMockUser(username = "alex@gmail.com", authorities = "USER")
 class StudentControllerTest {
 
     @Autowired

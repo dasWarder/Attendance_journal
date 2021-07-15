@@ -9,7 +9,7 @@ public interface RefreshTokenService {
 
     RefreshToken findByToken(String token) throws Throwable;
 
-    RefreshToken verifyExpiration(RefreshToken refreshToken) throws TokenRefreshException;
+    RefreshToken verifyExpiration(RefreshToken refreshToken) throws TokenRefreshException, Throwable;
 
     void deleteRefreshTokenById(Long tokenId);
 

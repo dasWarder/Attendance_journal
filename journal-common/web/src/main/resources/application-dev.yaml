@@ -17,7 +17,4 @@ spring:
 logging:
   config: classpath:logback.xml
 
-jwt:
-  secret: ${JWS_SECRET}
-  expirationMs: 1200000
-  refreshExpirationMs: 3200000
+

@@ -64,7 +64,7 @@ public class RefreshTokenServiceImpl implements RefreshTokenService {
     }
 
     @Override
-    public RefreshToken verifyExpiration(RefreshToken refreshToken) throws TokenRefreshException {
+    public RefreshToken verifyExpiration(RefreshToken refreshToken) throws Throwable {
 
         validateParams(refreshToken);
         

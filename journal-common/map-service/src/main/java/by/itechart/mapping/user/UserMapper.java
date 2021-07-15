@@ -33,4 +33,7 @@ public interface UserMapper {
 
     @Mapping(source = "username", target = "email")
     FullUserDto userToFullUserDto(User user);
+
+    @Mapping(source = "username", target = "email")
+    RegisterUserDto userToRegisterUserDto(User user);
 }
