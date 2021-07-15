@@ -1,9 +1,7 @@
 package by.itechart.web.controller.user;
 
 import by.itechart.mapping.dto.user.NoPassUserDto;
-import by.itechart.mapping.dto.user.UserDto;
 import by.itechart.mapping.user.UserMapper;
-import by.itechart.mapping.user.UserMapperWithUserRole;
 import by.itechart.model.user.User;
 import by.itechart.web.controller.util.JsonParser;
 import lombok.extern.slf4j.Slf4j;
@@ -32,8 +30,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @ExtendWith(SpringExtension.class)
 @Sql(scripts = { "/db/student/populate.sql" })
-@WithMockUser(username = "petr@gmail.com", authorities = "ADMIN" )
-class AdminControllerTest {
+@WithMockUser(username = "admin@gmail.com", authorities = "SUPER_ADMIN" )
+class SuperAdminControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -45,33 +43,32 @@ class AdminControllerTest {
     private UserMapper mapper;
 
 
-    private static final String BASE_URL = "/users";
-
+    private static final String BASE_URL = "/admin/users";
 
     @Test
-    public void shouldStatusBeCreatedAndSaveUserProperly() throws Exception {
+    public void shouldBeStatusCreatedAndSaveUserProperly() throws Exception {
 
-        log.info("Test saveUser() method with ADMIN role");
+        log.info("Test saveUser() with SUPER_ADMIN role");
 
-        UserDto request = mapper.userToUserDto(TEST_STORING_USER);
-
+        NoPassUserDto dto = mapper.userToNoPassUserDto(TEST_STORE_WITH_DEFAULT_PASS_USER);
 
         mockMvc.perform(post(BASE_URL + "/user")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(parser.getJsonObject(request)))
+                .content(parser.getJsonObject(dto)))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(request)))
+                .andExpect(content().json(parser.getJsonObject(dto)))
                 .andExpect(status().isCreated())
                 .andReturn();
     }
 
+
     @Test
-    public void shouldStatusBeOkAndGetUserByIdProperly() throws Exception {
+    public void shouldBeStatusOkAndGetUserByIdProperly() throws Exception {
 
-        log.info("Test getUserById() method with ADMIN role");
+        log.info("Test getUserById() with SUPER_ADMIN role");
 
-        UserDto response = mapper.userToUserDto(TEST_USER_1);
+        NoPassUserDto response = mapper.userToNoPassUserDto(TEST_USER_1);
 
         mockMvc.perform(get(BASE_URL + "/user/" + TEST_USER_1.getId()))
                 .andDo(print())
@@ -82,35 +79,18 @@ class AdminControllerTest {
     }
 
     @Test
-    public void shouldStatusBeOkAndGetUserByNameProperly() throws Exception {
-
-        log.info("Test getUserByName() method with ADMIN role");
-
-        UserDto response = mapper.userToUserDto(TEST_USER_1);
-
-        mockMvc.perform(get(BASE_URL + "/user")
-                .contentType(MediaType.APPLICATION_JSON)
-                .param("email", TEST_USER_1.getUsername()))
-                .andDo(print())
-                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(response)))
-                .andExpect(status().isOk())
-                .andReturn();
-    }
-
-    @Test
     public void shouldBeStatusOkAndUpdateUserProperly() throws Exception {
 
-        log.info("Test updateUser() method");
+        log.info("Test updateUser() with SUPER_ADMIN role");
 
-        UserDto userDto = mapper.userToUserDto(TEST_UPDATE_USER);
+        NoPassUserDto dto = mapper.userToNoPassUserDto(TEST_UPDATE_USER);
 
         mockMvc.perform(put(BASE_URL + "/user/" + TEST_USER_1.getId())
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(parser.getJsonObject(userDto)))
+                .content(parser.getJsonObject(dto)))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(userDto)))
+                .andExpect(content().json(parser.getJsonObject(dto)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -118,7 +98,7 @@ class AdminControllerTest {
     @Test
     public void shouldBeStatusNoContentAndDeleteUserByIdProperly() throws Exception {
 
-        log.info("Test deleteUserById() method with ADMIN role");
+        log.info("Test deleteUserById() with SUPER_ADMIN role");
 
         mockMvc.perform(delete(BASE_URL + "/user/" + TEST_USER_1.getId()))
                 .andDo(print())
@@ -127,50 +107,49 @@ class AdminControllerTest {
     }
 
     @Test
-    public void shouldBeStatusNoContentAndDeleteUserByUsernameProperly() throws Exception {
+    public void shouldBeStatusNoContentAndDeleteUserUsernameProperly() throws Exception {
 
-        log.info("Test deleteUserByUsername() with ADMIN role");
+        log.info("Test deleteUserByUsername() with SUPER_ADMIN role");
 
         mockMvc.perform(delete(BASE_URL + "/user")
+                .contentType(MediaType.APPLICATION_JSON)
                 .param("email", TEST_USER_1.getUsername()))
                 .andDo(print())
                 .andExpect(status().isNoContent())
                 .andReturn();
     }
 
-
     @Test
     public void shouldBeStatusOkAndGetAllUsersProperly() throws Exception {
 
-        log.info("Test getAllUsers() with ADMIN role");
+        log.info("Test getAllUsers() with SUPER_ADMIN role");
 
-        List<User> users = List.of(TEST_USER_1, TEST_USER_2, TEST_USER_3);
-        List<NoPassUserDto> response = mapper.userListToNoPassUserList(users);
+        List<User> allUsers = List.of(TEST_USER_1, TEST_USER_2, TEST_USER_3);
+        List<NoPassUserDto> noPassDtoUserList = mapper.userListToNoPassUserList(allUsers);
 
         mockMvc.perform(get(BASE_URL))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(response)))
+                .andExpect(content().json(parser.getJsonObject(noPassDtoUserList)))
                 .andExpect(status().isOk())
                 .andReturn();
+
     }
 
     @Test
-    public void shouldBeStatusOkAndReturnAllUsersByAuthorityNameProperly() throws Exception {
+    public void shouldBeStatusOkAndGetAllUsersByAuthorityNameProperly() throws Exception {
 
-        log.info("Test getAllUsersByAuthorityName() with ADMIN role");
+        log.info("Test getAllUsersByAuthority() with SUPER_ADMIN role");
 
-        List<User> adminUsers = List.of(TEST_USER_2);
-        List<NoPassUserDto> response = mapper.userListToNoPassUserList(adminUsers);
+        List<User> usersWithUserRole = List.of(TEST_USER_1);
+        List<NoPassUserDto> noPassUserDtoListOfUsersByUserRole = mapper.userListToNoPassUserList(usersWithUserRole);
 
-        mockMvc.perform(get(BASE_URL).param("role", "ADMIN"))
-                .andDo(print())
+        mockMvc.perform(get(BASE_URL)
+                .contentType(MediaType.APPLICATION_JSON)
+                .param("role", "USER"))
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(response)))
+                .andExpect(content().json(parser.getJsonObject(noPassUserDtoListOfUsersByUserRole)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
-
-
-
 }

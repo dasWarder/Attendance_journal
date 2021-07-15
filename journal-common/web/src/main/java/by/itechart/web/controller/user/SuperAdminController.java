@@ -94,7 +94,7 @@ public class SuperAdminController {
     }
 
     @GetMapping
-    public ResponseEntity<List<NoPassUserDto>> getAllUsersByAuthorityName(@RequestParam(value = "role", required = false)
+    public ResponseEntity<List<NoPassUserDto>> getAllUsers(@RequestParam(value = "role", required = false)
                                                                     @Min(value = 1,
                                                                             message = "The authority name size must be greater than 0")
                                                                             String authorityName) {
