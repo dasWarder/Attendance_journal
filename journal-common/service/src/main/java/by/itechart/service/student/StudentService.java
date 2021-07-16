@@ -3,6 +3,7 @@ package by.itechart.service.student;
 import by.itechart.model.Student;
 import org.springframework.data.domain.Pageable;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface StudentService {

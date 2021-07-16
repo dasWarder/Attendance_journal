@@ -4,6 +4,7 @@ package by.itechart.model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -30,6 +31,14 @@ public class Student {
     @JoinColumn(name = "class_id")
     private SchoolClass schoolClass;
 
+    @ManyToMany
+    @JoinTable(
+            name = "student_absence",
+            joinColumns = { @JoinColumn(name = "student_id") },
+            inverseJoinColumns = { @JoinColumn(name = "absence_id") }
+    )
+    private List<Absence> absenceDates;
+
     public Student(String name, String surname) {
         this.name = name;
         this.surname = surname;
@@ -46,5 +55,20 @@ public class Student {
         this.name = name;
         this.surname = surname;
         this.schoolClass = schoolClass;
+    }
+
+    public Student(Long id, String name, String surname, SchoolClass schoolClass, List<Absence> absenceDates) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.schoolClass = schoolClass;
+        this.absenceDates = absenceDates;
+    }
+
+    public Student(String name, String surname, SchoolClass schoolClass, List<Absence> absenceDates) {
+        this.name = name;
+        this.surname = surname;
+        this.schoolClass = schoolClass;
+        this.absenceDates = absenceDates;
     }
 }

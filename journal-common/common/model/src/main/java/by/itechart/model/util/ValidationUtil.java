@@ -1,7 +1,6 @@
 package by.itechart.model.util;
 
 import by.itechart.model.exception.*;
-import by.itechart.model.user.User;
 import javassist.NotFoundException;
 import lombok.extern.slf4j.Slf4j;
 
@@ -69,6 +68,9 @@ public class ValidationUtil {
 
             case "RefreshToken":
                 return new TokenNotFoundException("A refresh token not found");
+
+            case "Absence":
+                return new AbsenceNotFoundException("An absence object not found");
 
             default:
                 return new NotFoundException("An object not found");

@@ -5,7 +5,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.transaction.annotation.Transactional;
 
-
 import java.util.List;
 import java.util.Optional;
 
@@ -18,5 +17,7 @@ public interface StudentRepository extends PagingAndSortingRepository<Student, L
 
     @Transactional
     void deleteStudentByIdAndSchoolClass_Id(Long studentId, Long classId);
+
+    List<Student> findAllBySchoolClass_Id(Long classId);
 
 }
