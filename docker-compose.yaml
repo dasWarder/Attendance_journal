@@ -7,9 +7,9 @@ services:
     ports:
     - 8081:5432
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: journal
+      POSTGRES_USER: "${POSTGRE_USER}"
+      POSTGRES_PASSWORD: "${POSTGRE_PASS}"
+      POSTGRES_DB: "${POSTGRE_DB}"
 
   journal:
     depends_on:

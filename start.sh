@@ -4,5 +4,5 @@ docker-compose down
 
 mvn clean package
 
-docker-compose up -d
+docker-compose --env-file .env up -d
 
