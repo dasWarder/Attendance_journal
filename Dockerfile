@@ -1,9 +1,15 @@
+FROM maven:3.8.1-openjdk-11-slim
 
-FROM alpine:3.13.5
+COPY ./ ./
+
+RUN mvn clean install -Dmaven.test.skip=true
 
 ARG FILE_NAME=journal-common/web/target/*.jar
 
-RUN apk add openjdk11
+ENV POSTGRE_USER ${POSTGRE_USER}
+ENV POSTGRE_PASS ${POSTGRE_PASS}
+ENV POSTGRE_DB ${POSTGRE_DB}
+
 COPY $FILE_NAME /app.jar
 
 ENTRYPOINT ["java", "-jar", "/app.jar"]

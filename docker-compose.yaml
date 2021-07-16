@@ -7,9 +7,11 @@ services:
     ports:
     - 8081:5432
     environment:
-      POSTGRES_USER: "${POSTGRE_USER}"
-      POSTGRES_PASSWORD: "${POSTGRE_PASS}"
-      POSTGRES_DB: "${POSTGRE_DB}"
+      POSTGRES_USER: ${POSTGRE_USER}
+      POSTGRES_PASSWORD: ${POSTGRE_PASS}
+      POSTGRES_DB: ${POSTGRE_DB}
+    volumes:
+      - db-data:/var/lib/postgresql/data
 
   journal:
     depends_on:
@@ -18,3 +20,7 @@ services:
       context: .
     ports:
     - 8080:8080
+    restart: always
+
+volumes:
+  db-data:
