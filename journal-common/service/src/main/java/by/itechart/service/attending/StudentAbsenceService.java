@@ -8,4 +8,8 @@ import java.util.List;
 public interface StudentAbsenceService {
 
     List<Student> getAllByAbsenceDatesAndSchoolClassId(LocalDate absenceDate, Long classId) throws Throwable;
+
+    Student addStudentToAbsenceList(Long classId, Long studentId, LocalDate absenceDate) throws Throwable;
+
+    void deleteStudentFromAbsenceList(Long classId, Long studentId, LocalDate absenceDate) throws Throwable;
 }

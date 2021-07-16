@@ -3,7 +3,6 @@ package by.itechart.service.student;
 import by.itechart.model.Student;
 import org.springframework.data.domain.Pageable;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public interface StudentService {
@@ -17,4 +16,6 @@ public interface StudentService {
     void deleteStudentByIdAndClassId(Long studentId, Long classId);
 
     List<Student> findAllStudents(Long classId, Pageable pageable);
+
+    List<Student> findAllStudents(Long classId);
 }

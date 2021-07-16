@@ -1,3 +1,4 @@
+C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\absence\AbsenceMapperWithId.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\authority\AuthorityMapper.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\student\StudentMapperWithSchoolClass.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\dto\user\NoPassUserDto.java
@@ -7,9 +8,11 @@ C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\s
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\dto\user\UserDto.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\dto\user\RegisterUserDto.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\dto\schoolClass\SchoolClassDto.java
+C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\dto\absence\AbsenceDto.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\user\UserMapperWithUserRole.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\dto\token\TokenRefreshRequest.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\token\TokenMapper.java
+C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\absence\AbsenceMapper.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\schoolClass\SchoolClassMapperWithUser.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\student\StudentMapper.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\map-service\src\main\java\by\itechart\mapping\dto\student\StudentDto.java

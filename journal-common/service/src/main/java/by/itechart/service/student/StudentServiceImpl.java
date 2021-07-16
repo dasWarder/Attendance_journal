@@ -77,9 +77,22 @@ public class StudentServiceImpl implements StudentService {
 
         validateParams(classId);
 
+        log.info("Receive a pageable collection of all student for a class with ID = {}",
+                                                                                         classId);
+        List<Student> studentsList = studentRepository.findAllBySchoolClass_Id(classId, pageable);
+
+        return studentsList;
+    }
+
+    @Override
+    public List<Student> findAllStudents(Long classId) {
+
+        validateParams(classId);
+
         log.info("Receive a collection of all student for a class with ID = {}",
                                                                                 classId);
-        List<Student> studentsList = studentRepository.findAllBySchoolClass_Id(classId, pageable);
+
+        List<Student> studentsList = studentRepository.findAllBySchoolClass_Id(classId);
 
         return studentsList;
     }

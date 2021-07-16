@@ -5,6 +5,7 @@ C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\controller\student\StudentController.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\controller\user\RegisterController.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\controller\user\SuperAdminController.java
+C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\controller\attending\StudentAbsenceController.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\exceptionHandler\exception\ExceptionResponse.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\controller\schoolClass\SchoolClassController.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\security\UserJwtAuthEntryPoint.java
@@ -14,4 +15,5 @@ C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\controller\authority\AuthorityController.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\security\token\TokenProvider.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\security\util\SecurityUtil.java
+C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\controller\absence\AbsenceController.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\src\main\java\by\itechart\web\controller\user\UserController.java

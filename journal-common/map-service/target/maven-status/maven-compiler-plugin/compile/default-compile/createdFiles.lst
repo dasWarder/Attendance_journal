@@ -6,11 +6,14 @@ by\itechart\mapping\dto\token\TokenRefreshRequest.class
 by\itechart\mapping\dto\user\NoPassUserDto.class
 by\itechart\mapping\student\StudentMapperWithSchoolClass.class
 by\itechart\mapping\user\UserMapper.class
+by\itechart\mapping\absence\AbsenceMapperImpl.class
 by\itechart\mapping\authority\AuthorityMapperImpl.class
 by\itechart\mapping\user\UserMapperImpl.class
 by\itechart\mapping\user\UserMapperWithUserRole.class
+by\itechart\mapping\absence\AbsenceMapper.class
 by\itechart\mapping\dto\user\UserDto.class
 by\itechart\mapping\dto\schoolClass\SchoolClassDto.class
+by\itechart\mapping\absence\AbsenceMapperWithIdImpl.class
 by\itechart\mapping\schoolClass\SchoolClassMapperWithUserImpl.class
 by\itechart\mapping\authority\AuthorityMapper.class
 by\itechart\mapping\token\TokenMapperImpl.class
@@ -22,7 +25,9 @@ by\itechart\mapping\dto\token\Token$TokenBuilder.class
 by\itechart\mapping\dto\user\FullUserDto.class
 by\itechart\mapping\dto\student\StudentDto.class
 by\itechart\mapping\dto\user\RegisterUserDto.class
+by\itechart\mapping\dto\absence\AbsenceDto.class
 by\itechart\mapping\student\StudentMapperWithSchoolClassImpl.class
+by\itechart\mapping\absence\AbsenceMapperWithId.class
 by\itechart\mapping\schoolClass\SchoolClassMapper.class
 by\itechart\mapping\dto\authority\AuthorityDto.class
 by\itechart\mapping\schoolClass\SchoolClassMapperImpl.class

@@ -4,6 +4,7 @@ import by.itechart.model.Absence;
 import by.itechart.model.Student;
 import by.itechart.repository.StudentRepository;
 import by.itechart.service.absence.AbsenceService;
+import by.itechart.service.student.StudentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -20,7 +21,7 @@ import static by.itechart.model.util.ValidationUtil.validateParams;
 @RequiredArgsConstructor
 public class StudentAbsenceServiceImpl implements StudentAbsenceService {
 
-    private final StudentRepository studentRepository;
+    private final StudentService studentService;
 
     private final AbsenceService absenceService;
 
@@ -33,7 +34,7 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
         log.info("Receive a collection of absence students for a class with ID = {} on the date = {}",
                                                                                                       classId, absenceDate);
         Absence absenceByAbsenceDate = absenceService.getAbsenceByAbsenceDate(absenceDate);
-        List<Student> allStudentsByClassId = studentRepository.findAllBySchoolClass_Id(classId);
+        List<Student> allStudentsByClassId = studentService.findAllStudents(classId);
 
         Set<Student> absenceDateStudents = absenceByAbsenceDate.getStudents();
 
@@ -44,10 +45,45 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
         return studentsByAbsenceDate;
     }
 
+    @Override
+    public Student addStudentToAbsenceList(Long classId, Long studentId, LocalDate absenceDate) throws Throwable {
+
+        validateParams(classId, studentId, absenceDate);
+
+        log.info("Add student to the absence list");
+
+        Absence absenceByAbsenceDate = absenceService.getAbsenceByAbsenceDate(absenceDate);
+        Student studentByIdAndClassId = studentService.getStudentByIdAndClassId(studentId, classId);
+
+        studentByIdAndClassId.getAbsenceDates()
+                                                .add(absenceByAbsenceDate);
+        Student storedStudent = studentService.saveStudent(studentByIdAndClassId);
+
+        return storedStudent;
+    }
+
+    @Override
+    public void deleteStudentFromAbsenceList(Long classId, Long studentId, LocalDate absenceDate) throws Throwable {
+
+        validateParams(classId, studentId, absenceDate);
+
+        log.info("Delete student from the absence list");
+
+        Absence absenceByAbsenceDate = absenceService.getAbsenceByAbsenceDate(absenceDate);
+        Student studentByIdAndClassId = studentService.getStudentByIdAndClassId(studentId, classId);
+        List<Absence> absenceDates = studentByIdAndClassId.getAbsenceDates();
+
+        if (absenceDates.contains(absenceByAbsenceDate)) {
+
+            absenceDates.remove(absenceByAbsenceDate);
+        }
+
+        studentByIdAndClassId.setAbsenceDates(absenceDates);
+        studentService.saveStudent(studentByIdAndClassId);
+    }
 
 
-
-
+    
     private List<Student> filteringStudentByAbsenceDate(List<Student> allStudentsByClassId,
                                                         Set<Student> absenceDateStudents) {
 

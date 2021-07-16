@@ -1,9 +1,11 @@
 by\itechart\web\controller\student\StudentController.class
+by\itechart\web\controller\attending\StudentAbsenceController.class
 by\itechart\web\exceptionHandler\violation\Violation.class
 by\itechart\web\controller\authority\AuthorityController.class
 by\itechart\web\controller\user\SuperAdminController.class
 by\itechart\web\controller\user\UserController.class
 by\itechart\web\ApplicationWeb.class
+by\itechart\web\controller\absence\AbsenceController.class
 by\itechart\web\security\UserJwtAuthEntryPoint.class
 by\itechart\web\exceptionHandler\violation\ViolationResponse.class
 by\itechart\web\exceptionHandler\exception\ExceptionResponse.class
