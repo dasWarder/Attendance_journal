@@ -7649,3 +7649,10 @@ java.lang.IllegalArgumentException: Parameter value [2021-05-02] did not match e
 [2021-07-16 17:29:31] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-16 17:29:31] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
 [2021-07-16 17:29:31] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-16 17:29:31] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-16 17:29:31] [INFO] [by.itechart.service.attending.StudentAbsenceServiceImpl] Receive a collection of absence students for a class with ID = 1 on the date = 2021-05-02
+[2021-07-16 17:29:31] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-16 17:29:31] [INFO] [by.itechart.service.absence.AbsenceServiceImpl] Receive absence by date = 2021-05-02
+[2021-07-16 17:29:31] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-16 17:29:31] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-16 17:29:31] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a collection of all student for a class with ID = 1

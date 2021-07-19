@@ -10,6 +10,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 import java.util.List;
+import java.util.Set;
 
 @Mapper(componentModel = "spring")
 public interface StudentMapper {
@@ -26,4 +27,10 @@ public interface StudentMapper {
 
     @Mapping(target = "schoolClass", ignore = true)
     List<StudentDtoId> studentListToStudentDtoIdList(List<Student> students);
+
+    Set<Student> studentDtoIdSetToStudentSet(Set<StudentDtoId> students);
+
+    @Mapping(target = "schoolClass", ignore = true)
+    @Mapping(target = "absenceDate", ignore = true)
+    Set<StudentDto> studentSetToStudentDtoSet(Set<Student> students);
 }

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 import static by.itechart.model.util.ValidationUtil.validateOptional;
 import static by.itechart.model.util.ValidationUtil.validateParams;
@@ -95,6 +96,18 @@ public class StudentServiceImpl implements StudentService {
         List<Student> studentsList = studentRepository.findAllBySchoolClass_Id(classId);
 
         return studentsList;
+    }
+
+    @Override
+    public List<Student> saveAllStudents(List<Student> students) {
+
+        validateParams(students);
+
+        log.info("Save a set of students");
+
+        List<Student> studentList = (List<Student>) studentRepository.saveAll(students);
+
+        return studentList;
     }
 
 }

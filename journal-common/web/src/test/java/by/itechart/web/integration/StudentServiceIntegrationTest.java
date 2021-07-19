@@ -55,7 +55,7 @@ public class StudentServiceIntegrationTest {
 
         assertThat(studentByIdAndClassId)
                                         .usingRecursiveComparison()
-                                        .ignoringFields("schoolClass")
+                                        .ignoringFields("schoolClass", "absenceDates")
                                         .isEqualTo(TEST_STUDENT_2);
     }
 
@@ -106,7 +106,7 @@ public class StudentServiceIntegrationTest {
 
         assertThat(actualStudents)
                                 .usingRecursiveComparison()
-                                .ignoringFields("schoolClass")
+                                .ignoringFields("schoolClass", "absenceDates")
                                 .isEqualTo(expectedStudents);
     }
 }

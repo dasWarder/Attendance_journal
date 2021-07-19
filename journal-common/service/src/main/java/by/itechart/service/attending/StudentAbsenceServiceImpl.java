@@ -2,8 +2,8 @@ package by.itechart.service.attending;
 
 import by.itechart.model.Absence;
 import by.itechart.model.Student;
-import by.itechart.repository.StudentRepository;
 import by.itechart.service.absence.AbsenceService;
+import by.itechart.service.schoolClass.SchoolClassService;
 import by.itechart.service.student.StudentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -24,6 +25,8 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
     private final StudentService studentService;
 
     private final AbsenceService absenceService;
+
+    private final SchoolClassService classService;
 
     //THIS IMPLEMENTATION OR BETTER USE @QUERY AND PICK UP RIGHT FROM DB???
     @Override
@@ -52,7 +55,7 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
 
         log.info("Add student to the absence list");
 
-        Absence absenceByAbsenceDate = absenceService.getAbsenceByAbsenceDate(absenceDate);
+        Absence absenceByAbsenceDate = checkAbsenceObjectAndReturnOldOrCreateNew(absenceDate);
         Student studentByIdAndClassId = studentService.getStudentByIdAndClassId(studentId, classId);
 
         studentByIdAndClassId.getAbsenceDates()
@@ -82,8 +85,31 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
         studentService.saveStudent(studentByIdAndClassId);
     }
 
+    @Override
+    public Set<Student> addStudentsToAbsenceList(Set<Student> students, LocalDate absenceDate) throws Throwable {
 
-    
+        validateParams(students, absenceDate);
+
+        log.info("Store a list of users to the absence list");
+
+        Absence absence = checkAbsenceObjectAndReturnOldOrCreateNew(absenceDate);
+
+        students.stream().forEach(student -> {
+
+            List<Absence> daysOfAbsence = student.getAbsenceDates();
+            daysOfAbsence.add(absence);
+
+        });
+
+        List<Student> studentList = new ArrayList<>(students);
+
+        List<Student> storedStudents = studentService.saveAllStudents(studentList);
+        Set<Student> uniqueStudentsSet = new HashSet<>(storedStudents);
+
+        return uniqueStudentsSet;
+    }
+
+
     private List<Student> filteringStudentByAbsenceDate(List<Student> allStudentsByClassId,
                                                         Set<Student> absenceDateStudents) {
 
@@ -97,6 +123,26 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
         });
 
         return studentsByAbsenceDate;
+    }
+
+    private Absence checkAbsenceObjectAndReturnOldOrCreateNew(LocalDate absenceDate) {
+
+        Absence absence = null;
+
+        try {
+
+            absence = absenceService.getAbsenceByAbsenceDate(absenceDate);
+
+        } catch (Throwable throwable) {
+
+            Absence newAbsence = new Absence();
+            newAbsence.setAbsenceDate(absenceDate);
+            newAbsence.setStudents(new HashSet<>());
+
+            absence = absenceService.createAbsence(newAbsence);
+        }
+
+        return absence;
     }
 
 }
