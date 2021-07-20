@@ -90,9 +90,10 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
 
         studentsAbsenceDates.stream()
                             .filter(absence -> studentsAbsenceDates.contains(absenceByAbsenceDate))
-                            .forEach(absence -> studentsAbsenceDates.remove(absenceByAbsenceDate));
+                            .collect(Collectors.toList())
+                                    .stream()
+                                    .forEach(absence -> studentsAbsenceDates.remove(absenceByAbsenceDate));
 
-        studentByIdAndClassId.setAbsenceDates(studentsAbsenceDates);
         studentService.saveStudent(studentByIdAndClassId);
     }
 

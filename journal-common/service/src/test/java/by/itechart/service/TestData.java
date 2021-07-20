@@ -4,7 +4,6 @@ import by.itechart.model.SchoolClass;
 import by.itechart.model.user.UserAuthority;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 
 public class TestData {
 
