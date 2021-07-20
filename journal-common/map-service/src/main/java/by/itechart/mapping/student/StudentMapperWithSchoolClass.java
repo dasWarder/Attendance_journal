@@ -52,20 +52,19 @@ public abstract class StudentMapperWithSchoolClass {
     }
 
 
-    public Set<Student> studentDtoIdSetToStudentSet(Set<StudentDtoId> dtoIdSet, Long classId) throws Throwable {
+    public List<Student> studentDtoIdSetToStudentSet(List<StudentDtoId> dtoIdSet, Long classId) throws Throwable {
 
         log.info("Mapping student dto id set to the student set");
 
         List<Student> allBySchoolClassId = studentRepository.findAllBySchoolClass_Id(classId);
 
-        Set<Long> collectOfIds = dtoIdSet.stream()
-                .map(s -> s.getId())
-                .collect(Collectors.toSet());
+        List<Long> collectOfIds = dtoIdSet.stream()
+                                                .map(s -> s.getId())
+                                                .collect(Collectors.toList());
 
-        Set<Student> studentWithCorrectId = allBySchoolClassId
-                .stream()
-                .filter(s -> collectOfIds.contains(s.getId()))
-                .collect(Collectors.toSet());
+        List<Student> studentWithCorrectId = allBySchoolClassId.stream()
+                                                                    .filter(s -> collectOfIds.contains(s.getId()))
+                                                                    .collect(Collectors.toList());
 
       if(studentWithCorrectId.size() != dtoIdSet.size()) {
 

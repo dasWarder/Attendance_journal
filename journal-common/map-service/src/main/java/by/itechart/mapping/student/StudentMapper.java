@@ -28,9 +28,7 @@ public interface StudentMapper {
     @Mapping(target = "schoolClass", ignore = true)
     List<StudentDtoId> studentListToStudentDtoIdList(List<Student> students);
 
-    Set<Student> studentDtoIdSetToStudentSet(Set<StudentDtoId> students);
-
     @Mapping(target = "schoolClass", ignore = true)
     @Mapping(target = "absenceDate", ignore = true)
-    Set<StudentDto> studentSetToStudentDtoSet(Set<Student> students);
+    List<StudentDto> studentListToStudentDtoList(List<Student> students);
 }

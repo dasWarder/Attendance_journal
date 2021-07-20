@@ -14,5 +14,5 @@ public interface StudentAbsenceService {
 
     void deleteStudentFromAbsenceList(Long classId, Long studentId, LocalDate absenceDate) throws Throwable;
 
-    Set<Student> addStudentsToAbsenceList(Set<Student> students, LocalDate absenceDate) throws Throwable;
+    List<Student> addStudentsToAbsenceList(List<Student> students, LocalDate absenceDate);
 }

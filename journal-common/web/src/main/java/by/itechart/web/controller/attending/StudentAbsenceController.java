@@ -1,14 +1,12 @@
 package by.itechart.web.controller.attending;
 
 
-import by.itechart.mapping.dto.absence.AbsenceDto;
 import by.itechart.mapping.dto.student.StudentDto;
 import by.itechart.mapping.dto.student.StudentDtoId;
 import by.itechart.mapping.student.StudentMapper;
 import by.itechart.mapping.student.StudentMapperWithSchoolClass;
 import by.itechart.model.Student;
 import by.itechart.service.attending.StudentAbsenceService;
-import by.itechart.web.security.util.SecurityUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
@@ -17,10 +15,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Set;
 
 @RestController
 @RequestMapping("/classes/class/{classId}/absence")
@@ -44,11 +40,9 @@ public class StudentAbsenceController {
                                                                             DateTimeFormat.ISO.DATE)
                                                                     LocalDate absenceDate) throws Throwable {
 
-        List<Student> allStudentByDateAndClassId =
-                                                studentAbsenceService.getAllByAbsenceDatesAndSchoolClassId(
-                                                                                                            absenceDate,
-                                                                                                            classId);
-
+        List<Student> allStudentByDateAndClassId = studentAbsenceService.getAllByAbsenceDatesAndSchoolClassId(
+                                                                                                               absenceDate,
+                                                                                                               classId);
         List<StudentDtoId> studentDtoAbsence = mapper.studentListToStudentDtoIdList(allStudentByDateAndClassId);
 
         return new ResponseEntity(
@@ -77,20 +71,20 @@ public class StudentAbsenceController {
     }
 
     @PostMapping
-    public ResponseEntity<Set<StudentDto>> saveAbsenceList(@PathVariable("classId")
+    public ResponseEntity<List<StudentDto>> saveAbsenceList(@PathVariable("classId")
                                                            @Min(value = 1,
                                                                        message = "The ID must be greater that 0")
                                                            Long classId,
                                                            @RequestBody
-                                                           @Valid Set<StudentDtoId> dtoSet,
+                                                           @Valid List<StudentDtoId> dtoSet,
                                                            @RequestParam("date")
                                                            @DateTimeFormat(iso =
                                                                    DateTimeFormat.ISO.DATE)
                                                                    LocalDate absenceDate) throws Throwable {
 
-        Set<Student> students = customMapper.studentDtoIdSetToStudentSet(dtoSet, classId);
-        Set<Student> storedStudents = studentAbsenceService.addStudentsToAbsenceList(students, absenceDate);
-        Set<StudentDto> responseDtoOfAbsenceStudents = mapper.studentSetToStudentDtoSet(storedStudents);
+        List<Student> students = customMapper.studentDtoIdSetToStudentSet(dtoSet, classId);
+        List<Student> storedStudents = studentAbsenceService.addStudentsToAbsenceList(students, absenceDate);
+        List<StudentDto> responseDtoOfAbsenceStudents = mapper.studentListToStudentDtoList(storedStudents);
 
         return new ResponseEntity<>(
                                     responseDtoOfAbsenceStudents, HttpStatus.OK);
