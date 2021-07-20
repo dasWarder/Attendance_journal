@@ -121,7 +121,6 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
                                                 .absenceDate(absenceDate)
                                                 .students(new HashSet<>())
                                                 .build();
-
             absence = absenceService.createAbsence(newAbsence);
         }
 
