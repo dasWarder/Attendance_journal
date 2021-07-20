@@ -82,7 +82,7 @@ public class StudentAbsenceController {
                                                                    DateTimeFormat.ISO.DATE)
                                                                    LocalDate absenceDate) throws Throwable {
 
-        List<Student> students = customMapper.studentDtoIdSetToStudentSet(dtoSet, classId);
+        List<Student> students = customMapper.studentDtoIdListToStudentList(dtoSet, classId);
         List<Student> storedStudents = studentAbsenceService.addStudentsToAbsenceList(students, absenceDate);
         List<StudentDto> responseDtoOfAbsenceStudents = mapper.studentListToStudentDtoList(storedStudents);
 

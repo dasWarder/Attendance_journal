@@ -52,7 +52,7 @@ public abstract class StudentMapperWithSchoolClass {
     }
 
 
-    public List<Student> studentDtoIdSetToStudentSet(List<StudentDtoId> dtoIdSet, Long classId) throws Throwable {
+    public List<Student> studentDtoIdListToStudentList(List<StudentDtoId> dtoIdSet, Long classId) throws Throwable {
 
         log.info("Mapping student dto id set to the student set");
 
@@ -62,8 +62,14 @@ public abstract class StudentMapperWithSchoolClass {
                                                 .map(s -> s.getId())
                                                 .collect(Collectors.toList());
 
+        List<String> collectionOfNamesFromDto = dtoIdSet.stream()
+                                                                .map(dto -> dto.getName() + " " + dto.getSurname())
+                                                                .collect(Collectors.toList());
+
         List<Student> studentWithCorrectId = allBySchoolClassId.stream()
                                                                     .filter(s -> collectOfIds.contains(s.getId()))
+                                                                    .filter(s -> collectionOfNamesFromDto
+                                                                            .contains(s.getName() + " " + s.getSurname()))
                                                                     .collect(Collectors.toList());
 
       if(studentWithCorrectId.size() != dtoIdSet.size()) {
