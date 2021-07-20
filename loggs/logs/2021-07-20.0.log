@@ -1031,3 +1031,190 @@ java.util.ConcurrentModificationException: null
 [2021-07-20 11:16:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
 [2021-07-20 11:16:42] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
 [2021-07-20 11:16:42] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a collection of all student for a class with ID = 2
+[2021-07-20 11:34:17] [INFO] [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 6.2.0.Final
+[2021-07-20 11:34:17] [INFO] [by.itechart.web.ApplicationWeb] Starting ApplicationWeb using Java 11.0.10 on WIN-DQOGFATQ970 with PID 10320 (C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\web\target\classes started by user in C:\Users\user\IdeaProjects\clone\Attendings_journal)
+[2021-07-20 11:34:17] [INFO] [by.itechart.web.ApplicationWeb] The following profiles are active: dev
+[2021-07-20 11:34:18] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2021-07-20 11:34:18] [INFO] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 65 ms. Found 6 JPA repository interfaces.
+[2021-07-20 11:34:19] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+[2021-07-20 11:34:19] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-07-20 11:34:19] [INFO] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2021-07-20 11:34:19] [INFO] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/9.0.48]
+[2021-07-20 11:34:19] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2021-07-20 11:34:19] [INFO] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1787 ms
+[2021-07-20 11:34:19] [INFO] [org.flywaydb.core.internal.license.VersionPrinter] Flyway Community Edition 7.7.3 by Redgate
+[2021-07-20 11:34:19] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2021-07-20 11:34:19] [INFO] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2021-07-20 11:34:19] [INFO] [org.flywaydb.core.internal.database.base.DatabaseType] Database: jdbc:postgresql://localhost:8081/journal (PostgreSQL 12.7)
+[2021-07-20 11:34:19] [INFO] [org.flywaydb.core.internal.command.DbValidate] Successfully validated 13 migrations (execution time 00:00.037s)
+[2021-07-20 11:34:19] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Current version of schema "public": 13
+[2021-07-20 11:34:19] [INFO] [org.flywaydb.core.internal.command.DbMigrate] Schema "public" is up to date. No migration necessary.
+[2021-07-20 11:34:19] [INFO] [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2021-07-20 11:34:19] [INFO] [org.hibernate.Version] HHH000412: Hibernate ORM core version 5.4.32.Final
+[2021-07-20 11:34:20] [INFO] [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2021-07-20 11:34:20] [INFO] [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL91Dialect
+[2021-07-20 11:34:20] [INFO] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2021-07-20 11:34:20] [INFO] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2021-07-20 11:34:21] [WARN] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2021-07-20 11:34:21] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/'] with []
+[2021-07-20 11:34:21] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure Ant [pattern='/register'] with []
+[2021-07-20 11:34:21] [INFO] [org.springframework.security.web.DefaultSecurityFilterChain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33bf2602, org.springframework.security.web.context.SecurityContextPersistenceFilter@40071890, org.springframework.security.web.header.HeaderWriterFilter@1107c465, org.springframework.security.web.authentication.logout.LogoutFilter@33425171, by.itechart.web.security.token.JwtFilter@1b06dc57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31e84f10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3472f3ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4724b2c1, org.springframework.security.web.session.SessionManagementFilter@3c2f310c, org.springframework.security.web.access.ExceptionTranslationFilter@1bd6638, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43b3b1b0]
+[2021-07-20 11:34:22] [INFO] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2021-07-20 11:34:22] [INFO] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-07-20 11:34:22] [INFO] [by.itechart.web.ApplicationWeb] Started ApplicationWeb in 5.458 seconds (JVM running for 6.793)
+[2021-07-20 11:34:27] [INFO] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-07-20 11:34:27] [INFO] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2021-07-20 11:34:27] [INFO] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+[2021-07-20 11:34:27] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:34:40] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:34:40] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:34:40] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:34:41] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:34:41] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:34:41] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:34:41] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:34:41] [INFO] [by.itechart.web.security.token.TokenProvider] The token is valid until Tue Jul 20 11:54:41 MSK 2021
+[2021-07-20 11:34:41] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:34:41] [INFO] [by.itechart.service.refreshToken.RefreshTokenServiceImpl] Create new refresh token for user with the name = alex@gmail.com
+[2021-07-20 11:34:41] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:34:54] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:34:54] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:34:54] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:34:54] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:34:54] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:34:54] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:34:54] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:36:54] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:36:54] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:36:54] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:36:54] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:36:54] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:36:54] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a list of all school classes
+[2021-07-20 11:37:06] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:37:06] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:06] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:37:06] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:37:06] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:06] [INFO] [by.itechart.service.schoolClass.SchoolClassServiceImpl] Receive a school class by Id = 2
+[2021-07-20 11:37:06] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:37:10] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:37:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:10] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:37:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:37:10] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:10] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a pageable collection of all student for a class with ID = 2
+[2021-07-20 11:37:27] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:37:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:27] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:37:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:37:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:27] [INFO] [by.itechart.service.attending.StudentAbsenceServiceImpl] Receive a collection of absence students for a class with ID = 2 on the date = 2021-07-20
+[2021-07-20 11:37:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:27] [INFO] [by.itechart.service.absence.AbsenceServiceImpl] Receive absence by date = 2021-07-20
+[2021-07-20 11:37:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:37:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:27] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a collection of all student for a class with ID = 2
+[2021-07-20 11:37:37] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:37:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:37] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:37:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:37:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:37] [INFO] [by.itechart.service.attending.StudentAbsenceServiceImpl] Delete student from the absence list
+[2021-07-20 11:37:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:37] [INFO] [by.itechart.service.absence.AbsenceServiceImpl] Receive absence by date = 2021-07-20
+[2021-07-20 11:37:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:37:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:37] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a student by ID = 8 for a school class with ID = 2
+[2021-07-20 11:37:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:37:37] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:37] [INFO] [by.itechart.service.student.StudentServiceImpl] Storing a student for the class with ID = 2
+[2021-07-20 11:37:43] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:37:43] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:43] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:37:43] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:37:43] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:43] [INFO] [by.itechart.service.attending.StudentAbsenceServiceImpl] Receive a collection of absence students for a class with ID = 2 on the date = 2021-07-20
+[2021-07-20 11:37:43] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:43] [INFO] [by.itechart.service.absence.AbsenceServiceImpl] Receive absence by date = 2021-07-20
+[2021-07-20 11:37:43] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:37:43] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:37:43] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a collection of all student for a class with ID = 2
+[2021-07-20 11:38:01] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:38:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:01] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:38:01] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:02] [INFO] [by.itechart.mapping.student.StudentMapperWithSchoolClass] Mapping student dto id set to the student set
+[2021-07-20 11:38:02] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:02] [INFO] [by.itechart.service.attending.StudentAbsenceServiceImpl] Store a list of users to the absence list
+[2021-07-20 11:38:02] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:02] [INFO] [by.itechart.service.absence.AbsenceServiceImpl] Receive absence by date = 2021-07-20
+[2021-07-20 11:38:02] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:02] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:02] [INFO] [by.itechart.service.student.StudentServiceImpl] Save a set of students
+[2021-07-20 11:38:16] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:38:16] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:16] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:38:16] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:16] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:16] [INFO] [by.itechart.service.attending.StudentAbsenceServiceImpl] Receive a collection of absence students for a class with ID = 2 on the date = 2021-07-20
+[2021-07-20 11:38:16] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:16] [INFO] [by.itechart.service.absence.AbsenceServiceImpl] Receive absence by date = 2021-07-20
+[2021-07-20 11:38:16] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:16] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:16] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a collection of all student for a class with ID = 2
+[2021-07-20 11:38:23] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:38:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:23] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:38:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:23] [INFO] [by.itechart.service.attending.StudentAbsenceServiceImpl] Delete student from the absence list
+[2021-07-20 11:38:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:23] [INFO] [by.itechart.service.absence.AbsenceServiceImpl] Receive absence by date = 2021-07-20
+[2021-07-20 11:38:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:23] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a student by ID = 7 for a school class with ID = 2
+[2021-07-20 11:38:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:23] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:23] [INFO] [by.itechart.service.student.StudentServiceImpl] Storing a student for the class with ID = 2
+[2021-07-20 11:38:27] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:38:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:27] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:38:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:27] [INFO] [by.itechart.service.attending.StudentAbsenceServiceImpl] Delete student from the absence list
+[2021-07-20 11:38:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:27] [INFO] [by.itechart.service.absence.AbsenceServiceImpl] Receive absence by date = 2021-07-20
+[2021-07-20 11:38:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:27] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a student by ID = 8 for a school class with ID = 2
+[2021-07-20 11:38:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:27] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:27] [INFO] [by.itechart.service.student.StudentServiceImpl] Storing a student for the class with ID = 2
+[2021-07-20 11:38:32] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:38:32] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:32] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:38:32] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:32] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:32] [INFO] [by.itechart.service.attending.StudentAbsenceServiceImpl] Receive a collection of absence students for a class with ID = 2 on the date = 2021-07-20
+[2021-07-20 11:38:32] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:32] [INFO] [by.itechart.service.absence.AbsenceServiceImpl] Receive absence by date = 2021-07-20
+[2021-07-20 11:38:32] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:32] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:32] [INFO] [by.itechart.service.student.StudentServiceImpl] Receive a collection of all student for a class with ID = 2
+[2021-07-20 11:38:43] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:38:43] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:43] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:38:43] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:43] [INFO] [by.itechart.mapping.student.StudentMapperWithSchoolClass] Mapping student dto id set to the student set
+[2021-07-20 11:38:50] [INFO] [by.itechart.web.security.token.JwtFilter] Generate a JWT token
+[2021-07-20 11:38:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:50] [INFO] [by.itechart.service.user.UserServiceImpl] Receive a user by the name = alex@gmail.com
+[2021-07-20 11:38:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:50] [INFO] [by.itechart.mapping.student.StudentMapperWithSchoolClass] Mapping student dto id set to the student set
+[2021-07-20 11:38:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:50] [INFO] [by.itechart.service.attending.StudentAbsenceServiceImpl] Store a list of users to the absence list
+[2021-07-20 11:38:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:50] [INFO] [by.itechart.service.absence.AbsenceServiceImpl] Receive absence by date = 2021-07-20
+[2021-07-20 11:38:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate an optional not to be equals NULL
+[2021-07-20 11:38:50] [INFO] [by.itechart.model.util.ValidationUtil] Validate input params
+[2021-07-20 11:38:50] [INFO] [by.itechart.service.student.StudentServiceImpl] Save a set of students
