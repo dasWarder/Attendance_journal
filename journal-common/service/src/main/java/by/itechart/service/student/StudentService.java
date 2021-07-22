@@ -4,7 +4,6 @@ import by.itechart.model.Student;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
-import java.util.Set;
 
 public interface StudentService {
 
@@ -17,8 +16,6 @@ public interface StudentService {
     void deleteStudentByIdAndClassId(Long studentId, Long classId);
 
     List<Student> findAllStudents(Long classId, Pageable pageable);
-
-    List<Student> findAllStudents(Long classId);
 
     List<Student> saveAllStudents(List<Student> students);
 }

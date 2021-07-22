@@ -8,13 +8,15 @@ import by.itechart.model.SchoolClass;
 import by.itechart.service.schoolClass.SchoolClassService;
 import by.itechart.web.security.util.SecurityUtil;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -30,23 +32,15 @@ public class SchoolClassController {
 
     private final SchoolClassMapperWithUser customMapper;
 
-    private final static String REMOVE_BY_ID_MESSAGE = "The school class with ID = %d was successfully removed";
-
-    private final static String REMOVE_BY_NAME_MESSAGE = "The school class with the name = %s was successfully removed";
-
-
     @PostMapping("/class")
     public ResponseEntity<SchoolClassDto> saveSchoolClass(@RequestBody
                                                           @Valid SchoolClassDto schoolClassDto) throws Throwable {
 
-        String username = securityUtil.getLoggedUser();
-
-        SchoolClass schoolClass = customMapper.schoolClassDtoToSchoolClassForCreate(schoolClassDto, username);
+        SchoolClass schoolClass = customMapper.schoolClassDtoToSchoolClassForCreate(schoolClassDto, securityUtil.getLoggedUser());
         SchoolClass storedSchoolClass = classService.saveSchoolClass(schoolClass);
         SchoolClassDto dto = classMapper.schoolClassToSchoolClassDto(storedSchoolClass);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.CREATED);
+        return ResponseEntity.created(URI.create("/classes/class/" + dto.getId())).body(dto);
     }
 
     @GetMapping("/class/{classId}")
@@ -57,13 +51,10 @@ public class SchoolClassController {
                                                              Long classId)
                                                                            throws Throwable {
 
-        String username = securityUtil.getLoggedUser();
-
-        SchoolClass validSchoolClass = classService.getSchoolClassById(classId, username);
+        SchoolClass validSchoolClass = classService.getSchoolClassById(classId, securityUtil.getLoggedUser());
         SchoolClassDto dto = classMapper.schoolClassToSchoolClassDto(validSchoolClass);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @GetMapping("/class")
@@ -73,13 +64,10 @@ public class SchoolClassController {
                                                                String name)
                                                                            throws Throwable {
 
-        String username = securityUtil.getLoggedUser();
-
-        SchoolClass validSchoolClass = classService.getSchoolClassByName(name, username);
+        SchoolClass validSchoolClass = classService.getSchoolClassByName(name, securityUtil.getLoggedUser());
         SchoolClassDto dto = classMapper.schoolClassToSchoolClassDto(validSchoolClass);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @PutMapping("/class/{classId}")
@@ -97,48 +85,39 @@ public class SchoolClassController {
         SchoolClass updatedSchoolClass = classService.updateSchoolClass(classId, schoolClass, username);
         SchoolClassDto dto = classMapper.schoolClassToSchoolClassDto(updatedSchoolClass);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @DeleteMapping("/class/{classId}")
-    public ResponseEntity<String> deleteSchoolClassById(@PathVariable("classId")
+    public ResponseEntity<Void> deleteSchoolClassById(@PathVariable("classId")
                                                         @Min(value = 1,
                                                              message = "The ID must be greater that 0")
                                                         Long classId) {
 
-        String username = securityUtil.getLoggedUser();
+        classService.deleteSchoolClassById(classId, securityUtil.getLoggedUser());
 
-        classService.deleteSchoolClassById(classId, username);
-
-        return new ResponseEntity<>(
-                                    String.format(REMOVE_BY_ID_MESSAGE, classId), HttpStatus.OK);
+        return ResponseEntity.noContent().build();
     }
 
     @DeleteMapping("/class")
-    public ResponseEntity<String> deleteSchoolClassByName(@RequestParam("name")
+    public ResponseEntity<Void> deleteSchoolClassByName(@RequestParam("name")
                                                           @Min(value = 1,
                                                                message = "The size of the name must be greater than 1")
                                                           String name) {
 
-        String username = securityUtil.getLoggedUser();
+        classService.deleteSchoolClassByName(name, securityUtil.getLoggedUser());
 
-        classService.deleteSchoolClassByName(name, username);
-
-        return new ResponseEntity<>(
-                                    String.format(REMOVE_BY_NAME_MESSAGE, name), HttpStatus.OK);
+        return ResponseEntity.noContent().build();
     }
 
     @GetMapping
-    public ResponseEntity<List<SchoolClassDto>> getAllSchoolClasses() {
+    public ResponseEntity<List<SchoolClassDto>> getAllSchoolClasses(@PageableDefault(page = 0, size = 25, sort = { "id" })
+                                                                    Pageable pageable) {
 
-        String username = securityUtil.getLoggedUser();
-
-        List<SchoolClass> schoolClasses = classService.getAllSchoolClasses(username);
+        List<SchoolClass> schoolClasses = classService.getAllSchoolClasses(securityUtil.getLoggedUser(), pageable);
         List<SchoolClassDto> dtoList = classMapper.schoolClassListToSchoolClassDtoList(schoolClasses);
 
-        return new ResponseEntity<>(
-                                    dtoList, HttpStatus.OK);
+        return ResponseEntity.ok(dtoList);
     }
 
 }

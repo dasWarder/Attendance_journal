@@ -128,10 +128,10 @@ class SchoolClassServiceTest {
                                                     TEST_SCHOOL_CLASS_1,
                                                     TEST_SCHOOL_CLASS_2,
                                                     TEST_SCHOOL_CLASS_3);
-        Mockito.when(schoolClassRepository.getSchoolClassByUser_Username(LOGGED_USER))
+        Mockito.when(schoolClassRepository.getSchoolClassesByUser_Username(LOGGED_USER))
                                                                                      .thenReturn(actualSchoolClasses);
 
-        List<SchoolClass> allSchoolClasses = schoolClassService.getAllSchoolClasses(LOGGED_USER);
+        List<SchoolClass> allSchoolClasses = schoolClassService.getAllSchoolClasses(LOGGED_USER, PAGE_PARAM);
 
         assertThat(allSchoolClasses)
                                     .usingRecursiveComparison()

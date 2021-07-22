@@ -1,20 +1,22 @@
 package by.itechart.mapping.user;
 
 
-import by.itechart.mapping.dto.user.*;
+import by.itechart.mapping.dto.user.BaseUserDto;
+import by.itechart.mapping.dto.user.NoPassUserDto;
+import by.itechart.mapping.dto.user.RegisterUserDto;
+import by.itechart.mapping.dto.user.UserDto;
 import by.itechart.model.user.User;
 import by.itechart.model.user.UserAuthority;
 import by.itechart.repository.AuthorityRepository;
 import by.itechart.repository.UserRepository;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.mapstruct.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Optional;
 
-import static by.itechart.model.util.ValidationUtil.*;
+import static by.itechart.model.util.ValidationUtil.validateOptional;
 
 @Slf4j
 @NoArgsConstructor

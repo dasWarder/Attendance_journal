@@ -8,6 +8,8 @@ import by.itechart.mapping.student.StudentMapperWithSchoolClass;
 import by.itechart.model.Student;
 import by.itechart.service.attending.StudentAbsenceService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
+import java.net.URI;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -38,15 +41,15 @@ public class StudentAbsenceController {
                                                                     @RequestParam("date")
                                                                     @DateTimeFormat(iso =
                                                                             DateTimeFormat.ISO.DATE)
-                                                                    LocalDate absenceDate) throws Throwable {
+                                                                    LocalDate absenceDate,
+                                                                    @PageableDefault(page = 0, size = 25, sort = { "id" })
+                                                                    Pageable pageable) throws Throwable {
 
-        List<Student> allStudentByDateAndClassId = studentAbsenceService.getAllByAbsenceDatesAndSchoolClassId(
-                                                                                                               absenceDate,
-                                                                                                               classId);
+        List<Student> allStudentByDateAndClassId = studentAbsenceService
+                                                         .getAllByAbsenceDatesAndSchoolClassId(absenceDate, classId, pageable);
         List<StudentDtoId> studentDtoAbsence = mapper.studentListToStudentDtoIdList(allStudentByDateAndClassId);
 
-        return new ResponseEntity(
-                                  studentDtoAbsence, HttpStatus.OK);
+        return ResponseEntity.ok(studentDtoAbsence);
     }
 
     @PostMapping("/{studentId}")
@@ -66,8 +69,8 @@ public class StudentAbsenceController {
         Student storedAbsenceStudent = studentAbsenceService.addStudentToAbsenceList(classId, studentId, absenceDate);
         StudentDto responseStudentDto = mapper.studentToStudentDto(storedAbsenceStudent);
 
-        return new ResponseEntity<>(
-                                    responseStudentDto, HttpStatus.CREATED);
+        return ResponseEntity.created(URI.create("/classes/class/" + classId + "/absence/" + studentId))
+                                                                                .body(responseStudentDto);
     }
 
     @PostMapping
@@ -86,8 +89,8 @@ public class StudentAbsenceController {
         List<Student> storedStudents = studentAbsenceService.addStudentsToAbsenceList(students, absenceDate);
         List<StudentDto> responseDtoOfAbsenceStudents = mapper.studentListToStudentDtoList(storedStudents);
 
-        return new ResponseEntity<>(
-                                    responseDtoOfAbsenceStudents, HttpStatus.OK);
+        return ResponseEntity.created(URI.create("/classes/class/" + classId + "/absence"))
+                                                                    .body(responseDtoOfAbsenceStudents);
     }
 
     @DeleteMapping("/{studentId}")

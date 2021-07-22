@@ -1,6 +1,5 @@
 package by.itechart.service.student;
 
-import by.itechart.model.SchoolClass;
 import by.itechart.model.Student;
 
 import static by.itechart.service.TestData.TEST_SCHOOL_CLASS_1;

@@ -4,6 +4,7 @@ import by.itechart.model.SchoolClass;
 import by.itechart.repository.SchoolClassRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -94,14 +95,14 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
-    public List<SchoolClass> getAllSchoolClasses(String username) {
+    public List<SchoolClass> getAllSchoolClasses(String username, Pageable pageable) {
 
-        validateParams(username);
+        validateParams(username, pageable);
 
         log.info("Receive a list of all school classes");
 
-        List schoolClasses = (List) classRepository.getSchoolClassByUser_Username(username);
+        List schoolClassesByUsername = classRepository.getSchoolClassesByUser_Username(username, pageable);
 
-        return schoolClasses;
+        return schoolClassesByUsername;
     }
 }

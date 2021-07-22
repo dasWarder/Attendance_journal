@@ -15,6 +15,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.util.List;
 
 import static by.itechart.web.data.GeneralTestData.LOGGED_USERNAME;
+import static by.itechart.web.data.GeneralTestData.PAGE_PARAM;
 import static by.itechart.web.data.SchoolClassTestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -129,7 +130,7 @@ public class SchoolClassIntegrationTest {
 
         List<SchoolClass> testSchoolClasses = List.of(TEST_SCHOOL_CLASS_1);
 
-        List<SchoolClass> allSchoolClasses = classService.getAllSchoolClasses(LOGGED_USERNAME);
+        List<SchoolClass> allSchoolClasses = classService.getAllSchoolClasses(LOGGED_USERNAME, PAGE_PARAM);
 
         assertThat(allSchoolClasses)
                                     .usingRecursiveComparison()

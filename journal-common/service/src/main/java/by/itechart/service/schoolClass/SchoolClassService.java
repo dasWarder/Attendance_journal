@@ -1,6 +1,7 @@
 package by.itechart.service.schoolClass;
 
 import by.itechart.model.SchoolClass;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
@@ -18,6 +19,6 @@ public interface SchoolClassService {
 
     void deleteSchoolClassByName(String name, String username);
 
-    List<SchoolClass> getAllSchoolClasses(String username);
+    List<SchoolClass> getAllSchoolClasses(String username, Pageable pageable);
 
 }

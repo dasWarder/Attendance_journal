@@ -12,8 +12,7 @@ import org.mockito.Mockito;
 
 import java.util.List;
 
-import static by.itechart.service.TestData.TEST_SCHOOL_CLASS_1;
-import static by.itechart.service.TestData.WRONG_ID;
+import static by.itechart.service.TestData.*;
 import static by.itechart.service.attending.StudentAbsenceTestData.*;
 import static by.itechart.service.student.StudentTestData.TEST_STUDENT_1;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -36,11 +35,11 @@ class StudentAbsenceServiceTest {
         Long classId = TEST_SCHOOL_CLASS_1.getId();
         Mockito.when(absenceService.getAbsenceByAbsenceDate(TEST_ABSENCE_DATE))
                                                                                .thenReturn(TEST_ABSENCE);
-        Mockito.when(studentService.findAllStudents(classId))
+        Mockito.when(studentService.findAllStudents(classId, PAGE_PARAM))
                                                              .thenReturn(TEST_ALL_STUDENTS);
 
         List<Student> actualAbsenceStudents = studentAbsenceService
-                                                        .getAllByAbsenceDatesAndSchoolClassId(TEST_ABSENCE_DATE, classId);
+                                                        .getAllByAbsenceDatesAndSchoolClassId(TEST_ABSENCE_DATE, classId, PAGE_PARAM);
 
         assertThat(actualAbsenceStudents)
                                         .usingRecursiveComparison()
@@ -56,7 +55,7 @@ class StudentAbsenceServiceTest {
 
         Assertions.assertThrows(NullPointerException.class,
                                                 () -> studentAbsenceService
-                                                            .getAllByAbsenceDatesAndSchoolClassId(null, classId));
+                                                            .getAllByAbsenceDatesAndSchoolClassId(null, classId, PAGE_PARAM));
     }
 
     @Test
@@ -66,7 +65,7 @@ class StudentAbsenceServiceTest {
 
         Assertions.assertThrows(NullPointerException.class,
                                                 () -> studentAbsenceService
-                                                          .getAllByAbsenceDatesAndSchoolClassId(TEST_ABSENCE_DATE,null));
+                                                          .getAllByAbsenceDatesAndSchoolClassId(TEST_ABSENCE_DATE,null, PAGE_PARAM));
     }
 
     @Test
@@ -77,7 +76,7 @@ class StudentAbsenceServiceTest {
         Long classId = TEST_SCHOOL_CLASS_1.getId();
 
         Assertions.assertThrows(NullPointerException.class,
-                                    () -> studentAbsenceService.getAllByAbsenceDatesAndSchoolClassId(WRONG_ABSENCE_DATE, classId));
+                                    () -> studentAbsenceService.getAllByAbsenceDatesAndSchoolClassId(WRONG_ABSENCE_DATE, classId, PAGE_PARAM));
     }
 
     @Test
@@ -86,7 +85,7 @@ class StudentAbsenceServiceTest {
         log.info("Test getAllByAbsenceDatesAndSchoolClassId() method throw an exception");
 
         Assertions.assertThrows(NullPointerException.class,
-                () -> studentAbsenceService.getAllByAbsenceDatesAndSchoolClassId(TEST_ABSENCE_DATE, WRONG_ID));
+                () -> studentAbsenceService.getAllByAbsenceDatesAndSchoolClassId(TEST_ABSENCE_DATE, WRONG_ID, PAGE_PARAM));
     }
 
     @Test
