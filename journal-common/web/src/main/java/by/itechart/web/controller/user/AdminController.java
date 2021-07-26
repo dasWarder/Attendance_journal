@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -37,8 +38,8 @@ public class AdminController {
         User storedUser = userService.saveUser(user);
         UserDto dto = mapper.userToUserDto(storedUser);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.CREATED);
+        return ResponseEntity.created(URI.create("/users/user/" + storedUser.getId()))
+                                                                            .body(dto);
     }
 
     @GetMapping("/user/{userId}")
@@ -50,8 +51,7 @@ public class AdminController {
         User userById = userService.getUserById(userId);
         NoPassUserDto dto = mapper.userToNoPassUserDto(userById);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @GetMapping("/user")
@@ -64,8 +64,7 @@ public class AdminController {
         User userByUsername = userService.getUserByUsername(email);
         NoPassUserDto dto = mapper.userToNoPassUserDto(userByUsername);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @PutMapping("/user/{userId}")
@@ -81,8 +80,7 @@ public class AdminController {
         User user = userService.updateUser(userId, updateUser);
         UserDto dto = mapper.userToUserDto(user);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @DeleteMapping("/user/{userId}")
@@ -117,8 +115,7 @@ public class AdminController {
 
         List<NoPassUserDto> response = getAllUserOrAllByAuthority(authorityName);
 
-        return new ResponseEntity<>(
-                                    response, HttpStatus.OK);
+        return ResponseEntity.ok(response);
     }
 
 

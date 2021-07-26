@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
+import java.net.URI;
 import java.util.List;
 
 
@@ -29,8 +30,7 @@ public class StudentController {
 
     private final StudentMapperWithSchoolClass customStudentMapper;
 
-    private final String REMOVE_MESSAGE = "The student with ID = %d for a school class with ID = %d was successfully removed";
-
+    private static final String BASE_URL = "/classes/class/%d/students/student/%d";
 
     @PostMapping("/student")
     public ResponseEntity<StudentDto> saveStudent(@RequestBody
@@ -45,8 +45,9 @@ public class StudentController {
         Student storedStudent = studentService.saveStudent(student);
         StudentDto dto = studentMapper.studentToStudentDto(storedStudent);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.CREATED);
+        return ResponseEntity.created(URI.create(
+                                                String.format(BASE_URL, classId, storedStudent.getId())))
+                                                .body(dto);
     }
 
     @GetMapping("/student/{studentId}")
@@ -63,8 +64,7 @@ public class StudentController {
         Student studentById = studentService.getStudentByIdAndClassId(studentId, classId);
         StudentDto dto = studentMapper.studentToStudentDto(studentById);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @PutMapping("/student/{studentId}")
@@ -84,12 +84,11 @@ public class StudentController {
         Student updatedStudent = studentService.updateStudent(studentId, student, classId);
         StudentDto dto = studentMapper.studentToStudentDto(updatedStudent);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @DeleteMapping("/student/{studentId}")
-    public ResponseEntity<String> deleteStudent(@PathVariable("studentId")
+    public ResponseEntity<Void> deleteStudent(@PathVariable("studentId")
                                                 @Min(value = 1,
                                                      message = "The ID must be greater that 0")
                                                 Long studentId,
@@ -100,8 +99,8 @@ public class StudentController {
 
         studentService.deleteStudentByIdAndClassId(studentId, classId);
 
-        return new ResponseEntity<>(
-                                    String.format(REMOVE_MESSAGE, studentId, classId), HttpStatus.OK);
+        return ResponseEntity.noContent()
+                                        .build();
     }
 
     @GetMapping
@@ -115,7 +114,6 @@ public class StudentController {
         List<Student> allStudents = studentService.findAllStudents(classId, pageable);
         List<StudentDtoId> dtoList = studentMapper.studentListToStudentDtoIdList(allStudents);
 
-        return new ResponseEntity<>(
-                                    dtoList, HttpStatus.OK);
+        return ResponseEntity.ok(dtoList);
     }
 }

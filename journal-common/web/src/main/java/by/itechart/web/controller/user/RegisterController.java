@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
+import java.net.URI;
 
 @RestController
 @RequiredArgsConstructor
@@ -55,8 +56,8 @@ public class RegisterController {
         User storedUser = userService.saveUser(user);
         UserDto dto = mapper.userToUserDto(storedUser);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.CREATED);
+        return ResponseEntity.created(URI.create("/register"))
+                                            .body(dto);
     }
 
     @PostMapping("/auth")
@@ -72,8 +73,8 @@ public class RegisterController {
         RefreshToken refreshToken = tokenService.createRefreshToken(details.getUsername());
         Token response = tokenMapper.fromStringsToToken(token, refreshToken.getToken());
 
-        return new ResponseEntity<>(
-                                    response, HttpStatus.CREATED);
+        return ResponseEntity.created(URI.create("/auth"))
+                                            .body(response);
     }
 
     @PostMapping("/refresh")
@@ -90,7 +91,6 @@ public class RegisterController {
 
         Token responseToken = tokenMapper.fromStringsToToken(token, validToken.getToken());
 
-        return new ResponseEntity<>(
-                                    responseToken, HttpStatus.OK);
+        return ResponseEntity.ok(responseToken);
     }
 }

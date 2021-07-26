@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -32,8 +33,8 @@ public class AuthorityController {
         UserAuthority storedAuthority = authorityService.saveAuthority(userAuthority);
         AuthorityDto dto = mapper.userAuthorityToAuthorityDto(storedAuthority);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.CREATED);
+        return ResponseEntity.created(URI.create("/admin/roles/role/" + storedAuthority.getId()))
+                                                                                            .body(dto);
     }
 
     @GetMapping("/role/{authorityId}")
@@ -45,8 +46,7 @@ public class AuthorityController {
         UserAuthority authorityById = authorityService.getAuthorityById(authorityId);
         AuthorityDto dto = mapper.userAuthorityToAuthorityDto(authorityById);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @GetMapping("/role")
@@ -58,8 +58,7 @@ public class AuthorityController {
         UserAuthority authorityByName = authorityService.getAuthorityByName(name);
         AuthorityDto dto = mapper.userAuthorityToAuthorityDto(authorityByName);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @PutMapping("/role/{authorityId}")
@@ -75,8 +74,7 @@ public class AuthorityController {
         UserAuthority updatedUserAuthority = authorityService.updateAuthority(authorityId, userAuthority);
         AuthorityDto dto = mapper.userAuthorityToAuthorityDto(updatedUserAuthority);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @DeleteMapping("/role/{authorityId}")
@@ -109,8 +107,7 @@ public class AuthorityController {
         List<UserAuthority> authorities = authorityService.getAllAuthorities();
         List<AuthorityDto> dtoList = mapper.userAuthorityListToAuthorityDtoList(authorities);
 
-        return new ResponseEntity<>(
-                                    dtoList, HttpStatus.OK);
+        return ResponseEntity.ok(dtoList);
     }
 
 

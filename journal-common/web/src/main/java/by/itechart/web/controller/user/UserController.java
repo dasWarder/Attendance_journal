@@ -35,8 +35,7 @@ public class UserController {
         User userById = userService.getUserByUsername(username);
         FullUserDto dto = mapper.userToFullUserDto(userById);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @PutMapping("/details")
@@ -49,8 +48,7 @@ public class UserController {
         User user = userService.updateUserByUsername(username, updateUser);
         FullUserDto dto = mapper.userToFullUserDto(user);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
 

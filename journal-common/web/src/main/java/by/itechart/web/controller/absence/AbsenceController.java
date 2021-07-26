@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
+import java.net.URI;
 import java.time.LocalDate;
 
 
@@ -37,8 +38,8 @@ public class AbsenceController {
         Absence storedAbsence = absenceService.createAbsence(absence);
         AbsenceDto responseDto = mapper.absenceToAbsenceDto(storedAbsence);
 
-        return new ResponseEntity<>(
-                                    responseDto, HttpStatus.CREATED);
+        return ResponseEntity.created(URI.create("/absence/" + storedAbsence.getId()))
+                                                                        .body(responseDto);
     }
 
 
@@ -51,8 +52,7 @@ public class AbsenceController {
         Absence absenceById = absenceService.getAbsenceById(absenceId);
         AbsenceDto responseDtoById = mapper.absenceToAbsenceDto(absenceById);
 
-        return new ResponseEntity<>(
-                                    responseDtoById, HttpStatus.OK);
+        return ResponseEntity.ok(responseDtoById);
     }
 
 
@@ -65,8 +65,7 @@ public class AbsenceController {
         Absence absenceByAbsenceDate = absenceService.getAbsenceByAbsenceDate(absenceDate);
         AbsenceDto responseDtoByAbsenceDate = mapper.absenceToAbsenceDto(absenceByAbsenceDate);
 
-        return new ResponseEntity<>(
-                                    responseDtoByAbsenceDate, HttpStatus.OK);
+        return ResponseEntity.ok(responseDtoByAbsenceDate);
     }
 
     @PutMapping("/{absenceId}")
@@ -81,8 +80,7 @@ public class AbsenceController {
         Absence updatedAbsence = absenceService.updateAbsence(absenceId, validAbsence);
         AbsenceDto updatedResponseDto = mapper.absenceToAbsenceDto(updatedAbsence);
 
-        return new ResponseEntity<>(
-                                    updatedResponseDto, HttpStatus.OK);
+        return ResponseEntity.ok(updatedResponseDto);
     }
 
     @DeleteMapping("/{absenceId}")

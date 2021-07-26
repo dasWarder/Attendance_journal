@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
+import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -34,8 +35,8 @@ public class SuperAdminController {
         User storedUser = userService.saveUser(user);
         NoPassUserDto dto = mapper.userToNoPassUserDto(storedUser);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.CREATED);
+        return ResponseEntity.created(URI.create("/admin/users/user/" + storedUser.getId()))
+                                                                                    .body(dto);
     }
 
     @GetMapping("/user/{userId}")
@@ -47,8 +48,7 @@ public class SuperAdminController {
         User userById = userService.getUserById(userId);
         NoPassUserDto dto = mapper.userToNoPassUserDto(userById);
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
 
@@ -65,8 +65,7 @@ public class SuperAdminController {
         NoPassUserDto dto = mapper.userToNoPassUserDto(updatedUser);
 
 
-        return new ResponseEntity<>(
-                                    dto, HttpStatus.OK);
+        return ResponseEntity.ok(dto);
     }
 
     @DeleteMapping("/user/{userId}")
@@ -101,8 +100,7 @@ public class SuperAdminController {
 
         List<NoPassUserDto> response = getAllUserOrAllByAuthority(authorityName);
 
-        return new ResponseEntity<>(
-                                     response, HttpStatus.OK);
+        return ResponseEntity.ok(response);
     }
 
 
