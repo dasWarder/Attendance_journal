@@ -2,13 +2,16 @@ by\itechart\web\data\GeneralTestData.class
 by\itechart\web\controller\student\StudentControllerTest.class
 by\itechart\web\controller\user\UserControllerTest.class
 by\itechart\web\integration\AuthorityServiceIntegrationTest.class
+by\itechart\web\data\AbsenceTestData.class
 by\itechart\web\controller\user\RegisterControllerTest.class
 by\itechart\web\data\AuthorityTestData.class
 by\itechart\web\integration\UserServiceIntegrationTest.class
 by\itechart\web\controller\user\SuperAdminControllerTest.class
+by\itechart\web\integration\AbsenceServiceIntegrationTest.class
 by\itechart\web\data\SchoolClassTestData.class
 by\itechart\web\controller\user\AdminControllerTest.class
 by\itechart\web\controller\util\JsonParser.class
+by\itechart\web\integration\StudentAbsenceServiceIntegrationTest.class
 by\itechart\web\integration\StudentServiceIntegrationTest.class
 by\itechart\web\controller\authority\AuthorityControllerTest.class
 by\itechart\web\data\TokenTestData.class

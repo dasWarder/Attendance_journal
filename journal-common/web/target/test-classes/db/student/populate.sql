@@ -1,8 +1,17 @@
+DELETE FROM student_absence;
+DELETE FROM absence;
 DELETE FROM student;
 DELETE FROM school_class;
 DELETE FROM users;
 DELETE FROM authorities;
 DELETE FROM refresh_token;
+
+
+
+ALTER SEQUENCE user_seq RESTART WITH 100000;
+ALTER SEQUENCE global_seq RESTART WITH 1;
+ALTER SEQUENCE token_seq RESTART WITH 1;
+ALTER SEQUENCE absence_seq RESTART WITH 10000;
 
 
 INSERT INTO authorities(id,  authority) VALUES
@@ -29,3 +38,16 @@ ALTER SEQUENCE global_seq RESTART WITH 9;
 
 INSERT INTO refresh_token(id, subject, token, expirydate) VALUES
     (1234, 'alex@gmail.com', '111111111111111111111111111111111111111111', CURRENT_TIMESTAMP());
+
+ALTER SEQUENCE token_seq RESTART WITH 1235;
+
+INSERT INTO absence(id, absence_date) VALUES
+    (10000, '2021-07-27'),
+    (10001, '2021-07-28');
+
+ALTER SEQUENCE absence_seq RESTART WITH 10002;
+
+INSERT INTO student_absence(absence_id, student_id) VALUES
+    (10000, 6),
+    (10000, 7),
+    (10001, 6);

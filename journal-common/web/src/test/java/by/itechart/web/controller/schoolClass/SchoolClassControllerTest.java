@@ -134,14 +134,11 @@ class SchoolClassControllerTest {
     public void shouldStatusBeOkAndReturnDeleteSchoolClassByIdProperly() throws Exception {
 
         log.info("Remove a school class by its id from the method deleteSchoolClassById() and status OK");
-        String response = String.format(
-                                        "The school class with ID = %d was successfully removed",
-                                                                                                TEST_SCHOOL_CLASS_1.getId());
+
         mockMvc.perform(delete(BASE_URL + "/class/"
                 + TEST_SCHOOL_CLASS_1.getId()))
                                             .andDo(print())
-                                            .andExpect(content().string(response))
-                                            .andExpect(status().isOk())
+                                            .andExpect(status().isNoContent())
                                             .andReturn();
     }
 
@@ -149,14 +146,11 @@ class SchoolClassControllerTest {
     public void shouldStatusBeOkAndReturnDeleteSchoolClassByNameProperly() throws Exception {
 
         log.info("Remove a school class by its name from the method deleteSchoolClassByName() and status OK");
-        String response = String.format(
-                                        "The school class with the name = %s was successfully removed",
-                                                                                                  TEST_SCHOOL_CLASS_1.getName());
+
         mockMvc.perform(delete(BASE_URL + "/class")
                                     .param("name", TEST_SCHOOL_CLASS_1.getName()))
                                         .andDo(print())
-                                        .andExpect(content().string(response))
-                                        .andExpect(status().isOk())
+                                        .andExpect(status().isNoContent())
                                         .andReturn();
     }
 

@@ -25,7 +25,7 @@ public class Absence {
     @Column(name = "absence_date")
     private LocalDate absenceDate;
 
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "absenceDates")
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "absenceDates", cascade = CascadeType.ALL)
     private Set<Student> students;
 
     public Absence(LocalDate absenceDate) {

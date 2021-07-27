@@ -115,14 +115,10 @@ class StudentControllerTest {
     public void shouldStatusBeOkAndReturnDeleteStudentProperly() throws Exception {
 
         log.info("Remove a student by its id from the method deleteStudentById() and status OK");
-        String response = String.format(
-                                "The student with ID = %d for a school class with ID = %d was successfully removed",
-                                                                                            TEST_STUDENT_2.getId(),
-                                                                                            TEST_SCHOOL_CLASS_1.getId());
+
         mockMvc.perform(delete(BASE_URL + "/students/student/" + TEST_STUDENT_2.getId()))
                     .andDo(print())
-                    .andExpect(content().string(response))
-                    .andExpect(status().isOk())
+                    .andExpect(status().isNoContent())
                     .andReturn();
     }
 }
