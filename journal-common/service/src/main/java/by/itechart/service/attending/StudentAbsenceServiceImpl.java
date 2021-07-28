@@ -30,9 +30,6 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
 
     private final AbsenceService absenceService;
 
-
-    //THIS IMPLEMENTATION OR BETTER USE @QUERY AND PICK UP RIGHT FROM DB???
-
     /**
      * Receive a list of students, that not presented at @param absenceDate date./n
      * @param absenceDate a day, which one the collection of students must be found
@@ -41,6 +38,7 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
      * @throws Throwable AbsenceNotFoundException if there is no absence students on this date
      */
     @Override
+    @Transactional(readOnly = true)
     public List<Student> getAllByAbsenceDatesAndSchoolClassId(LocalDate absenceDate, Long classId, Pageable pageable)
                                                                                                     throws Throwable {
 

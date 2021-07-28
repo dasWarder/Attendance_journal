@@ -26,6 +26,7 @@ public class UserServiceImpl implements UserService {
     private final PasswordEncoder encoder;
 
     @Override
+    @Transactional(readOnly = true)
     public User getUserById(Long userId) throws Throwable {
 
         validateParams(userId);
@@ -39,6 +40,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public User getUserByUsername(String userName) throws Throwable {
 
         validateParams(userName);
@@ -90,6 +92,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<User> getAllUsers() {
 
         log.info("Receive a list of all users");
@@ -100,6 +103,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<User> getAllUsersByAuthority(String name) {
 
         validateParams(name);

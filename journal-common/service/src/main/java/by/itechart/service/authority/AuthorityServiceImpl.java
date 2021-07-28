@@ -34,6 +34,7 @@ public class AuthorityServiceImpl implements AuthorityService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public UserAuthority getAuthorityById(Long authorityId) throws Throwable {
 
         validateParams(authorityId);
@@ -47,6 +48,7 @@ public class AuthorityServiceImpl implements AuthorityService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public UserAuthority getAuthorityByName(String name) throws Throwable {
 
         validateParams(name);
@@ -97,6 +99,7 @@ public class AuthorityServiceImpl implements AuthorityService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<UserAuthority> getAllAuthorities() {
 
         log.info("Receive a list of all authorities");

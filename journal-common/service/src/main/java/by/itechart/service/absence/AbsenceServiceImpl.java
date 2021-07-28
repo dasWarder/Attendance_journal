@@ -34,6 +34,7 @@ public class AbsenceServiceImpl implements AbsenceService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Absence getAbsenceByAbsenceDate(LocalDate absenceDate) throws Throwable {
 
         validateParams(absenceDate);
@@ -48,6 +49,7 @@ public class AbsenceServiceImpl implements AbsenceService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Absence getAbsenceById(Long absenceId) throws Throwable {
 
         validateParams(absenceId);

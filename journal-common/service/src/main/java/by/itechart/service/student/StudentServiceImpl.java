@@ -42,6 +42,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     @Cacheable(cacheNames = "students", key = "#studentId")
     public Student getStudentByIdAndClassId(Long studentId, Long classId) throws Throwable {
 
@@ -85,6 +86,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<Student> findAllStudents(Long classId, Pageable pageable) {
 
         validateParams(classId, pageable);

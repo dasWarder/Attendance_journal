@@ -53,6 +53,7 @@ public class RefreshTokenServiceImpl implements RefreshTokenService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public RefreshToken findByToken(String token) throws Throwable {
 
         validateParams(token);

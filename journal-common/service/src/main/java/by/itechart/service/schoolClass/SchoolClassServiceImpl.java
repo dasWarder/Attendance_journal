@@ -40,6 +40,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     @Cacheable(cacheNames = "schoolClass", key = "#classId")
     public SchoolClass getSchoolClassById(Long classId, String username) throws Throwable {
 
@@ -54,6 +55,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public SchoolClass getSchoolClassByName(String name, String username) throws Throwable {
 
         validateParams(name, username);
@@ -108,6 +110,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<SchoolClass> getAllSchoolClasses(String username, Pageable pageable) {
 
         validateParams(username, pageable);
