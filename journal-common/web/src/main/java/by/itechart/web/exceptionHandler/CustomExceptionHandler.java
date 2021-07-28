@@ -6,6 +6,7 @@ import by.itechart.web.exceptionHandler.exception.ExceptionResponse;
 import by.itechart.web.exceptionHandler.violation.Violation;
 import by.itechart.web.exceptionHandler.violation.ViolationResponse;
 import io.jsonwebtoken.ExpiredJwtException;
+import org.postgresql.util.PSQLException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -14,10 +15,8 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.ServletException;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
-import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
@@ -48,13 +47,28 @@ public class CustomExceptionHandler {
         ExceptionResponse response = new ExceptionResponse();
 
         response.setClassName(e
-                .getClass()
-                .getSimpleName());
+                                .getCause()
+                                .getClass()
+                                .getSimpleName());
 
         response.setMessage(e.getMessage());
 
         return new ResponseEntity<>(
                                     response, HttpStatus.FORBIDDEN);
+    }
+
+    @ExceptionHandler(value = { PSQLException.class })
+    public ResponseEntity<ExceptionResponse> duplicateEntityException(PSQLException e) {
+
+        ExceptionResponse response = new ExceptionResponse();
+
+        response.setClassName(e
+                                .getClass()
+                                .getSimpleName());
+
+        response.setMessage("Duplicate exception. The same object already exist");
+
+        return ResponseEntity.badRequest().body(response);
     }
 
     @ExceptionHandler(value = { StudentNotFoundException.class,
@@ -103,8 +117,7 @@ public class CustomExceptionHandler {
                     .add(singleViolation);
         });
 
-        return new ResponseEntity(
-                                  response, HttpStatus.BAD_REQUEST);
+        return ResponseEntity.badRequest().body(response);
     }
 
     @ExceptionHandler(value = { MethodArgumentNotValidException.class })
@@ -129,8 +142,7 @@ public class CustomExceptionHandler {
                     .add(singleViolation);
         });
 
-        return new ResponseEntity(
-                                  response, HttpStatus.BAD_REQUEST);
+        return ResponseEntity.badRequest().body(response);
     }
 
 

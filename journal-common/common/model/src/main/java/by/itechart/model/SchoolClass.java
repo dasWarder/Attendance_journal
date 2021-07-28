@@ -31,7 +31,7 @@ public class SchoolClass {
                                          cascade = CascadeType.REMOVE)
     private Set<Student> students;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User user;
 
