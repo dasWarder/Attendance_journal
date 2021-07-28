@@ -4,6 +4,9 @@ import by.itechart.model.Student;
 import by.itechart.repository.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +26,7 @@ public class StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;
 
     @Override
+    @CachePut(cacheNames = "students")
     public Student saveStudent(Student student) {
 
         validateParams(student);
@@ -36,6 +40,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Cacheable(cacheNames = "students", key = "#studentId")
     public Student getStudentByIdAndClassId(Long studentId, Long classId) throws Throwable {
 
         validateParams(studentId, classId);
@@ -50,6 +55,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @CachePut(cacheNames = "students", key = "#studentId")
     public Student updateStudent(Long studentId, Student student, Long classId) {
 
         validateParams(studentId, student, classId);
@@ -63,6 +69,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @CacheEvict(cacheNames = "students", key = "#studentId")
     public void deleteStudentByIdAndClassId(Long studentId, Long classId) {
 
         validateParams(studentId, classId);

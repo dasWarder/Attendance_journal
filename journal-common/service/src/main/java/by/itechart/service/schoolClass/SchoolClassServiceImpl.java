@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +25,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
 
 
     @Override
-    @CachePut(value = "schoolClass")
+    @CachePut(cacheNames = "schoolClass")
     public SchoolClass saveSchoolClass(SchoolClass schoolClass) {
 
         validateParams(schoolClass);
@@ -37,6 +38,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
+    @Cacheable(cacheNames = "schoolClass", key = "#classId")
     public SchoolClass getSchoolClassById(Long classId, String username) throws Throwable {
 
         validateParams(classId, username);
@@ -63,7 +65,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
-    @CachePut(value = "schoolClass", key = "#classId")
+    @CachePut(cacheNames = "schoolClass", key = "#classId")
     public SchoolClass updateSchoolClass(Long classId, SchoolClass updateSchoolClass, String username) throws Throwable {
 
         validateParams(classId, updateSchoolClass);
@@ -79,7 +81,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
-    @CacheEvict("schoolClass")
+    @CacheEvict(cacheNames = "schoolClass")
     public void deleteSchoolClassById(Long classId, String username) {
 
         validateParams(classId, username);
@@ -90,7 +92,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
-    @CacheEvict("schoolClass")
+    @CacheEvict(cacheNames = "schoolClass")
     public void deleteSchoolClassByName(String name, String username) {
 
         validateParams(name, username);
