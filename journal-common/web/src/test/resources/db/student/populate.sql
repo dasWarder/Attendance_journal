@@ -27,7 +27,8 @@ INSERT INTO users(id, role_id, username, password, enabled) VALUES
 ALTER SEQUENCE user_seq RESTART WITH 100006;
 
 INSERT INTO school_class(id, name, user_id) VALUES
-    (12, '1A', 100003);
+    (12, '1A', 100003),
+    (13, '2A', 100003);
 
 INSERT INTO student(id, name, surname, class_id) VALUES
     (6, 'Alex', 'Petrov', 12),

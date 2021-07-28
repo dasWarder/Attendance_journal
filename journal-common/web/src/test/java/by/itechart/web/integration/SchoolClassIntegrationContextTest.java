@@ -123,7 +123,7 @@ public class SchoolClassIntegrationContextTest extends AbstractContextTest {
 
         log.info("Test getAllSchoolClasses() method");
 
-        List<SchoolClass> testSchoolClasses = List.of(TEST_SCHOOL_CLASS_1);
+        List<SchoolClass> testSchoolClasses = List.of(TEST_SCHOOL_CLASS_1, TEST_SCHOOL_CLASS_2);
 
         List<SchoolClass> allSchoolClasses = classService.getAllSchoolClasses(LOGGED_USERNAME, PAGE_PARAM);
 

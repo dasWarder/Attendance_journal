@@ -47,7 +47,6 @@ public class CustomExceptionHandler {
         ExceptionResponse response = new ExceptionResponse();
 
         response.setClassName(e
-                                .getCause()
                                 .getClass()
                                 .getSimpleName());
 

@@ -41,7 +41,7 @@ class SchoolClassControllerTest extends AbstractControllerContextTest {
 
         log.info("Receive a list of school classes dto from method getAllSchoolClasses() and status OK");
 
-        List<SchoolClass> schoolClassesOrigin = List.of(TEST_SCHOOL_CLASS_1);
+        List<SchoolClass> schoolClassesOrigin = List.of(TEST_SCHOOL_CLASS_1, TEST_SCHOOL_CLASS_2);
         List<SchoolClassDto> response = schoolClassMapper.schoolClassListToSchoolClassDtoList(schoolClassesOrigin);
 
         mockMvc.perform(get(BASE_URL))
@@ -56,10 +56,10 @@ class SchoolClassControllerTest extends AbstractControllerContextTest {
     public void shouldBeStatusOkAndReturnGetSchoolClassByIdProperly() throws Exception {
 
         log.info("Receive a school class dto from method getSchoolClassById() and status OK");
-        SchoolClassDto response = schoolClassMapper.schoolClassToSchoolClassDto(TEST_SCHOOL_CLASS_1);
+        SchoolClassDto response = schoolClassMapper.schoolClassToSchoolClassDto(TEST_SCHOOL_CLASS_2);
 
         mockMvc.perform(get(BASE_URL + "/class/"
-                + TEST_SCHOOL_CLASS_1.getId()))
+                + TEST_SCHOOL_CLASS_2.getId()))
                                             .andDo(print())
                                             .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                                             .andExpect(content().json(jsonParser.getJsonObject(response)))
