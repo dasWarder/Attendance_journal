@@ -2,6 +2,7 @@ package by.itechart.web.security;
 
 import by.itechart.web.security.token.JwtFilter;
 import lombok.RequiredArgsConstructor;
+import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -59,11 +60,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                     .and()
                     .authorizeRequests()
-                    .antMatchers("/admin/**").hasAuthority("SUPER_ADMIN")
+                    .antMatchers("/admin/**", "/actuator/**").hasAuthority("SUPER_ADMIN")
                     .antMatchers("/users/**").hasAuthority("ADMIN")
-                    .antMatchers("/classes/**").authenticated()
-                    .antMatchers("/details/**").authenticated()
-                    .antMatchers("/absence/**").authenticated()
+                    .antMatchers("/classes/**", "/details/**", "/absence/**").authenticated()
                     .antMatchers("/auth").permitAll().anyRequest().authenticated()
                     .and()
                     .exceptionHandling()

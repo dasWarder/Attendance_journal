@@ -5,25 +5,17 @@ import by.itechart.mapping.dto.user.UserDto;
 import by.itechart.mapping.user.UserMapper;
 import by.itechart.mapping.user.UserMapperWithUserRole;
 import by.itechart.model.user.User;
+import by.itechart.web.controller.AbstractControllerContextTest;
 import by.itechart.web.controller.util.JsonParser;
-import by.itechart.web.data.TokenTestData;
-import by.itechart.web.data.UserTestData;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.test.context.jdbc.Sql;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static by.itechart.web.data.TokenTestData.TEST_TOKEN_REQUEST;
 import static by.itechart.web.data.UserTestData.*;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -31,11 +23,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 @Slf4j
-@SpringBootTest
-@AutoConfigureMockMvc
-@ExtendWith(SpringExtension.class)
-@Sql(scripts = { "/db/student/populate.sql" })
-class RegisterControllerTest {
+class RegisterControllerTest extends AbstractControllerContextTest {
 
     @Autowired
     private MockMvc mockMvc;

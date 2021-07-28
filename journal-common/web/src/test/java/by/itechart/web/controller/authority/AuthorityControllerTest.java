@@ -3,17 +3,13 @@ package by.itechart.web.controller.authority;
 import by.itechart.mapping.authority.AuthorityMapper;
 import by.itechart.mapping.dto.authority.AuthorityDto;
 import by.itechart.model.user.UserAuthority;
+import by.itechart.web.controller.AbstractControllerContextTest;
 import by.itechart.web.controller.util.JsonParser;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.test.context.jdbc.Sql;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
@@ -26,12 +22,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 @Slf4j
-@SpringBootTest
-@AutoConfigureMockMvc
-@ExtendWith(SpringExtension.class)
-@Sql(scripts = { "/db/student/populate.sql" })
 @WithMockUser(username = "admin@gmail.com", authorities = "SUPER_ADMIN" )
-class AuthorityControllerTest {
+class AuthorityControllerTest extends AbstractControllerContextTest {
 
     @Autowired
     private MockMvc mockMvc;

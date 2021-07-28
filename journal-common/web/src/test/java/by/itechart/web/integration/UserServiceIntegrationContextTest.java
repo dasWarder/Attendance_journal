@@ -4,14 +4,11 @@ package by.itechart.web.integration;
 import by.itechart.model.exception.UserNotFoundException;
 import by.itechart.model.user.User;
 import by.itechart.service.user.UserService;
+import by.itechart.web.AbstractContextTest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.jdbc.Sql;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.List;
 
@@ -19,10 +16,7 @@ import static by.itechart.web.data.UserTestData.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j
-@SpringBootTest
-@ExtendWith(SpringExtension.class)
-@Sql(scripts = { "/db/student/populate.sql" })
-public class UserServiceIntegrationTest {
+public class UserServiceIntegrationContextTest extends AbstractContextTest {
 
     @Autowired
     private UserService userService;
