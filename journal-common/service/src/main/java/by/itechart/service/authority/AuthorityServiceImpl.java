@@ -5,6 +5,7 @@ import by.itechart.repository.AuthorityRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -20,6 +21,7 @@ public class AuthorityServiceImpl implements AuthorityService {
     private final AuthorityRepository authorityRepository;
 
     @Override
+    @Transactional
     public UserAuthority saveAuthority(UserAuthority authority) {
 
         validateParams(authority);
@@ -58,6 +60,7 @@ public class AuthorityServiceImpl implements AuthorityService {
     }
 
     @Override
+    @Transactional
     public void deleteAuthorityById(Long authorityId) {
 
         validateParams(authorityId);
@@ -68,6 +71,7 @@ public class AuthorityServiceImpl implements AuthorityService {
     }
 
     @Override
+    @Transactional
     public void deleteAuthorityByName(String name) {
 
         validateParams(name);
@@ -78,6 +82,7 @@ public class AuthorityServiceImpl implements AuthorityService {
     }
 
     @Override
+    @Transactional
     public UserAuthority updateAuthority(Long authorityId, UserAuthority updateAuthority) throws Throwable {
 
         validateParams(authorityId, updateAuthority);

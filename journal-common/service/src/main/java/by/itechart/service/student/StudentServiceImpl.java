@@ -9,6 +9,7 @@ import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -26,6 +27,7 @@ public class StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;
 
     @Override
+    @Transactional
     @CachePut(cacheNames = "students")
     public Student saveStudent(Student student) {
 
@@ -55,6 +57,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Transactional
     @CachePut(cacheNames = "students", key = "#studentId")
     public Student updateStudent(Long studentId, Student student, Long classId) {
 
@@ -69,6 +72,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Transactional
     @CacheEvict(cacheNames = "students", key = "#studentId")
     public void deleteStudentByIdAndClassId(Long studentId, Long classId) {
 
@@ -93,6 +97,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Transactional
     public List<Student> saveAllStudents(List<Student> students) {
 
         validateParams(students);

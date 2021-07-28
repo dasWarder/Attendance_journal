@@ -9,6 +9,7 @@ import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -25,6 +26,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
 
 
     @Override
+    @Transactional
     @CachePut(cacheNames = "schoolClass")
     public SchoolClass saveSchoolClass(SchoolClass schoolClass) {
 
@@ -65,6 +67,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
+    @Transactional
     @CachePut(cacheNames = "schoolClass", key = "#classId")
     public SchoolClass updateSchoolClass(Long classId, SchoolClass updateSchoolClass, String username) throws Throwable {
 
@@ -81,6 +84,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
+    @Transactional
     @CacheEvict(cacheNames = "schoolClass")
     public void deleteSchoolClassById(Long classId, String username) {
 
@@ -92,6 +96,7 @@ public class SchoolClassServiceImpl implements SchoolClassService {
     }
 
     @Override
+    @Transactional
     @CacheEvict(cacheNames = "schoolClass")
     public void deleteSchoolClassByName(String name, String username) {
 

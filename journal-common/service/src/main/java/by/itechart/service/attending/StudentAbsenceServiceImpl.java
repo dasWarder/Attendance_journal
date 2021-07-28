@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -66,6 +67,7 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
      * @throws Throwable StudentNotFoundException if the student with the ID doesn't exist
      */
     @Override
+    @Transactional
     public Student addStudentToAbsenceList(Long classId, Long studentId, LocalDate absenceDate) throws Throwable {
 
         validateParams(classId, studentId, absenceDate);
@@ -89,6 +91,7 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
      * @return the collection of stored into the absence list students
      */
     @Override
+    @Transactional
     public List<Student> addStudentsToAbsenceList(List<Student> students, LocalDate absenceDate) {
 
         validateParams(students, absenceDate);
@@ -113,6 +116,7 @@ public class StudentAbsenceServiceImpl implements StudentAbsenceService {
      * if the absence object or the student with ID doesn't exist
      */
     @Override
+    @Transactional
     public void deleteStudentFromAbsenceList(Long classId, Long studentId, LocalDate absenceDate) throws Throwable {
 
         validateParams(classId, studentId, absenceDate);
