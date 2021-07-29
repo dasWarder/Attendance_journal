@@ -56,7 +56,7 @@ class StudentServiceTest {
         Long studentId = TEST_STUDENT_1.getId();
         Long classId = TEST_SCHOOL_CLASS_1.getId();
 
-        Mockito.when(studentRepository.getStudentByIdAndSchoolClass_Id(studentId, classId))
+        Mockito.when(studentRepository.getStudentByIdAndSchoolClassId(studentId, classId))
                                                                 .thenReturn(Optional.of(TEST_STUDENT_1));
 
         Student studentByIdAndClassId = studentService.getStudentByIdAndClassId(studentId, classId);
@@ -74,7 +74,7 @@ class StudentServiceTest {
         Long studentId = WRONG_ID;
         Long classId = TEST_SCHOOL_CLASS_1.getId();
 
-        Mockito.when(studentRepository.getStudentByIdAndSchoolClass_Id(studentId, classId))
+        Mockito.when(studentRepository.getStudentByIdAndSchoolClassId(studentId, classId))
                                                                         .thenReturn(Optional.ofNullable(null));
 
         Assertions.assertThrows(StudentNotFoundException.class,
@@ -192,7 +192,7 @@ class StudentServiceTest {
         log.info("Test findAllStudents() method");
         Long classId = TEST_SCHOOL_CLASS_1.getId();
         List<Student> expectedStudents = List.of(TEST_STUDENT_1, TEST_STUDENT_2, TEST_STUDENT_3);
-        Mockito.when(studentRepository.findAllBySchoolClass_Id(classId, PAGE_PARAM)).thenReturn(expectedStudents);
+        Mockito.when(studentRepository.findAllBySchoolClassId(classId, PAGE_PARAM)).thenReturn(expectedStudents);
 
         List<Student> actualStudents = studentService.findAllStudents(classId, PAGE_PARAM);
 

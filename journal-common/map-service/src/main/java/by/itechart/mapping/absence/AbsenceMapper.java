@@ -8,7 +8,7 @@ import org.mapstruct.Mapping;
 
 import java.util.Set;
 
-@Mapper(componentModel = "spring")
+@Mapper
 public interface AbsenceMapper {
 
     @Mapping(target = "id", ignore = true)

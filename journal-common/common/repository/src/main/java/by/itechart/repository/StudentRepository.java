@@ -10,12 +10,12 @@ import java.util.Optional;
 
 public interface StudentRepository extends PagingAndSortingRepository<Student, Long> {
 
-    List<Student> findAllBySchoolClass_Id(Long classId, Pageable pageable);
+    List<Student> findAllBySchoolClassId(Long classId, Pageable pageable);
 
-    Optional<Student> getStudentByIdAndSchoolClass_Id(Long studentId, Long classId);
+    Optional<Student> getStudentByIdAndSchoolClassId(Long studentId, Long classId);
 
-    void deleteStudentByIdAndSchoolClass_Id(Long studentId, Long classId);
+    void deleteStudentByIdAndSchoolClassId(Long studentId, Long classId);
 
-    List<Student> findAllBySchoolClass_Id(Long classId);
+    List<Student> findAllBySchoolClassId(Long classId);
 
 }

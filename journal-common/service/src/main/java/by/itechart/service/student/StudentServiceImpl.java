@@ -11,10 +11,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 import static by.itechart.model.util.ValidationUtil.validateOptional;
 import static by.itechart.model.util.ValidationUtil.validateParams;
@@ -50,7 +48,7 @@ public class StudentServiceImpl implements StudentService {
 
         log.info("Receive a student by ID = {} for a school class with ID = {}",
                                                                                 studentId, classId);
-        Optional<Student> possibleStudentById = studentRepository.getStudentByIdAndSchoolClass_Id(
+        Optional<Student> possibleStudentById = studentRepository.getStudentByIdAndSchoolClassId(
                                                                                                   studentId, classId);
         Student studentById = validateOptional(possibleStudentById, Student.class);
 
@@ -81,7 +79,7 @@ public class StudentServiceImpl implements StudentService {
 
         log.info("Remove a student with ID = {}",
                                                 studentId);
-        studentRepository.deleteStudentByIdAndSchoolClass_Id(studentId, classId);
+        studentRepository.deleteStudentByIdAndSchoolClassId(studentId, classId);
 
     }
 
@@ -93,7 +91,7 @@ public class StudentServiceImpl implements StudentService {
 
         log.info("Receive a pageable collection of all student for a class with ID = {}",
                                                                                          classId);
-        List<Student> studentsList = studentRepository.findAllBySchoolClass_Id(classId, pageable);
+        List<Student> studentsList = studentRepository.findAllBySchoolClassId(classId, pageable);
 
         return studentsList;
     }

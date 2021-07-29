@@ -80,6 +80,9 @@ public class ValidationUtil {
             case "Absence":
                 return new AbsenceNotFoundException("An absence object not found");
 
+            case "StudentDetails":
+                return new StudentDetailsNotFoundException("Student details not found");
+
             default:
                 return new NotFoundException("An object not found");
         }

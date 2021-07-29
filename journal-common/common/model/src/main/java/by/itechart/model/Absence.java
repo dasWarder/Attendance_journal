@@ -7,12 +7,13 @@ import java.time.LocalDate;
 import java.util.Set;
 
 
-@Data
+@Getter
+@Setter
 @Entity
 @Builder
-@Table(name = "absence")
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "absence")
 public class Absence {
 
     @Id

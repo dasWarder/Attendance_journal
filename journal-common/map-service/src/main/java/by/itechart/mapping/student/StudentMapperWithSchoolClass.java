@@ -54,7 +54,7 @@ public abstract class StudentMapperWithSchoolClass {
 
         log.info("Mapping student dto id set to the student set");
 
-        List<Student> allBySchoolClassId = studentRepository.findAllBySchoolClass_Id(classId);
+        List<Student> allBySchoolClassId = studentRepository.findAllBySchoolClassId(classId);
 
         List<Long> collectOfIds = dtoIdSet.stream()
                                                 .map(s -> s.getId())

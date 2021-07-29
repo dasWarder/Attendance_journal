@@ -7,7 +7,7 @@ import by.itechart.model.refreshToken.RefreshToken;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper(componentModel = "spring")
+@Mapper
 public interface TokenMapper {
 
     @Mapping(target = "refreshToken", ignore = true)

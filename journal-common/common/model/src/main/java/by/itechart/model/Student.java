@@ -39,6 +39,10 @@ public class Student {
     )
     private List<Absence> absenceDates;
 
+    @OneToOne(mappedBy = "student",
+              cascade = CascadeType.REMOVE, fetch = FetchType.LAZY)
+    private StudentDetails details;
+
     public Student(String name, String surname) {
         this.name = name;
         this.surname = surname;
@@ -70,5 +74,15 @@ public class Student {
         this.surname = surname;
         this.schoolClass = schoolClass;
         this.absenceDates = absenceDates;
+    }
+
+    public Student(Long id, String name, String surname, SchoolClass schoolClass,
+                   List<Absence> absenceDates, StudentDetails details) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.schoolClass = schoolClass;
+        this.absenceDates = absenceDates;
+        this.details = details;
     }
 }
