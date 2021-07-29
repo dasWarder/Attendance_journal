@@ -2,10 +2,8 @@ package by.itechart.service.studentDetails;
 
 import by.itechart.model.Student;
 import by.itechart.model.StudentDetails;
-import by.itechart.model.util.ValidationUtil;
 import by.itechart.repository.StudentDetailsRepository;
 import by.itechart.service.student.StudentService;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
