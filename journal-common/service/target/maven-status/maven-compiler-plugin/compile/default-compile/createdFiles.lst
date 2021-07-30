@@ -10,7 +10,9 @@ by\itechart\service\attending\StudentAbsenceServiceImpl.class
 by\itechart\service\schoolClass\SchoolClassService.class
 by\itechart\service\security\UserDetailsSecurityService.class
 by\itechart\service\user\UserServiceImpl.class
+by\itechart\service\studentDetails\StudentDetailsService.class
 by\itechart\service\absence\AbsenceServiceImpl.class
+by\itechart\service\studentDetails\StudentDetailsServiceImpl.class
 by\itechart\service\absence\AbsenceService.class
 by\itechart\service\user\UserService.class
 by\itechart\service\refreshToken\RefreshTokenService.class

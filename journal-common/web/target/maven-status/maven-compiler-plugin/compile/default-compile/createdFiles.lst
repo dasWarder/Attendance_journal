@@ -10,6 +10,7 @@ by\itechart\web\security\UserJwtAuthEntryPoint.class
 by\itechart\web\exceptionHandler\violation\ViolationResponse.class
 by\itechart\web\exceptionHandler\exception\ExceptionResponse.class
 by\itechart\web\security\SecurityConfig.class
+by\itechart\web\controller\studentDetails\StudentDetailsController.class
 by\itechart\web\controller\user\AdminController.class
 by\itechart\web\controller\schoolClass\SchoolClassController.class
 by\itechart\web\controller\user\RegisterController.class

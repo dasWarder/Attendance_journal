@@ -12,6 +12,8 @@ C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\service\src\m
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\service\src\main\java\by\itechart\service\security\CustomUserDetails.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\service\src\main\java\by\itechart\service\attending\StudentAbsenceServiceImpl.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\service\src\main\java\by\itechart\service\user\UserServiceImpl.java
+C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\service\src\main\java\by\itechart\service\studentDetails\StudentDetailsServiceImpl.java
+C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\service\src\main\java\by\itechart\service\studentDetails\StudentDetailsService.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\service\src\main\java\by\itechart\service\refreshToken\RefreshTokenService.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\service\src\main\java\by\itechart\service\student\StudentServiceImpl.java
 C:\Users\user\IdeaProjects\clone\Attendings_journal\journal-common\service\src\main\java\by\itechart\service\schoolClass\SchoolClassService.java

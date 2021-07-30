@@ -1,5 +1,6 @@
 DELETE FROM student_absence;
 DELETE FROM absence;
+DELETE FROM student_details;
 DELETE FROM student;
 DELETE FROM school_class;
 DELETE FROM users;
@@ -12,6 +13,7 @@ ALTER SEQUENCE user_seq RESTART WITH 100000;
 ALTER SEQUENCE global_seq RESTART WITH 1;
 ALTER SEQUENCE token_seq RESTART WITH 1;
 ALTER SEQUENCE absence_seq RESTART WITH 10000;
+ALTER SEQUENCE details_seq RESTART WITH 1000;
 
 
 INSERT INTO authorities(id,  authority) VALUES
@@ -52,3 +54,9 @@ INSERT INTO student_absence(absence_id, student_id) VALUES
     (10000, 6),
     (10000, 7),
     (10001, 6);
+
+INSERT INTO student_details(id, student_id, first_parent, second_parent, parents_email, contact_num, bio) VALUES
+    (1000, 6, 'Petr Petrov', 'Olga Petrova', 'petr@gmail.com', '+79113880777', 'Just a poor boy'),
+    (1001, 7, 'Unknown Pirate', '', '', '', 'PIRAAAATE!!!');
+
+ALTER SEQUENCE details_seq RESTART WITH 1002;
