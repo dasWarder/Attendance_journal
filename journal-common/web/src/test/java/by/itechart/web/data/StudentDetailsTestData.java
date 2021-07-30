@@ -17,5 +17,5 @@ public class StudentDetailsTestData {
     public static final StudentDetails TEST_SAVE_DETAILS = new StudentDetails(1002L, "Dave Blane", "Alice Blane", "dave@gmail.com",
                                                             "+10376544355", "Magic", TEST_STUDENT_4);
     public static final StudentDetails TEST_UPDATE_DETAILS = new StudentDetails(null, "UPDATE", "UPDATE",
-                                                    "UPDATE", "UPDATE", "UPDATE", TEST_STUDENT_2);
+                                                    "UPDATE@gmail.com", "+71111111111", "UPDATE", TEST_STUDENT_2);
 }

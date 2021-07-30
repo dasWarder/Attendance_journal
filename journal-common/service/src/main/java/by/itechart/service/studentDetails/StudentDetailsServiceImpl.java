@@ -24,6 +24,7 @@ public class StudentDetailsServiceImpl implements StudentDetailsService {
     private final StudentService studentService;
 
     @Override
+    @Transactional
     public StudentDetails saveStudentDetails(Long classId,  Long studentId, StudentDetails studentDetails) throws Throwable {
 
         validateParams(classId, studentId, studentDetails);
@@ -39,6 +40,7 @@ public class StudentDetailsServiceImpl implements StudentDetailsService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public StudentDetails getStudentDetailsBySchoolClassIdAndStudentId(Long classId, Long studentId) throws Throwable {
 
         validateParams(classId, studentId);
@@ -64,6 +66,7 @@ public class StudentDetailsServiceImpl implements StudentDetailsService {
     }
 
     @Override
+    @Transactional
     public StudentDetails updateStudentDetails(Long classId, Long studentId, StudentDetails updateDetails) throws Throwable {
 
         validateParams(classId, studentId, updateDetails);

@@ -5,13 +5,11 @@ import by.itechart.mapping.dto.student.StudentDtoId;
 import by.itechart.mapping.student.StudentMapper;
 import by.itechart.model.Student;
 import by.itechart.web.controller.AbstractControllerContextTest;
-import by.itechart.web.controller.util.JsonParser;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
@@ -24,12 +22,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Slf4j
 @WithMockUser(username = "alex@gmail.com", authorities = "USER")
 class StudentControllerTest extends AbstractControllerContextTest {
-
-    @Autowired
-    private MockMvc mockMvc;
-
-    @Autowired
-    private JsonParser jsonParser;
 
     @Autowired
     private StudentMapper studentMapper;

@@ -49,7 +49,7 @@ public class StudentServiceIntegrationContextTest extends AbstractContextTest {
 
         assertThat(studentByIdAndClassId)
                                         .usingRecursiveComparison()
-                                        .ignoringFields("schoolClass", "absenceDates")
+                                        .ignoringFields("details", "schoolClass", "absenceDates")
                                         .isEqualTo(TEST_STUDENT_2);
     }
 
@@ -100,7 +100,7 @@ public class StudentServiceIntegrationContextTest extends AbstractContextTest {
 
         assertThat(actualStudents)
                                 .usingRecursiveComparison()
-                                .ignoringFields("schoolClass", "absenceDates")
+                                .ignoringFields("details", "schoolClass", "absenceDates")
                                 .isEqualTo(expectedStudents);
     }
 }

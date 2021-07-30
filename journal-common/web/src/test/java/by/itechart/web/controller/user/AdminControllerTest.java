@@ -5,13 +5,11 @@ import by.itechart.mapping.dto.user.UserDto;
 import by.itechart.mapping.user.UserMapper;
 import by.itechart.model.user.User;
 import by.itechart.web.controller.AbstractControllerContextTest;
-import by.itechart.web.controller.util.JsonParser;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
@@ -25,12 +23,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Slf4j
 @WithMockUser(username = "petr@gmail.com", authorities = "ADMIN" )
 class AdminControllerTest extends AbstractControllerContextTest {
-
-    @Autowired
-    private MockMvc mockMvc;
-
-    @Autowired
-    private JsonParser parser;
 
     @Autowired
     private UserMapper mapper;
@@ -49,10 +41,10 @@ class AdminControllerTest extends AbstractControllerContextTest {
 
         mockMvc.perform(post(BASE_URL + "/user")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(parser.getJsonObject(request)))
+                .content(jsonParser.getJsonObject(request)))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(request)))
+                .andExpect(content().json(jsonParser.getJsonObject(request)))
                 .andExpect(status().isCreated())
                 .andReturn();
     }
@@ -67,7 +59,7 @@ class AdminControllerTest extends AbstractControllerContextTest {
         mockMvc.perform(get(BASE_URL + "/user/" + TEST_USER_1.getId()))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(response)))
+                .andExpect(content().json(jsonParser.getJsonObject(response)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -84,7 +76,7 @@ class AdminControllerTest extends AbstractControllerContextTest {
                 .param("email", TEST_USER_1.getUsername()))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(response)))
+                .andExpect(content().json(jsonParser.getJsonObject(response)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -98,10 +90,10 @@ class AdminControllerTest extends AbstractControllerContextTest {
 
         mockMvc.perform(put(BASE_URL + "/user/" + TEST_USER_1.getId())
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(parser.getJsonObject(userDto)))
+                .content(jsonParser.getJsonObject(userDto)))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(userDto)))
+                .andExpect(content().json(jsonParser.getJsonObject(userDto)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -141,7 +133,7 @@ class AdminControllerTest extends AbstractControllerContextTest {
         mockMvc.perform(get(BASE_URL))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(response)))
+                .andExpect(content().json(jsonParser.getJsonObject(response)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -157,7 +149,7 @@ class AdminControllerTest extends AbstractControllerContextTest {
         mockMvc.perform(get(BASE_URL).param("role", "ADMIN"))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(response)))
+                .andExpect(content().json(jsonParser.getJsonObject(response)))
                 .andExpect(status().isOk())
                 .andReturn();
     }

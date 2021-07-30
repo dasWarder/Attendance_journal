@@ -4,13 +4,11 @@ import by.itechart.mapping.authority.AuthorityMapper;
 import by.itechart.mapping.dto.authority.AuthorityDto;
 import by.itechart.model.user.UserAuthority;
 import by.itechart.web.controller.AbstractControllerContextTest;
-import by.itechart.web.controller.util.JsonParser;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
@@ -26,12 +24,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class AuthorityControllerTest extends AbstractControllerContextTest {
 
     @Autowired
-    private MockMvc mockMvc;
-
-    @Autowired
-    private JsonParser parser;
-
-    @Autowired
     private AuthorityMapper mapper;
 
     private static final String BASE_URL = "/admin/roles";
@@ -45,7 +37,7 @@ class AuthorityControllerTest extends AbstractControllerContextTest {
 
         mockMvc.perform(get(BASE_URL)).andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(dtoList)))
+                .andExpect(content().json(jsonParser.getJsonObject(dtoList)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -60,7 +52,7 @@ class AuthorityControllerTest extends AbstractControllerContextTest {
         mockMvc.perform(get(BASE_URL + "/role/" + TEST_AUTHORITY_1.getId()))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(authorityDto)))
+                .andExpect(content().json(jsonParser.getJsonObject(authorityDto)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -76,7 +68,7 @@ class AuthorityControllerTest extends AbstractControllerContextTest {
                 .param("name", TEST_AUTHORITY_1.getAuthority()))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(authorityDto)))
+                .andExpect(content().json(jsonParser.getJsonObject(authorityDto)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -112,11 +104,11 @@ class AuthorityControllerTest extends AbstractControllerContextTest {
         AuthorityDto authorityDto = mapper.userAuthorityToAuthorityDto(TEST_STORING_AUTHORITY);
 
         mockMvc.perform(post(BASE_URL + "/role")
-                .content(parser.getJsonObject(authorityDto))
+                .content(jsonParser.getJsonObject(authorityDto))
                 .contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(authorityDto)))
+                .andExpect(content().json(jsonParser.getJsonObject(authorityDto)))
                 .andExpect(status().isCreated())
                 .andReturn();
     }
@@ -130,10 +122,10 @@ class AuthorityControllerTest extends AbstractControllerContextTest {
 
         mockMvc.perform(put(BASE_URL + "/role/" + TEST_AUTHORITY_1.getId())
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(parser.getJsonObject(authorityDto)))
+                .content(jsonParser.getJsonObject(authorityDto)))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(authorityDto)))
+                .andExpect(content().json(jsonParser.getJsonObject(authorityDto)))
                 .andExpect(status().isOk())
                 .andReturn();
     }

@@ -4,13 +4,11 @@ import by.itechart.mapping.dto.user.NoPassUserDto;
 import by.itechart.mapping.user.UserMapper;
 import by.itechart.model.user.User;
 import by.itechart.web.controller.AbstractControllerContextTest;
-import by.itechart.web.controller.util.JsonParser;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
@@ -24,12 +22,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Slf4j
 @WithMockUser(username = "admin@gmail.com", authorities = "SUPER_ADMIN" )
 class SuperAdminControllerTest extends AbstractControllerContextTest {
-
-    @Autowired
-    private MockMvc mockMvc;
-
-    @Autowired
-    private JsonParser parser;
 
     @Autowired
     private UserMapper mapper;
@@ -46,10 +38,10 @@ class SuperAdminControllerTest extends AbstractControllerContextTest {
 
         mockMvc.perform(post(BASE_URL + "/user")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(parser.getJsonObject(dto)))
+                .content(jsonParser.getJsonObject(dto)))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(dto)))
+                .andExpect(content().json(jsonParser.getJsonObject(dto)))
                 .andExpect(status().isCreated())
                 .andReturn();
     }
@@ -65,7 +57,7 @@ class SuperAdminControllerTest extends AbstractControllerContextTest {
         mockMvc.perform(get(BASE_URL + "/user/" + TEST_USER_1.getId()))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(response)))
+                .andExpect(content().json(jsonParser.getJsonObject(response)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -79,10 +71,10 @@ class SuperAdminControllerTest extends AbstractControllerContextTest {
 
         mockMvc.perform(put(BASE_URL + "/user/" + TEST_USER_1.getId())
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(parser.getJsonObject(dto)))
+                .content(jsonParser.getJsonObject(dto)))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(dto)))
+                .andExpect(content().json(jsonParser.getJsonObject(dto)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -122,7 +114,7 @@ class SuperAdminControllerTest extends AbstractControllerContextTest {
         mockMvc.perform(get(BASE_URL))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(noPassDtoUserList)))
+                .andExpect(content().json(jsonParser.getJsonObject(noPassDtoUserList)))
                 .andExpect(status().isOk())
                 .andReturn();
 
@@ -140,7 +132,7 @@ class SuperAdminControllerTest extends AbstractControllerContextTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .param("role", "USER"))
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(noPassUserDtoListOfUsersByUserRole)))
+                .andExpect(content().json(jsonParser.getJsonObject(noPassUserDtoListOfUsersByUserRole)))
                 .andExpect(status().isOk())
                 .andReturn();
     }

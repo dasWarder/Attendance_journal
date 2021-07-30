@@ -33,7 +33,7 @@ public class StudentAbsenceServiceIntegrationTest extends AbstractContextTest {
 
         assertThat(absenceStudent)
                                 .usingRecursiveComparison()
-                                .ignoringFields("absenceDates", "schoolClass")
+                                .ignoringFields("details", "absenceDates", "schoolClass")
                                 .isEqualTo(TEST_STUDENT_2);
     }
 }

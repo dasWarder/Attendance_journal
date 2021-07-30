@@ -4,13 +4,11 @@ import by.itechart.mapping.dto.user.FullUserDto;
 import by.itechart.mapping.dto.user.RegisterUserDto;
 import by.itechart.mapping.user.UserMapper;
 import by.itechart.web.controller.AbstractControllerContextTest;
-import by.itechart.web.controller.util.JsonParser;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.test.web.servlet.MockMvc;
 
 import static by.itechart.web.data.UserTestData.TEST_UPDATE_USER;
 import static by.itechart.web.data.UserTestData.TEST_USER_1;
@@ -24,12 +22,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Slf4j
 @WithMockUser(username = "alex@gmail.com", authorities = "USER" )
 class UserControllerTest extends AbstractControllerContextTest {
-
-    @Autowired
-    private MockMvc mockMvc;
-
-    @Autowired
-    private JsonParser parser;
 
     @Autowired
     private UserMapper mapper;
@@ -47,7 +39,7 @@ class UserControllerTest extends AbstractControllerContextTest {
         mockMvc.perform(get(BASE_URL))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(userDto)))
+                .andExpect(content().json(jsonParser.getJsonObject(userDto)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
@@ -62,10 +54,10 @@ class UserControllerTest extends AbstractControllerContextTest {
 
         mockMvc.perform(put(BASE_URL)
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(parser.getJsonObject(requestDto)))
+                .content(jsonParser.getJsonObject(requestDto)))
                 .andDo(print())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(content().json(parser.getJsonObject(responseDto)))
+                .andExpect(content().json(jsonParser.getJsonObject(responseDto)))
                 .andExpect(status().isOk())
                 .andReturn();
     }
