@@ -1,3 +1,4 @@
+by\itechart\web\controller\studentDetails\StudentDetailsControllerTest.class
 by\itechart\web\integration\AuthorityServiceIntegrationContextTest.class
 by\itechart\web\controller\user\RegisterControllerTest.class
 by\itechart\web\data\AuthorityTestData.class
@@ -18,6 +19,8 @@ by\itechart\web\controller\student\StudentControllerTest.class
 by\itechart\web\controller\user\UserControllerTest.class
 by\itechart\web\controller\AbstractControllerContextTest.class
 by\itechart\web\data\AbsenceTestData.class
+by\itechart\web\data\StudentDetailsTestData.class
 by\itechart\web\data\TokenTestData.class
 by\itechart\web\integration\StudentServiceIntegrationContextTest.class
+by\itechart\web\integration\StudentDetailsServiceIntegrationContextTest.class
 by\itechart\web\data\StudentTestData.class

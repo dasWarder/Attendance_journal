@@ -6,7 +6,6 @@ import by.itechart.mapping.dto.authority.AuthorityDto;
 import by.itechart.model.user.UserAuthority;
 import by.itechart.service.authority.AuthorityService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

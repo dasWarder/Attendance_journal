@@ -2,8 +2,6 @@ package by.itechart.mapping.token;
 
 
 import by.itechart.mapping.dto.token.Token;
-import by.itechart.mapping.dto.token.TokenRefreshRequest;
-import by.itechart.model.refreshToken.RefreshToken;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

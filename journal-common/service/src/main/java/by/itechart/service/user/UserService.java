@@ -1,7 +1,6 @@
 package by.itechart.service.user;
 
 import by.itechart.model.user.User;
-import net.bytebuddy.implementation.bytecode.Throw;
 
 import java.util.List;
 

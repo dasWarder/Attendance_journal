@@ -2,7 +2,6 @@ package by.itechart.service.attending;
 
 import by.itechart.model.Absence;
 import by.itechart.model.Student;
-import by.itechart.service.TestData;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

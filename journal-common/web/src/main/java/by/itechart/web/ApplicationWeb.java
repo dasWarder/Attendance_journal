@@ -10,8 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableCaching
 @EntityScan(basePackages = { "by.itechart.model" })
 @EnableJpaRepositories(basePackages = { "by.itechart.repository" })
-@SpringBootApplication(scanBasePackages = { "by.itechart.mapping", "by.itechart.service",
-                                                                        "by.itechart.web" })
+@SpringBootApplication(scanBasePackages = { "by.itechart.mapping", "by.itechart.service", "by.itechart.web" })
 public class ApplicationWeb {
 
     public static void main(String[] args) {

@@ -8,7 +8,6 @@ import by.itechart.model.Absence;
 import by.itechart.service.absence.AbsenceService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
