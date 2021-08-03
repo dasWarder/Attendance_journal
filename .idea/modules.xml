@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AttendingsJournal.iml" filepath="$PROJECT_DIR$/AttendingsJournal.iml" />
       <module fileurl="file://$PROJECT_DIR$/journal-common/common/common.iml" filepath="$PROJECT_DIR$/journal-common/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deploy-module/deploy-module.iml" filepath="$PROJECT_DIR$/deploy-module/deploy-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/journal-common/journal-common.iml" filepath="$PROJECT_DIR$/journal-common/journal-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/journal-common/map-service/map-service.iml" filepath="$PROJECT_DIR$/journal-common/map-service/map-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/journal-common/common/model/model.iml" filepath="$PROJECT_DIR$/journal-common/common/model/model.iml" />

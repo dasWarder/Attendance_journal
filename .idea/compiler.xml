@@ -17,11 +17,13 @@
         <module name="repository" />
         <module name="web" />
         <module name="service" />
+        <module name="deploy-module" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AttendingsJournal" target="11" />
       <module name="common" target="11" />
+      <module name="deploy-module" target="11" />
       <module name="journal-common" target="11" />
       <module name="map-service" target="11" />
       <module name="model" target="11" />
@@ -32,6 +34,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="deploy-module" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="map-service" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="model" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="repository" options="-parameters -Amapstruct.defaultComponentModel=spring" />

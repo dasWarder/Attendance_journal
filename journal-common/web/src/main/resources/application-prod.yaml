@@ -9,12 +9,20 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
-    show-sql: true
+    show-sql: false
     generate-ddl: false
     properties:
       hibernate.dialect: org.hibernate.dialect.PostgreSQL91Dialect
 
+management:
+  endpoint:
+    health:
+      cache:
+        time-to-live: "10s"
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 logging:
   config: classpath:logback.xml
-
-

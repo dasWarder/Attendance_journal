@@ -16,8 +16,7 @@
         <module>service</module>
         <module>web</module>
         <module>map-service</module>
+        <module>deploy-module</module>
     </modules>
-
-
 
 </project>
